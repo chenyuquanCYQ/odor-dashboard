@@ -5,7 +5,7 @@
     "countries": 10,
     "analyzed_count": 519,
     "pending_count": 1004,
-    "updated_at": "2026-04-08T00:44:48"
+    "updated_at": "2026-04-08T00:53:20"
   },
   "charts": {
     "sensor_type": {
@@ -191,41 +191,41 @@
     },
     "brands": {
       "Q1": [
-        "清華系友企業",
-        "廣運 (Kwangyuen)",
-        "Senseair",
-        "Ainos",
-        "ABB",
-        "日本INSENT",
-        "Aryballe",
-        "chromatotec.com"
+        "AIRSENSE Analytics / Olfosense",
+        "Alphasense UK",
+        "yanlania.com",
+        "SRI Robot",
+        "太陽誘電株式会社 (Taiyo Yuden Co., Ltd.)",
+        "XEARPRO",
+        "FlavorActiV",
+        "Siemens"
       ],
       "Q2": [
-        "Bosch Sensortec",
+        "Ainos",
+        "不詳",
         "The eNose Company",
         "Bosch Sensortec (博世)",
-        "不詳",
-        "Ainos"
+        "Bosch Sensortec"
       ],
       "Q3": [
-        "Zhejiang Zheke Instrument",
-        "增誠科技有限公司",
-        "日本ガイシ株式会社 (NGK Insulators, Ltd.)",
-        "太陽誘電株式会社",
-        "Thermo Fisher Scientific",
-        "KIMO",
-        "Aromabit",
-        "ABB"
+        "SHINYEI",
+        "合肥工業大學",
+        "Alphasense UK",
+        "(未明確品牌，來自研究人員開發)",
+        "太陽誘電株式会社 (Taiyo Yuden Co., Ltd.)",
+        "(hellopro.fr)",
+        "FlavorActiV",
+        "Siemens"
       ],
       "Q4": [
+        "smart-nanotubes.com",
+        "P. Arroyo et al. (研究/原型)",
+        "SHINYEI",
         "神栄テクノロジー",
-        "GazDetect",
-        "New Cosmos",
-        "SPEC-Sensors",
-        "三洋化成 (Sanyo Chemical)",
-        "Milvus Consulting",
-        "Nosi",
-        "北京盈盛恒泰科技有限责任公司"
+        "電子科学",
+        "北京盈盛恒泰科技有限责任公司",
+        "儕仕實業有限公司",
+        "Gazdetect"
       ]
     },
     "labels": {
