@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>氣味檢測器市場 Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<style>
+  :root {
+    --bg: #f8f7f4;
+    --surface: #ffffff;
+    --border: rgba(0,0,0,0.08);
+    --text: #1a1a18;
+    --muted: #6b6a64;
+    --accent: #2563eb;
+    --teal: #0f9e75;
+    --amber: #d97706;
+    --coral: #dc4f2a;
+    --purple: #6d5ce7;
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Helvetica Neue', 'PingFang TC', 'Microsoft JhengHei', sans-serif; font-size: 14px; line-height: 1.6; }
+
+  /* ── Layout ── */
+  .topbar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 32px; height: 56px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+  .topbar-title { font-size: 16px; font-weight: 600; letter-spacing: -.01em; }
+  .topbar-sub { font-size: 12px; color: var(--muted); }
+  #last-updated { font-size: 11px; color: var(--muted); }
+
+  .main { max-width: 1280px; margin: 0 auto; padding: 28px 24px; }
+  .section { margin-bottom: 32px; }
+  .section-title { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: .05em; text-transform: uppercase; margin-bottom: 14px; }
+
+  /* ── KPI Cards ── */
+  .kpi-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
+  .kpi-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 16px; }
+  .kpi-label { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+  .kpi-value { font-size: 26px; font-weight: 700; letter-spacing: -.02em; line-height: 1; }
+  .kpi-sub { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+  /* ── Chart Grid ── */
+  .chart-grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .chart-grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+  .chart-card-title { font-size: 13px; font-weight: 600; margin-bottom: 16px; }
+  .chart-wrap { position: relative; }
+
+  /* ── Quadrant ── */
+  .quadrant-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .q-card { border-radius: var(--radius-sm); padding: 16px; }
+  .q-card.q1 { background: #eff6ff; border: 1px solid #bfdbfe; }
+  .q-card.q2 { background: #f0fdf4; border: 1px solid #bbf7d0; }
+  .q-card.q3 { background: #fefce8; border: 1px solid #fde68a; }
+  .q-card.q4 { background: #f9fafb; border: 1px solid #e5e7eb; }
+  .q-label { font-size: 10px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; margin-bottom: 4px; }
+  .q-count { font-size: 32px; font-weight: 700; line-height: 1; margin-bottom: 8px; }
+  .q-title { font-size: 12px; font-weight: 600; margin-bottom: 6px; color: var(--muted); }
+  .q-brands { display: flex; flex-wrap: wrap; gap: 4px; }
+  .q-brand-tag { font-size: 10px; background: rgba(0,0,0,0.06); padding: 2px 7px; border-radius: 10px; }
+  .q-axis { font-size: 11px; color: var(--muted); margin-top: 8px; }
+
+  /* ── Gap Analysis ── */
+  .gap-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+  .gap-card { border-radius: var(--radius-sm); padding: 14px; border: 1px solid var(--border); background: var(--surface); }
+  .gap-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+  .gap-title { font-size: 12px; font-weight: 600; margin-bottom: 4px; display: flex; align-items: center; }
+  .gap-body { font-size: 11px; color: var(--muted); line-height: 1.6; }
+  .gap-badge { display: inline-block; font-size: 10px; padding: 1px 7px; border-radius: 10px; margin-top: 6px; font-weight: 600; }
+
+  /* ── Search table ── */
+  .search-bar { display: flex; gap: 8px; margin-bottom: 12px; }
+  .search-bar input { flex: 1; border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 8px 12px; font-size: 13px; background: var(--surface); outline: none; }
+  .search-bar input:focus { border-color: var(--accent); }
+  .search-bar select { border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 8px 10px; font-size: 13px; background: var(--surface); outline: none; cursor: pointer; }
+  .table-wrap { overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid var(--border); }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { background: #f4f3f0; padding: 9px 12px; text-align: left; font-weight: 600; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; border-bottom: 1px solid var(--border); }
+  td { padding: 9px 12px; border-bottom: 1px solid rgba(0,0,0,0.04); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f8f7f4; }
+  .pill { display: inline-block; font-size: 10px; padding: 1px 7px; border-radius: 10px; font-weight: 500; white-space: nowrap; }
+  .pill-blue   { background: #dbeafe; color: #1e40af; }
+  .pill-teal   { background: #d1fae5; color: #065f46; }
+  .pill-amber  { background: #fef3c7; color: #92400e; }
+  .pill-purple { background: #ede9fe; color: #4c1d95; }
+  .pill-gray   { background: #f3f4f6; color: #374151; }
+  .pill-coral  { background: #fee2e2; color: #991b1b; }
+
+  /* ── Map ── */
+  #world-map svg { width: 100%; height: auto; }
+  .map-legend { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; font-size: 11px; color: var(--muted); }
+
+  /* ── Trend ── */
+  .trend-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .trend-bar-bg { flex: 1; height: 8px; background: #eee; border-radius: 4px; overflow: hidden; }
+  .trend-bar-fill { height: 100%; border-radius: 4px; background: var(--accent); transition: width .4s; }
+  .trend-label { min-width: 52px; font-size: 11px; color: var(--muted); }
+  .trend-count { min-width: 32px; text-align: right; font-size: 11px; font-weight: 600; }
+
+  /* ── Loading ── */
+  #loading { display: flex; align-items: center; justify-content: center; height: 50vh; font-size: 15px; color: var(--muted); }
+  #app { display: none; }
+
+  @media (max-width: 900px) {
+    .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+    .chart-grid-2, .chart-grid-3 { grid-template-columns: 1fr; }
+    .quadrant-grid { grid-template-columns: 1fr; }
+    .gap-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div>
+    <div class="topbar-title">氣味檢測器 · 全球市場 Dashboard</div>
+    <div class="topbar-sub">Odor Detector Market Intelligence</div>
+  </div>
+  <div id="last-updated">載入中...</div>
+</div>
+
+<div id="loading">載入資料中...</div>
+
+<div id="app" class="main">
+
+  <!-- M1: KPI -->
+  <div class="section">
+    <div class="section-title">市場總覽</div>
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-label">收錄產品總數</div><div class="kpi-value" id="kpi-total">—</div><div class="kpi-sub">筆產品資料</div></div>
+      <div class="kpi-card"><div class="kpi-label">品牌/公司數</div><div class="kpi-value" id="kpi-brands">—</div><div class="kpi-sub">家廠商</div></div>
+      <div class="kpi-card"><div class="kpi-label">來源國家數</div><div class="kpi-value" id="kpi-countries">—</div><div class="kpi-sub">個國家/地區</div></div>
+      <div class="kpi-card"><div class="kpi-label">感測器類型</div><div class="kpi-value" id="kpi-sensors">—</div><div class="kpi-sub">種技術類型</div></div>
+      <div class="kpi-card"><div class="kpi-label">應用場景</div><div class="kpi-value" id="kpi-segments">—</div><div class="kpi-sub">個細分市場</div></div>
+      <div class="kpi-card"><div class="kpi-label">已完成 AI 分析</div><div class="kpi-value" id="kpi-analyzed">—</div><div class="kpi-sub">筆已分類</div></div>
+    </div>
+  </div>
+
+  <!-- M3+M6: 感測器 & 應用場景 -->
+  <div class="section">
+    <div class="section-title">技術分類 × 應用場景</div>
+    <div class="chart-grid-3">
+      <div class="chart-card">
+        <div class="chart-card-title">感測器技術類型</div>
+        <div class="chart-wrap" style="height:220px"><canvas id="chart-sensor"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-card-title">應用場景分佈</div>
+        <div class="chart-wrap" style="height:220px"><canvas id="chart-segment"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-card-title">目標氣體 Top 12</div>
+        <div class="chart-wrap" style="height:220px"><canvas id="chart-gases"></canvas></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- M2: 精度 & 生態 & TRL -->
+  <div class="section">
+    <div class="section-title">產品成熟度 × 生態系整合</div>
+    <div class="chart-grid-3">
+      <div class="chart-card">
+        <div class="chart-card-title">精度等級分佈</div>
+        <div class="chart-wrap" style="height:200px"><canvas id="chart-precision"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-card-title">技術成熟度（TRL）</div>
+        <div class="chart-wrap" style="height:200px"><canvas id="chart-trl"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-card-title">生態系整合程度</div>
+        <div class="chart-wrap" style="height:200px"><canvas id="chart-ecosystem"></canvas></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- M4: 競爭四象限 -->
+  <div class="section">
+    <div class="section-title">競爭四象限（精度 × 生態系整合）</div>
+    <div class="chart-grid-2">
+      <div class="chart-card">
+        <div class="chart-card-title">象限分佈</div>
+        <div class="chart-wrap" style="height:240px"><canvas id="chart-quadrant"></canvas></div>
+      </div>
+      <div class="chart-card" style="padding:16px">
+        <div class="quadrant-grid">
+          <div class="q-card q1">
+            <div class="q-label" style="color:#1d4ed8">Q1</div>
+            <div class="q-count" id="q1-count" style="color:#1e40af">—</div>
+            <div class="q-title">高精度 + 強生態（平台型）</div>
+            <div class="q-brands" id="q1-brands"></div>
+          </div>
+          <div class="q-card q2">
+            <div class="q-label" style="color:#15803d">Q2</div>
+            <div class="q-count" id="q2-count" style="color:#166534">—</div>
+            <div class="q-title">低精度 + 強生態（IoT消費型）</div>
+            <div class="q-brands" id="q2-brands"></div>
+            <div class="q-axis" style="color:#15803d">⭐ 氪諾思目標區域</div>
+          </div>
+          <div class="q-card q3">
+            <div class="q-label" style="color:#92400e">Q3</div>
+            <div class="q-count" id="q3-count" style="color:#92400e">—</div>
+            <div class="q-title">高精度 + 弱生態（儀器型）</div>
+            <div class="q-brands" id="q3-brands"></div>
+          </div>
+          <div class="q-card q4">
+            <div class="q-label" style="color:#374151">Q4</div>
+            <div class="q-count" id="q4-count" style="color:#374151">—</div>
+            <div class="q-title">低精度 + 弱生態（基礎感測型）</div>
+            <div class="q-brands" id="q4-brands"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- M5: 國家地圖 + 品牌 -->
+  <div class="section">
+    <div class="section-title">品牌來源國家分佈</div>
+    <div class="chart-grid-2">
+      <div class="chart-card">
+        <div class="chart-card-title">全球分佈地圖</div>
+        <div id="world-map" style="height:260px;overflow:hidden"></div>
+        <div class="map-legend" id="map-legend"></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-card-title">各國產品數量</div>
+        <div class="chart-wrap" style="height:240px"><canvas id="chart-country"></canvas></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 每月趨勢 & 護城河 -->
+  <div class="section">
+    <div class="section-title">資料收集趨勢 × 競爭護城河</div>
+    <div class="chart-grid-2">
+      <div class="chart-card">
+        <div class="chart-card-title">每月新增產品數</div>
+        <div class="chart-wrap" style="height:200px"><canvas id="chart-trend"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-card-title">競爭護城河類型</div>
+        <div class="chart-wrap" style="height:200px"><canvas id="chart-moat"></canvas></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- M7: 市場缺口分析 -->
+  <div class="section">
+    <div class="section-title">市場缺口分析 · 氪諾思策略視角</div>
+    <div class="chart-card">
+      <div class="gap-grid" id="gap-grid">
+        <!-- 動態產生 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 產品搜尋表格 -->
+  <div class="section">
+    <div class="section-title">產品資料庫搜尋</div>
+    <div class="chart-card">
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="搜尋產品名稱、品牌、氣體...">
+        <select id="filter-sensor">
+          <option value="">所有感測器類型</option>
+        </select>
+        <select id="filter-segment">
+          <option value="">所有應用場景</option>
+        </select>
+        <select id="filter-country">
+          <option value="">所有國家</option>
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>產品名稱</th>
+              <th>品牌</th>
+              <th>感測器</th>
+              <th>型態</th>
+              <th>精度</th>
+              <th>TRL</th>
+              <th>應用場景</th>
+              <th>來源國</th>
+            </tr>
+          </thead>
+          <tbody id="product-table"></tbody>
+        </table>
+      </div>
+      <div style="margin-top:10px;font-size:12px;color:var(--muted)" id="table-count"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ── 資料載入 ─────────────────────────────────────────────────────
+// 修改這個路徑為你的 GitHub Pages URL
+const DATA_URL = "data/market_data.json";
+
+const COLORS_10 = ["#2563eb","#0f9e75","#d97706","#dc4f2a","#6d5ce7","#0891b2","#65a30d","#db2777","#7c3aed","#059669"];
+
+let ALL_PRODUCTS = [];
+
+async function loadData() {
+  try {
+    const res = await fetch(DATA_URL + "?t=" + Date.now());
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    renderDashboard(data);
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("app").style.display = "block";
+  } catch (e) {
+    document.getElementById("loading").textContent = "無法載入資料：" + e.message + "　請確認 data/market_data.json 路徑正確";
+  }
+}
+
+// ── 主渲染 ───────────────────────────────────────────────────────
+function renderDashboard(d) {
+  const meta = d.meta;
+  const charts = d.charts;
+  ALL_PRODUCTS = d.products || [];
+
+  // 更新時間
+  document.getElementById("last-updated").textContent = "更新：" + meta.updated_at.replace("T"," ");
+
+  // KPI
+  document.getElementById("kpi-total").textContent     = meta.total.toLocaleString();
+  document.getElementById("kpi-brands").textContent    = meta.brands.toLocaleString();
+  document.getElementById("kpi-countries").textContent = meta.countries.toLocaleString();
+  document.getElementById("kpi-sensors").textContent   = Object.keys(charts.sensor_type).length;
+  document.getElementById("kpi-segments").textContent  = Object.keys(charts.application_segments).length;
+  document.getElementById("kpi-analyzed").textContent  = meta.analyzed_count.toLocaleString();
+
+  // 圖表
+  renderDonut("chart-sensor",    charts.sensor_type,          8);
+  renderBar  ("chart-segment",   charts.application_segments, 10, "#0f9e75");
+  renderBar  ("chart-gases",     charts.target_gases,         12, "#d97706");
+  renderDonut("chart-precision", charts.precision_tier,       5);
+  renderDonut("chart-trl",       charts.trl,                  5);
+  renderBar  ("chart-ecosystem", charts.ecosystem,            8, "#6d5ce7");
+  renderDonut("chart-quadrant",  d.quadrant.counts,           4, ["#2563eb","#0f9e75","#d97706","#9ca3af"]);
+  renderBar  ("chart-country",   charts.country,              12, "#2563eb");
+  renderLine ("chart-trend",     charts.monthly_trend);
+  renderBar  ("chart-moat",      charts.competitive_moat,     8, "#dc4f2a");
+
+  // 四象限卡片
+  renderQuadrantCards(d.quadrant);
+
+  // 地圖
+  renderWorldMap(charts.country);
+
+  // 缺口分析
+  renderGapAnalysis(d);
+
+  // 產品表格
+  renderTable(ALL_PRODUCTS);
+  setupFilters(ALL_PRODUCTS);
+}
+
+// ── 圖表函式 ─────────────────────────────────────────────────────
+function topN(obj, n) {
+  return Object.entries(obj).sort((a,b)=>b[1]-a[1]).slice(0,n);
+}
+
+function renderDonut(id, obj, n, colors) {
+  const data = topN(obj, n);
+  new Chart(document.getElementById(id), {
+    type: "doughnut",
+    data: {
+      labels: data.map(d=>d[0]),
+      datasets: [{ data: data.map(d=>d[1]), backgroundColor: colors || COLORS_10, borderWidth: 2, borderColor: "#fff" }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: "right", labels: { font: { size: 11 }, boxWidth: 12, padding: 8 } } }
+    }
+  });
+}
+
+function renderBar(id, obj, n, color) {
+  const data = topN(obj, n);
+  new Chart(document.getElementById(id), {
+    type: "bar",
+    data: {
+      labels: data.map(d=>d[0]),
+      datasets: [{ data: data.map(d=>d[1]), backgroundColor: color || "#2563eb", borderRadius: 4, borderSkipped: false }]
+    },
+    options: {
+      indexAxis: "y", responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: "rgba(0,0,0,0.04)" }, ticks: { font: { size: 10 } } },
+        y: { grid: { display: false }, ticks: { font: { size: 10 } } }
+      }
+    }
+  });
+}
+
+function renderLine(id, obj) {
+  const entries = Object.entries(obj).sort((a,b)=>a[0].localeCompare(b[0]));
+  new Chart(document.getElementById(id), {
+    type: "line",
+    data: {
+      labels: entries.map(e=>e[0]),
+      datasets: [{ data: entries.map(e=>e[1]), borderColor: "#2563eb", backgroundColor: "rgba(37,99,235,0.08)", fill: true, tension: 0.3, pointRadius: 3 }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { font: { size: 10 }, maxRotation: 45 } },
+        y: { ticks: { font: { size: 10 } }, grid: { color: "rgba(0,0,0,0.04)" } }
+      }
+    }
+  });
+}
+
+// ── 四象限卡片 ───────────────────────────────────────────────────
+function renderQuadrantCards(qdata) {
+  ["Q1","Q2","Q3","Q4"].forEach(q => {
+    const id = q.toLowerCase();
+    const el = document.getElementById(id + "-count");
+    if (el) el.textContent = qdata.counts[q] || 0;
+    const brands = document.getElementById(id + "-brands");
+    if (brands && qdata.brands[q]) {
+      brands.innerHTML = qdata.brands[q].slice(0,6).map(b=>
+        `<span class="q-brand-tag">${b}</span>`
+      ).join("");
+    }
+  });
+}
+
+// ── 世界地圖 ─────────────────────────────────────────────────────
+const COUNTRY_ISO = {
+  "日本":"392","美國":"840","德國":"276","中國":"156","台灣":"158",
+  "英國":"826","法國":"250","荷蘭":"528","韓國":"410","瑞士":"756",
+  "丹麥":"208","瑞典":"752","義大利":"380","以色列":"376","加拿大":"124"
+};
+
+async function renderWorldMap(countryData) {
+  const container = document.getElementById("world-map");
+  const w = container.offsetWidth || 500;
+  const h = 260;
+  const svg = d3.select("#world-map").append("svg")
+    .attr("viewBox", `0 0 ${w} ${h}`)
+    .attr("width", w).attr("height", h);
+
+  try {
+    const world = await d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json");
+    const projection = d3.geoNaturalEarth1().scale(w/6.5).translate([w/2, h/2]);
+    const path = d3.geoPath(projection);
+    const maxVal = Math.max(...Object.values(countryData), 1);
+    const color = d3.scaleSequential([0, maxVal], d3.interpolateBlues);
+
+    const isoMap = {};
+    Object.entries(COUNTRY_ISO).forEach(([cn, iso]) => {
+      if (countryData[cn]) isoMap[iso] = countryData[cn];
+    });
+
+    svg.selectAll("path")
+      .data(topojson.feature(world, world.objects.countries).features)
+      .join("path")
+      .attr("d", path)
+      .attr("fill", d => isoMap[d.id] ? color(isoMap[d.id]) : "#e5e7eb")
+      .attr("stroke", "#fff")
+      .attr("stroke-width", 0.5)
+      .append("title")
+      .text(d => {
+        const cn = Object.entries(COUNTRY_ISO).find(([,iso])=>iso==d.id);
+        return cn ? `${cn[0]}: ${isoMap[d.id]||0} 筆` : "";
+      });
+  } catch(e) {
+    container.innerHTML = `<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--muted);font-size:12px">地圖載入失敗</div>`;
+  }
+}
+
+// ── 市場缺口分析 ─────────────────────────────────────────────────
+function renderGapAnalysis(d) {
+  const charts = d.charts;
+  const q = d.quadrant.counts;
+  const total = d.meta.total;
+
+  const gaps = [
+    {
+      color: "#0f9e75",
+      title: "Q2 消費 IoT 藍海",
+      body: `目前僅 ${q.Q2||0} 筆（${Math.round((q.Q2||0)/total*100)}%）產品落在「低精度+強生態」象限，是競爭最稀疏的區域。消費型口臭/體臭檢測搭配 App 健康追蹤，是氪諾思短中期最清晰的切入點。`,
+      badge: "機會區", badgeColor: "#d1fae5", badgeText: "#065f46"
+    },
+    {
+      color: "#2563eb",
+      title: "醫療呼氣診斷缺口",
+      body: `FeNO（氣喘）、C13-UBT（幽門桿菌）、H2/CH4（SIBO）等醫療呼氣檢測在資料庫中佔比極低，且多為實驗室級或大型設備。小型化、居家使用版本幾乎空白。`,
+      badge: "中長期", badgeColor: "#dbeafe", badgeText: "#1e40af"
+    },
+    {
+      color: "#d97706",
+      title: "亞健康氣味追蹤",
+      body: `疲勞臭（異戊酸）、生酮監測（丙酮）、腸道健康（H2S）等「亞健康」應用場景在消費端幾乎無成熟商品。與現有口臭產品差異化明顯，可作為 Me-Better 的差異化賣點。`,
+      badge: "差異化", badgeColor: "#fef3c7", badgeText: "#92400e"
+    },
+    {
+      color: "#6d5ce7",
+      title: "AI 氣味辨識平台",
+      body: `目前市場上「演算法 IP + SaaS 平台」護城河的產品僅 ${(d.charts.competitive_moat["演算法IP"]||0)+(d.charts.competitive_moat["SaaS平台"]||0)} 筆，軟體訂閱模式未被充分開發。氣味健康履歷訂閱服務幾乎空白。`,
+      badge: "護城河", badgeColor: "#ede9fe", badgeText: "#4c1d95"
+    },
+    {
+      color: "#dc4f2a",
+      title: "中國市場監控",
+      body: `中國品牌正快速進入消費健康感測器市場（如 Shownovo），以低成本硬體切入口臭/酒精/生酮多合一產品。需持續監控定價策略與技術提升速度，評估未來競爭威脅程度。`,
+      badge: "風險監控", badgeColor: "#fee2e2", badgeText: "#991b1b"
+    },
+    {
+      color: "#0891b2",
+      title: "感測器標準化認證",
+      body: `${charts.competitive_moat["標準化認證"]||0} 筆產品以標準化認證為護城河，但消費健康類別幾乎沒有 CE/FDA 認證產品。率先取得認證可建立信任壁壘，對 B2B 企業健康管理市場尤其重要。`,
+      badge: "壁壘建設", badgeColor: "#cffafe", badgeText: "#164e63"
+    },
+  ];
+
+  const container = document.getElementById("gap-grid");
+  container.innerHTML = gaps.map(g => `
+    <div class="gap-card" style="border-left:3px solid ${g.color}">
+      <div class="gap-title">
+        <span class="gap-dot" style="background:${g.color}"></span>${g.title}
+      </div>
+      <div class="gap-body">${g.body}</div>
+      <span class="gap-badge" style="background:${g.badgeColor};color:${g.badgeText}">${g.badge}</span>
+    </div>
+  `).join("");
+}
+
+// ── 產品表格 ─────────────────────────────────────────────────────
+const PRECISION_PILL = { "實驗室級":"pill-coral","工業級":"pill-amber","消費電子級":"pill-teal","不明":"pill-gray" };
+const TRL_PILL = { "成熟商用":"pill-teal","小量商用":"pill-blue","研發中":"pill-amber","原型":"pill-purple","不明":"pill-gray" };
+
+function renderTable(products) {
+  const tbody = document.getElementById("product-table");
+  tbody.innerHTML = products.slice(0,200).map(p => `
+    <tr>
+      <td style="max-width:180px;font-weight:500">${p.name !== "不明" ? `<a href="${p.url}" target="_blank" style="color:var(--accent);text-decoration:none">${p.name}</a>` : p.name}</td>
+      <td style="white-space:nowrap">${p.brand}</td>
+      <td><span class="pill pill-blue">${p.sensor_type}</span></td>
+      <td style="color:var(--muted)">${p.form_factor}</td>
+      <td><span class="pill ${PRECISION_PILL[p.precision]||'pill-gray'}">${p.precision}</span></td>
+      <td><span class="pill ${TRL_PILL[p.trl]||'pill-gray'}">${p.trl}</span></td>
+      <td style="color:var(--muted);font-size:11px;max-width:160px">${p.segments.join(", ")}</td>
+      <td style="white-space:nowrap">${p.country}</td>
+    </tr>
+  `).join("");
+  document.getElementById("table-count").textContent = `顯示前 ${Math.min(products.length,200)} 筆 / 共 ${products.length} 筆`;
+}
+
+function setupFilters(products) {
+  const sensors  = [...new Set(products.map(p=>p.sensor_type).filter(v=>v!=="不明"))].sort();
+  const segments = [...new Set(products.flatMap(p=>p.segments).filter(v=>v!=="不明"))].sort();
+  const countries = [...new Set(products.map(p=>p.country).filter(v=>v!=="其他/不明"))].sort();
+
+  const populate = (id, opts) => {
+    const sel = document.getElementById(id);
+    opts.forEach(o => { const el = document.createElement("option"); el.value = el.textContent = o; sel.appendChild(el); });
+  };
+  populate("filter-sensor", sensors);
+  populate("filter-segment", segments);
+  populate("filter-country", countries);
+
+  const filter = () => {
+    const q = document.getElementById("search-input").value.toLowerCase();
+    const s = document.getElementById("filter-sensor").value;
+    const seg = document.getElementById("filter-segment").value;
+    const c = document.getElementById("filter-country").value;
+    const filtered = products.filter(p =>
+      (!q || [p.name,p.brand,p.description,p.gases.join()].join(" ").toLowerCase().includes(q)) &&
+      (!s || p.sensor_type === s) &&
+      (!seg || p.segments.includes(seg)) &&
+      (!c || p.country === c)
+    );
+    renderTable(filtered);
+  };
+  ["search-input","filter-sensor","filter-segment","filter-country"].forEach(id =>
+    document.getElementById(id).addEventListener("input", filter)
+  );
+}
+
+loadData();
+</script>
+</body>
+</html>
