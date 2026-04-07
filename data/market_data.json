@@ -5,7 +5,7 @@
     "countries": 10,
     "analyzed_count": 519,
     "pending_count": 1004,
-    "updated_at": "2026-04-08T00:53:20"
+    "updated_at": "2026-04-08T01:10:45"
   },
   "charts": {
     "sensor_type": {
@@ -180,7 +180,8 @@
       "以色列": 5,
       "荷蘭": 4,
       "韓國": 1
-    }
+    },
+    "monthly_trend": {}
   },
   "quadrant": {
     "counts": {
@@ -191,41 +192,41 @@
     },
     "brands": {
       "Q1": [
-        "AIRSENSE Analytics / Olfosense",
-        "Alphasense UK",
-        "yanlania.com",
         "SRI Robot",
-        "太陽誘電株式会社 (Taiyo Yuden Co., Ltd.)",
-        "XEARPRO",
+        "Ainos",
+        "FIGARO Engineering inc.",
         "FlavorActiV",
-        "Siemens"
+        "Airsense Analytics",
+        "I-PEX",
+        "Alpha MOS",
+        "AIRSENSE Analytics"
       ],
       "Q2": [
-        "Ainos",
-        "不詳",
-        "The eNose Company",
         "Bosch Sensortec (博世)",
-        "Bosch Sensortec"
+        "The eNose Company",
+        "Bosch Sensortec",
+        "Ainos",
+        "不詳"
       ],
       "Q3": [
-        "SHINYEI",
-        "合肥工業大學",
-        "Alphasense UK",
-        "(未明確品牌，來自研究人員開發)",
-        "太陽誘電株式会社 (Taiyo Yuden Co., Ltd.)",
-        "(hellopro.fr)",
+        "浙江浙科儀器設備有限公司",
+        "intendvision",
+        "FIGARO Engineering inc.",
         "FlavorActiV",
-        "Siemens"
+        "I-PEX",
+        "Alpha MOS",
+        "TopTes",
+        "電子科学 (Electronic Science)"
       ],
       "Q4": [
-        "smart-nanotubes.com",
-        "P. Arroyo et al. (研究/原型)",
-        "SHINYEI",
-        "神栄テクノロジー",
-        "電子科学",
+        "AIRSENSE / 北京盈盛恒泰科技有限责任公司",
+        "論文研究 (Research Paper)",
+        "(來自Premio Sapio專案)",
+        "未提及",
+        "Fermion",
         "北京盈盛恒泰科技有限责任公司",
-        "儕仕實業有限公司",
-        "Gazdetect"
+        "Néose",
+        "Sparkfun"
       ]
     },
     "labels": {
