@@ -465,7 +465,11 @@ async function renderWorldMap(countryData) {
     const projection = d3.geoNaturalEarth1().scale(w/6.5).translate([w/2, h/2]);
     const path = d3.geoPath(projection);
     const maxVal = Math.max(...Object.values(countryData), 1);
-    const color = d3.scaleSequential([0, maxVal], d3.interpolateBlues);
+
+    // 高對比色階：淺灰→深藍→深紅
+    const color = d3.scaleSequential()
+      .domain([0, maxVal])
+      .interpolator(d3.interpolateRgbBasis(["#e2e8f0","#93c5fd","#3b82f6","#1d4ed8","#1e3a8a"]));
 
     const isoMap = {};
     Object.entries(COUNTRY_ISO).forEach(([cn, iso]) => {
@@ -476,14 +480,31 @@ async function renderWorldMap(countryData) {
       .data(topojson.feature(world, world.objects.countries).features)
       .join("path")
       .attr("d", path)
-      .attr("fill", d => isoMap[d.id] ? color(isoMap[d.id]) : "#e5e7eb")
-      .attr("stroke", "#fff")
-      .attr("stroke-width", 0.5)
+      .attr("fill", d => isoMap[d.id] ? color(isoMap[d.id]) : "#f1f5f9")
+      .attr("stroke", "#cbd5e1")
+      .attr("stroke-width", 0.4)
       .append("title")
       .text(d => {
         const cn = Object.entries(COUNTRY_ISO).find(([,iso])=>iso==d.id);
         return cn ? `${cn[0]}: ${isoMap[d.id]||0} 筆` : "";
       });
+
+    // 凡有資料的國家加深色邊框
+    svg.selectAll("path")
+      .filter(d => isoMap[d.id])
+      .attr("stroke", "#1d4ed8")
+      .attr("stroke-width", 1);
+
+    // 圖例
+    const legendEl = document.getElementById("map-legend");
+    const steps = [0, 0.25, 0.5, 0.75, 1].map(t => Math.round(t * maxVal));
+    legendEl.innerHTML = steps.map(v =>
+      `<span style="display:flex;align-items:center;gap:4px">
+        <span style="width:14px;height:14px;border-radius:2px;background:${color(v)};border:1px solid #cbd5e1;display:inline-block"></span>
+        ${v} 筆
+      </span>`
+    ).join("");
+
   } catch(e) {
     container.innerHTML = `<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--muted);font-size:12px">地圖載入失敗</div>`;
   }
@@ -552,19 +573,21 @@ const TRL_PILL = { "成熟商用":"pill-teal","小量商用":"pill-blue","研發
 
 function renderTable(products) {
   const tbody = document.getElementById("product-table");
-  tbody.innerHTML = products.slice(0,200).map(p => `
+  const display = products.slice(0, 500);
+  tbody.innerHTML = display.map(p => `
     <tr>
-      <td style="max-width:180px;font-weight:500">${p.name !== "不明" ? `<a href="${p.url}" target="_blank" style="color:var(--accent);text-decoration:none">${p.name}</a>` : p.name}</td>
+      <td style="max-width:180px;font-weight:500">${p.url && p.url !== "不明" ? `<a href="${p.url}" target="_blank" style="color:var(--accent);text-decoration:none">${p.name}</a>` : p.name}</td>
       <td style="white-space:nowrap">${p.brand}</td>
       <td><span class="pill pill-blue">${p.sensor_type}</span></td>
       <td style="color:var(--muted)">${p.form_factor}</td>
-      <td><span class="pill ${PRECISION_PILL[p.precision]||'pill-gray'}">${p.precision}</span></td>
+      <td><span class="pill ${PRECISION_PILL[p.precision]||'pill-gray'}" title="${p.precision==='實驗室級'?'ppb級精度，GC-MS等分析儀器':p.precision==='工業級'?'ppm級精度，長期穩定監測':p.precision==='消費電子級'?'相對偵測，分級顯示為主':''}">${p.precision}</span></td>
       <td><span class="pill ${TRL_PILL[p.trl]||'pill-gray'}">${p.trl}</span></td>
       <td style="color:var(--muted);font-size:11px;max-width:160px">${p.segments.join(", ")}</td>
       <td style="white-space:nowrap">${p.country}</td>
     </tr>
   `).join("");
-  document.getElementById("table-count").textContent = `顯示前 ${Math.min(products.length,200)} 筆 / 共 ${products.length} 筆`;
+  document.getElementById("table-count").textContent =
+    `顯示 ${display.length} 筆 / 共 ${products.length} 筆（使用篩選條件可縮小範圍）`;
 }
 
 function setupFilters(products) {

@@ -209,6 +209,79 @@ def merge_sources(df_local: pd.DataFrame, df_cloud: pd.DataFrame) -> list:
     return list(products.values())
 
 
+# ── 應用場景標準化對應表 ─────────────────────────────────────────
+SEGMENT_NORMALIZE = {
+    # 環境監測相關
+    "環境監測": "環境監測",
+    "環境與工業安全": "環境監測",
+    "惡臭監測": "環境監測",
+    "空氣品質": "環境監測",
+    "氣體洩漏偵測": "環境監測",
+    # 工業安全相關
+    "工業安全": "工業安全",
+    "工業": "工業安全",
+    "化工廠排放": "工業安全",
+    "毒氣偵查": "工業安全",
+    "職業安全": "工業安全",
+    # 食品品質相關
+    "食品品質": "食品品質",
+    "食品鮮度": "食品品質",
+    "食品安全": "食品品質",
+    "食品": "食品品質",
+    "鮮度檢測": "食品品質",
+    # 醫療健康相關
+    "醫療健康": "醫療健康",
+    "醫療": "醫療健康",
+    "呼氣診斷": "醫療健康",
+    "疾病診斷": "醫療健康",
+    "呼吸與氣味偵測": "醫療健康",
+    "呼吸與氣味檢測": "醫療健康",
+    "呼吸分析": "醫療健康",
+    "生理氣味監測": "醫療健康",
+    # 亞健康個人相關
+    "個人健康": "亞健康/個人健康",
+    "亞健康": "亞健康/個人健康",
+    "口臭檢測": "亞健康/個人健康",
+    "體臭監測": "亞健康/個人健康",
+    "生酮監測": "亞健康/個人健康",
+    # 智慧家居相關
+    "智慧家居": "智慧家居/IoT",
+    "智慧家居/IoT": "智慧家居/IoT",
+    "家電整合": "智慧家居/IoT",
+    "IoT": "智慧家居/IoT",
+    # 農業相關
+    "農業": "農業",
+    "農業應用": "農業",
+    # 半導體/製造相關
+    "半導體製程": "半導體/製造",
+    "半導體": "半導體/製造",
+    "製程監控": "半導體/製造",
+    # 國防相關
+    "國防": "國防/安全",
+    "爆炸物偵測": "國防/安全",
+    # 研究相關（過濾掉「新品研發」這種無意義標籤）
+    "新品研發": None,
+    "研究": None,
+    "學術研究": None,
+    "不明": None,
+    "待分析": None,
+}
+
+def normalize_segment(seg: str) -> str | None:
+    seg = seg.strip()
+    # 完全匹配
+    if seg in SEGMENT_NORMALIZE:
+        return SEGMENT_NORMALIZE[seg]
+    # 部分匹配
+    for k, v in SEGMENT_NORMALIZE.items():
+        if k in seg or seg in k:
+            return v
+    # 過濾掉太短或無意義的標籤
+    if len(seg) <= 1:
+        return None
+    return seg
+
+
 # ── 統計彙總 ─────────────────────────────────────────────────────
 ECOSYSTEM_SCORE = {"無":0,"藍牙App":1,"IoT雲端":2,"AI驅動":3,"SaaS平台":4,"多種整合":4}
 PRECISION_SCORE = {"消費電子級":1,"工業級":2,"實驗室級":3}
@@ -222,8 +295,14 @@ def count_list_field(products, field, top=20):
     c = Counter()
     for p in products:
         for tag in p[field]:
-            if tag not in ("不明","待分析"):
-                c[tag] += 1
+            if tag in ("不明","待分析"):
+                continue
+            # 應用場景套用標準化
+            if field == "segments":
+                tag = normalize_segment(tag)
+                if tag is None:
+                    continue
+            c[tag] += 1
     return dict(c.most_common(top))
 
 def build_quadrant(products):
@@ -294,7 +373,7 @@ def main():
             "monthly_trend":        {},
         },
         "quadrant": build_quadrant(products),
-        "products": products[:600],
+        "products": products,  # 全部筆數，不限制
     }
 
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
