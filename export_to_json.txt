@@ -291,6 +291,7 @@ def main():
             "target_gases":         count_list_field(products, "gases"),
             "application_segments": count_list_field(products, "segments"),
             "country":              count_field(products, "country"),
+            "monthly_trend":        {},
         },
         "quadrant": build_quadrant(products),
         "products": products[:600],

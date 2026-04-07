@@ -322,6 +322,10 @@ async function loadData() {
 
 // ── 主渲染 ───────────────────────────────────────────────────────
 function renderDashboard(d) {
+  if (!d || !d.meta || !d.charts) {
+    document.getElementById("loading").textContent = "資料格式錯誤，請重新執行 export_to_json.py";
+    return;
+  }
   const meta = d.meta;
   const charts = d.charts;
   ALL_PRODUCTS = d.products || [];
@@ -403,6 +407,11 @@ function renderBar(id, obj, n, color) {
 }
 
 function renderLine(id, obj) {
+  if (!obj || typeof obj !== "object" || Object.keys(obj).length === 0) {
+    const el = document.getElementById(id);
+    if (el) el.closest(".chart-wrap").innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--muted);font-size:12px">資料累積中...</div>';
+    return;
+  }
   const entries = Object.entries(obj).sort((a,b)=>a[0].localeCompare(b[0]));
   new Chart(document.getElementById(id), {
     type: "line",
