@@ -5,7 +5,7 @@
     "countries": 10,
     "analyzed_count": 519,
     "pending_count": 1077,
-    "updated_at": "2026-04-08T09:15:13"
+    "updated_at": "2026-04-08T09:17:44"
   },
   "charts": {
     "sensor_type": {
@@ -192,41 +192,41 @@
     },
     "brands": {
       "Q1": [
-        "Honeywell",
-        "Applied Sensor",
-        "SRI-Robot",
-        "Neotechnology",
-        "Bruker",
-        "Yanlania",
-        "太陽誘電株式会社 (Taiyo Yuden Co., Ltd.)",
-        "PCA Technologies"
+        "Bosch Sensortec",
+        "Ainos",
+        "AIRSENSE Analytics GmbH",
+        "WINOPAL Forschungsbedarf",
+        "Chromatotec®",
+        "Instrument Solutions",
+        "上海機器人產業技術研究院",
+        "Winopal"
       ],
       "Q2": [
+        "Ainos",
         "Bosch Sensortec (博世)",
         "Bosch Sensortec",
-        "不詳",
         "The eNose Company",
-        "Ainos"
+        "不詳"
       ],
       "Q3": [
-        "Fermion",
-        "(研究專案產品)",
-        "Honeywell",
-        "intendvision",
-        "Odometric",
-        "未知",
-        "(中國研究人員開發)",
-        "HORIBA"
+        "Fresenius Instruments",
+        "Alpha-MOS / AIRSENSE Analytics",
+        "北京盈盛恒泰科技有限責任公司",
+        "AIRSENSE Analytics GmbH",
+        "Siemens",
+        "Eurotron",
+        "I-PEX",
+        "Alphasense UK"
       ],
       "Q4": [
-        "Fermion",
-        "神栄テクノロジー",
-        "電子科学 (Electronic Science)",
-        "Sheng Yi",
-        "Smart Nanotubes",
-        "gemini",
-        "Gazdetect",
-        "Odometric"
+        "SHINYEI",
+        "I-PEX株式会社",
+        "三洋化成 (Sanyo Chemical)",
+        "北京盈盛恒泰科技有限责任公司",
+        "電子科學",
+        "(來自Premio Sapio專案)",
+        "omron",
+        "AP2E"
       ]
     },
     "labels": {
