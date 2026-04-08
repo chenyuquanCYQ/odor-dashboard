@@ -5,7 +5,7 @@
     "countries": 10,
     "analyzed_count": 1575,
     "pending_count": 21,
-    "updated_at": "2026-04-08T16:56:37"
+    "updated_at": "2026-04-09T05:00:19"
   },
   "charts": {
     "sensor_type": {
@@ -204,44 +204,44 @@
     },
     "brands": {
       "Q1": [
-        "上海機器人產業技術研究院",
-        "AIRSENSE Analytics",
-        "德國Pfeiffer",
+        "Smell Inspector Project",
+        "duotec",
+        "Critical Environment Technologies",
         "广州瑞普医疗",
-        "Oizom",
-        "Hellopro",
-        "Aeris",
-        "ELLONA"
+        "Pason Systems Inc.",
+        "三洋化成",
+        "Ainos",
+        "yanlania.com"
       ],
       "Q2": [
-        "成功大學",
+        "Sisco",
+        "BACtrack",
+        "Bruno MD6",
+        "Ainos",
         "XiuXin",
-        "coolker",
-        "The eNose Company",
-        "Bosch Sensortec (博世)",
-        "WG1 (ShowNovo 首昕)",
-        "KETO-MOJO",
-        "Generic"
+        "I-PEX",
+        "FoodMarble",
+        "Unknown/Generic"
       ],
       "Q3": [
-        "Picarro",
-        "(未明確品牌，來自YouTube影片)",
-        "Bedfont",
-        "(未明確品牌，來自研究人員開發)",
-        "Hellopro",
-        "Oizom",
-        "Hellopro (via various suppliers)",
-        "KAGUROBO カルモア (KAGUROBO Calmoa)"
+        "BACtrack",
+        "duotec",
+        "Winsen",
+        "AIRSENSE (德國)",
+        "Pason Systems Inc.",
+        "三洋化成",
+        "PRONOVA",
+        "TopTes"
       ],
       "Q4": [
-        "KETONIX",
-        "Mochae",
-        "Tanita",
-        "Generic",
-        "케이엠티엘 (KMTL)",
-        "Keto Mojo",
-        "Shenzhen Jinsenchuan Technology",
-        "百利达 (Tanita)"
+        "タニタ (Tanita)",
+        "BACtrack",
+        "三洋化成",
+        "Ainos",
+        "Gemelli Biotech",
+        "深圳市源晟衡器有限公司",
+        "Breathometer",
+        "Tanita"
       ]
     },
     "labels": {
