@@ -5,7 +5,7 @@
     "countries": 10,
     "analyzed_count": 519,
     "pending_count": 1077,
-    "updated_at": "2026-04-08T09:17:44"
+    "updated_at": "2026-04-08T09:17:53"
   },
   "charts": {
     "sensor_type": {
@@ -192,41 +192,41 @@
     },
     "brands": {
       "Q1": [
-        "Bosch Sensortec",
-        "Ainos",
-        "AIRSENSE Analytics GmbH",
+        "SepSolve",
+        "Alphasense",
+        "Alpha-MOS",
         "WINOPAL Forschungsbedarf",
-        "Chromatotec®",
-        "Instrument Solutions",
-        "上海機器人產業技術研究院",
-        "Winopal"
+        "Aryballe",
+        "Sensigent",
+        "Branom",
+        "Airsense Analytics"
       ],
       "Q2": [
-        "Ainos",
+        "不詳",
         "Bosch Sensortec (博世)",
-        "Bosch Sensortec",
+        "Ainos",
         "The eNose Company",
-        "不詳"
+        "Bosch Sensortec"
       ],
       "Q3": [
-        "Fresenius Instruments",
+        "Flavoractiv",
+        "SepSolve",
+        "(hellopro.fr)",
+        "SHINYEI",
+        "新コスモス電機 (New Cosmos Electric Co., Ltd.)",
+        "Aryballe",
         "Alpha-MOS / AIRSENSE Analytics",
-        "北京盈盛恒泰科技有限責任公司",
-        "AIRSENSE Analytics GmbH",
-        "Siemens",
-        "Eurotron",
-        "I-PEX",
-        "Alphasense UK"
+        "Sensigent"
       ],
       "Q4": [
-        "SHINYEI",
-        "I-PEX株式会社",
+        "Aryballe Technologies",
+        "air-q",
+        "Agscent",
         "三洋化成 (Sanyo Chemical)",
-        "北京盈盛恒泰科技有限责任公司",
-        "電子科學",
-        "(來自Premio Sapio專案)",
-        "omron",
-        "AP2E"
+        "Fermion",
+        "I-PEX株式会社",
+        "AP2E",
+        "SHINYEI"
       ]
     },
     "labels": {
