@@ -5,7 +5,7 @@
     "countries": 10,
     "analyzed_count": 1575,
     "pending_count": 21,
-    "updated_at": "2026-04-09T05:00:19"
+    "updated_at": "2026-04-10T05:00:11"
   },
   "charts": {
     "sensor_type": {
@@ -204,44 +204,44 @@
     },
     "brands": {
       "Q1": [
-        "Smell Inspector Project",
-        "duotec",
-        "Critical Environment Technologies",
-        "广州瑞普医疗",
-        "Pason Systems Inc.",
-        "三洋化成",
-        "Ainos",
-        "yanlania.com"
+        "汉威科技",
+        "SPEC Sensors",
+        "MUSA Scarl",
+        "Agscent",
+        "Soberlink",
+        "Airsense Analytics",
+        "AIRSENSE Analytics",
+        "WINOPAL Forschungsbedarf"
       ],
       "Q2": [
-        "Sisco",
-        "BACtrack",
-        "Bruno MD6",
+        "Sharp",
         "Ainos",
-        "XiuXin",
-        "I-PEX",
+        "Toto",
+        "成功大學",
+        "Unknown",
         "FoodMarble",
-        "Unknown/Generic"
+        "KETO-MOJO",
+        "WG1 (ShowNovo 首昕)"
       ],
       "Q3": [
-        "BACtrack",
-        "duotec",
-        "Winsen",
-        "AIRSENSE (德國)",
-        "Pason Systems Inc.",
-        "三洋化成",
-        "PRONOVA",
-        "TopTes"
+        "汉威科技",
+        "(未明確品牌，來自Hellopro平台)",
+        "多個供應商 (於Alibaba平台販售)",
+        "中核",
+        "Agscent",
+        "浙江浙科儀器設備有限公司",
+        "AIRSENSE (德国AIRSENSE)",
+        "欧朗凯"
       ],
       "Q4": [
-        "タニタ (Tanita)",
-        "BACtrack",
-        "三洋化成",
-        "Ainos",
-        "Gemelli Biotech",
-        "深圳市源晟衡器有限公司",
+        "OHM 電機",
+        "Keto-Mojo",
+        "汉威科技",
+        "Agscent",
         "Breathometer",
-        "Tanita"
+        "欧朗凯",
+        "AP2E",
+        "P. Arroyo et al. (研究/原型)"
       ]
     },
     "labels": {
