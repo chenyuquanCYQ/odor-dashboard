@@ -5,7 +5,7 @@
     "countries": 10,
     "analyzed_count": 1894,
     "pending_count": 21,
-    "updated_at": "2026-04-13T15:09:00"
+    "updated_at": "2026-04-14T15:00:21"
   },
   "charts": {
     "sensor_type": {
@@ -206,44 +206,44 @@
     },
     "brands": {
       "Q1": [
-        "Honeywell",
-        "無明確品牌 (學術論文描述的設備)",
-        "Balzers Instruments AG",
-        "Ellona",
-        "i-PEX",
-        "PRECISE (研究專案)",
-        "AMETEK Land",
-        "Siemens"
+        "清華大學系友企業",
+        "Instrument-Solutions",
+        "Winopal Forschungsbedarf GmbH",
+        "Aeris",
+        "汉威科技",
+        "Exhalon",
+        "新コスモス電機 (New Cosmos Electric)",
+        "Undefined"
       ],
       "Q2": [
-        "coolker",
-        "Sisco",
+        "BACtrack",
+        "KETO-MOJO",
+        "Ainos",
+        "PiVIS",
         "(Generic)",
-        "I-PEX",
-        "無明確品牌",
-        "(學術研究原型)",
-        "Unknown",
-        "Toto"
+        "Undefined",
+        "Toto",
+        "Vivatmo"
       ],
       "Q3": [
-        "Honeywell",
-        "無明確品牌 (學術論文描述的設備)",
-        "未提及",
-        "中科微感 (Ningbo CSMSN Technology Co., Ltd.)",
+        "ALCO9",
+        "Hellopro (經銷商)",
         "北京华源康达医疗设备有限公司",
-        "GasDetect A/S",
-        "Bedfont",
-        "株式会社カナデン"
+        "Aeris",
+        "MDPI (學術論文中描述的裝置)",
+        "汉威科技",
+        "三洋化成工業",
+        "中核 (CNNC)"
       ],
       "Q4": [
-        "PreEvnt",
-        "Keto Mojo",
-        "未提及",
-        "GasDetect A/S",
-        "タニタ (Tanita)",
-        "AP2E",
-        "Néose",
-        "電子科学 (DENSITRON Corporation)"
+        "KETO-MOJO",
+        "air-q",
+        "iSOBER",
+        "汉威科技",
+        "Anfurt",
+        "KISSME",
+        "冀仪 (JiYi)",
+        "Sparkfun"
       ]
     },
     "labels": {
