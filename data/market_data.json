@@ -5,7 +5,7 @@
     "countries": 10,
     "analyzed_count": 1894,
     "pending_count": 21,
-    "updated_at": "2026-04-14T15:00:21"
+    "updated_at": "2026-04-15T15:00:25"
   },
   "charts": {
     "sensor_type": {
@@ -206,44 +206,44 @@
     },
     "brands": {
       "Q1": [
-        "清華大學系友企業",
-        "Instrument-Solutions",
-        "Winopal Forschungsbedarf GmbH",
-        "Aeris",
+        "Sepsolve",
+        "PCA Technologies",
+        "duotec",
+        "RISE",
+        "Osmotech - Lifeanalytics",
         "汉威科技",
-        "Exhalon",
-        "新コスモス電機 (New Cosmos Electric)",
-        "Undefined"
+        "Airsense Analytics",
+        "新コスモス電機 (New Cosmos Electric)"
       ],
       "Q2": [
-        "BACtrack",
         "KETO-MOJO",
-        "Ainos",
-        "PiVIS",
-        "(Generic)",
-        "Undefined",
-        "Toto",
-        "Vivatmo"
+        "(學術研究原型)",
+        "BACtrack",
+        "Generic",
+        "Sisco",
+        "(學術團隊/研究機構)",
+        "Smarter Living",
+        "salvatore fracella"
       ],
       "Q3": [
-        "ALCO9",
-        "Hellopro (經銷商)",
-        "北京华源康达医疗设备有限公司",
-        "Aeris",
-        "MDPI (學術論文中描述的裝置)",
+        "duotec",
+        "RISE",
+        "Gasmet",
+        "中科微感 (Ningbo CSMSN Technology Co., Ltd.)",
+        "Airsense Analytics",
+        "太陽誘電株式会社 (Taiyo Yuden)",
         "汉威科技",
-        "三洋化成工業",
-        "中核 (CNNC)"
+        "NEW COSMOS (新コスモス電機)"
       ],
       "Q4": [
-        "KETO-MOJO",
-        "air-q",
-        "iSOBER",
+        "PCA Technologies",
+        "Aromajoin",
+        "Keto Mojo",
+        "Fenom Flo™",
+        "coolker",
+        "Mijia",
         "汉威科技",
-        "Anfurt",
-        "KISSME",
-        "冀仪 (JiYi)",
-        "Sparkfun"
+        "케이엠티엘 (KMTL)"
       ]
     },
     "labels": {
