@@ -5,7 +5,7 @@
     "countries": 10,
     "analyzed_count": 2309,
     "pending_count": 21,
-    "updated_at": "2026-04-20T15:06:01"
+    "updated_at": "2026-04-21T15:00:17"
   },
   "charts": {
     "sensor_type": {
@@ -208,44 +208,44 @@
     },
     "brands": {
       "Q1": [
-        "Meridian Bioscience",
-        "未說明",
-        "Yanlania",
-        "SRI-Robot",
-        "Sepsolve",
-        "Osmotech (Lifeanalytics)",
-        "AIRSENSE Analytics GmbH",
-        "Le JDD (unspecified Grenoble company)"
+        "Pason Systems Inc.",
+        "THINKSENSO&SENSO",
+        "IL1A-AI",
+        "Sunvou",
+        "Innovaer Technologies",
+        "(無明確品牌)",
+        "開發團隊",
+        "Ainos"
       ],
       "Q2": [
-        "成功大學",
-        "Vivatmo",
-        "Bruno MD6",
-        "無明確品牌",
-        "Ainos",
-        "Aromajoin",
-        "Bosch Sensortec",
-        "KETO-MOJO"
+        "Bosch Sensortec (博世)",
+        "レボーン (RevoN)",
+        "ShowNovo (首昕)",
+        "(學術研究原型)",
+        "Generic",
+        "salvatore fracella",
+        "(學術團隊/研究機構)",
+        "Smarter Living"
       ],
       "Q3": [
-        "Meridian Bioscience",
-        "Siemens Healthineers",
-        "安徽养和 (Anhui YangHe)",
-        "MGC Diagnostics",
-        "未說明",
-        "AIRSENSE Analytics GmbH",
-        "G.A.S. analytische Sensorsysteme",
-        "無明確品牌"
+        "Pason Systems Inc.",
+        "KIMO",
+        "THINKSENSO&SENSO",
+        "Sunvou",
+        "Interlink Electronics",
+        "Tunable",
+        "TopTes",
+        "AIRSENSE (德國)"
       ],
       "Q4": [
-        "SIUKE",
-        "MGC Diagnostics",
-        "smart-nanotubes.com",
-        "無明確品牌",
-        "SDU 研究團隊",
-        "Ketonix",
-        "KISSME",
-        "Applied Sensor"
+        "gemini",
+        "Omron",
+        "PreEvnt",
+        "怡諾威騰",
+        "Innovaer Technologies",
+        "Vivatmo von BOSCH",
+        "浙江浙科仪器设备有限公司 (Zhejiang ZK Instruments & Equipment Co., Ltd.)",
+        "(No specific brand mentioned)"
       ]
     },
     "labels": {
