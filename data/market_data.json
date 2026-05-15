@@ -5,7 +5,7 @@
     "countries": 11,
     "analyzed_count": 3694,
     "pending_count": 21,
-    "updated_at": "2026-05-14T15:05:46"
+    "updated_at": "2026-05-15T15:00:22"
   },
   "charts": {
     "sensor_type": {
@@ -213,44 +213,44 @@
     },
     "brands": {
       "Q1": [
-        "AMETEK Land",
-        "Sepsolve",
-        "하이크마이크로 (Hikmicro)",
-        "PRECISE (研究專案)",
-        "Exhalon",
-        "村田製作所 (Murata Manufacturing Co., Ltd.)",
-        "無明確品牌 (學術論文描述的設備)",
-        "Sharp"
+        "Linköping University (研究員)",
+        "新コスモス電機 (New Cosmos Electric)",
+        "FlavorActiV",
+        "北京万联达信科仪器有限公司",
+        "霍尼韦尔 (Honeywell)",
+        "Generic Instrument",
+        "SRI Robot",
+        "Unknown"
       ],
       "Q2": [
-        "Diyatel",
-        "Ainos",
-        "KETO-MOJO",
-        "The eNose Company",
+        "Toto",
+        "(Generic)",
+        "ShowNovo",
         "紫陽科技",
-        "Bruno",
-        "Generic",
-        "airthings"
+        "(YouTube頻道/開發者)",
+        "レボーン (RevoN)",
+        "SYNC",
+        "(未明確指出)"
       ],
       "Q3": [
-        "하이크마이크로 (Hikmicro)",
-        "Interlink Electronics",
-        "MDPI (學術論文中描述的裝置)",
-        "電子科學 (Electronic Science)",
-        "医疗电子股份有限公司",
-        "Evernoa",
-        "Milvus Consulting",
-        "由電"
+        "Bedfont",
+        "北京万联达信科仪器有限公司",
+        "アロマビット (Aromabit)",
+        "케이엠티엘",
+        "유브이넥스 (UVNEX)",
+        "德國AIRSENSE (AIRSENSE Analytics GmbH)",
+        "Dräger",
+        "Neurovanna"
       ],
       "Q4": [
-        "Bruno",
-        "カルモア (Calmoa)",
-        "airthings",
-        "Fenom Flo™",
-        "Evernoa",
-        "欧朗凯 (Oulang Kai)",
-        "Milvus Consulting",
-        "Mijia (米家)"
+        "アロマビット (Aromabit)",
+        "케이엠티엘",
+        "eeketone",
+        "KETO-MOJO",
+        "air-q",
+        "NObreath",
+        "Halimeter Plus",
+        "KETONIX"
       ]
     },
     "labels": {
