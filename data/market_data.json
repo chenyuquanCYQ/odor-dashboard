@@ -5,7 +5,7 @@
     "countries": 11,
     "analyzed_count": 3694,
     "pending_count": 21,
-    "updated_at": "2026-05-15T15:00:22"
+    "updated_at": "2026-05-16T15:00:23"
   },
   "charts": {
     "sensor_type": {
@@ -213,44 +213,44 @@
     },
     "brands": {
       "Q1": [
-        "Linköping University (研究員)",
-        "新コスモス電機 (New Cosmos Electric)",
-        "FlavorActiV",
-        "北京万联达信科仪器有限公司",
-        "霍尼韦尔 (Honeywell)",
-        "Generic Instrument",
-        "SRI Robot",
-        "Unknown"
+        "Ellona",
+        "Chromatotec",
+        "東京工科大学",
+        "yanlania",
+        "PiVIS",
+        "Alphasense UK",
+        "Instrument-Solutions",
+        "Balzers Instruments AG"
       ],
       "Q2": [
-        "Toto",
-        "(Generic)",
-        "ShowNovo",
-        "紫陽科技",
+        "(學術團隊/研究機構)",
         "(YouTube頻道/開發者)",
-        "レボーン (RevoN)",
-        "SYNC",
-        "(未明確指出)"
+        "Unknown/Generic",
+        "三诺 (Sanuo)",
+        "WG1 (ShowNovo 首昕)",
+        "YRY",
+        "ShowNovo",
+        "PiVIS"
       ],
       "Q3": [
-        "Bedfont",
-        "北京万联达信科仪器有限公司",
-        "アロマビット (Aromabit)",
-        "케이엠티엘",
-        "유브이넥스 (UVNEX)",
-        "德國AIRSENSE (AIRSENSE Analytics GmbH)",
-        "Dräger",
-        "Neurovanna"
+        "浙江浙科儀器設備有限公司 (Zhejiang Zhekai Instrument & Equipment Co., Ltd.)",
+        "Hellopro (經銷商)",
+        "Werfen",
+        "Emerson",
+        "(未明確品牌，來自研究人員開發)",
+        "德國Pfeiffer (Pfeiffer)",
+        "北京华源康达医疗设备有限公司",
+        "Milvus Consulting"
       ],
       "Q4": [
-        "アロマビット (Aromabit)",
-        "케이엠티엘",
-        "eeketone",
-        "KETO-MOJO",
-        "air-q",
-        "NObreath",
-        "Halimeter Plus",
-        "KETONIX"
+        "(來自Premio Sapio專案)",
+        "CareExpert",
+        "YRY",
+        "SPEC-Sensors",
+        "Mijia (米家)",
+        "Oasser",
+        "(美國進口)",
+        "(Generic on eBay)"
       ]
     },
     "labels": {
