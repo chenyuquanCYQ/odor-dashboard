@@ -5,7 +5,7 @@
     "countries": 11,
     "analyzed_count": 3694,
     "pending_count": 21,
-    "updated_at": "2026-05-16T15:00:23"
+    "updated_at": "2026-05-17T15:00:23"
   },
   "charts": {
     "sensor_type": {
@@ -213,44 +213,44 @@
     },
     "brands": {
       "Q1": [
-        "Ellona",
-        "Chromatotec",
-        "東京工科大学",
-        "yanlania",
-        "PiVIS",
-        "Alphasense UK",
-        "Instrument-Solutions",
-        "Balzers Instruments AG"
+        "(未明確公司，為創新獎獲獎項目)",
+        "SMELLDECT",
+        "NOSI",
+        "Unspecified",
+        "Vocxi Health",
+        "サンワテクノス株式会社 (Sunwa Technos Corporation)",
+        "ScentSational Scent Sciences",
+        "Yanlania"
       ],
       "Q2": [
-        "(學術團隊/研究機構)",
-        "(YouTube頻道/開發者)",
-        "Unknown/Generic",
-        "三诺 (Sanuo)",
+        "Toto",
+        "I-PEX",
         "WG1 (ShowNovo 首昕)",
-        "YRY",
-        "ShowNovo",
-        "PiVIS"
+        "Undefined",
+        "Unspecified",
+        "SmartNanotubes Technologies",
+        "紫陽科技",
+        "BOSCH"
       ],
       "Q3": [
-        "浙江浙科儀器設備有限公司 (Zhejiang Zhekai Instrument & Equipment Co., Ltd.)",
-        "Hellopro (經銷商)",
-        "Werfen",
-        "Emerson",
-        "(未明確品牌，來自研究人員開發)",
-        "德國Pfeiffer (Pfeiffer)",
-        "北京华源康达医疗设备有限公司",
-        "Milvus Consulting"
+        "Gasmet",
+        "WLD600",
+        "Backerclub",
+        "Sunvou",
+        "Generic Brand",
+        "冀仪",
+        "增誠科技有限公司",
+        "Bedfont Scientific Limited"
       ],
       "Q4": [
-        "(來自Premio Sapio專案)",
-        "CareExpert",
-        "YRY",
-        "SPEC-Sensors",
-        "Mijia (米家)",
-        "Oasser",
-        "(美國進口)",
-        "(Generic on eBay)"
+        "Generic (Alibaba listing)",
+        "Myromi",
+        "Generic Brand",
+        "冀仪",
+        "Bedfont Scientific Limited",
+        "Smart Start",
+        "VivaChek (微策)",
+        "カルモア"
       ]
     },
     "labels": {
