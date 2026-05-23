@@ -5,7 +5,7 @@
     "countries": 11,
     "analyzed_count": 4036,
     "pending_count": 21,
-    "updated_at": "2026-05-22T15:05:44"
+    "updated_at": "2026-05-23T15:00:21"
   },
   "charts": {
     "sensor_type": {
@@ -213,44 +213,44 @@
     },
     "brands": {
       "Q1": [
-        "Alphasense UK",
-        "广州瑞普医疗",
-        "Critical Environment Technologies",
         "未說明",
-        "開發團隊",
-        "医疗科技股份有限公司",
-        "日本神荣 (Shinyei)",
-        "NeOse™"
+        "Alpha M.O.S.",
+        "Osmotech",
+        "Aryballe",
+        "PCA Technologies",
+        "i-PEX",
+        "Alphasense UK",
+        "XEARPRO"
       ],
       "Q2": [
-        "BOSCH",
-        "Generic (Amazon JP)",
-        "Ainos",
-        "アロマビット",
-        "Generic Brand",
+        "KETOSCAN",
+        "レボーン",
+        "冀仪 (Jiyi)",
         "Bruno MD6",
-        "iSOBER",
-        "レボーン (RevoN)"
+        "Unknown",
+        "coolker",
+        "無明確品牌",
+        "(Generic on Amazon, but WG1 is specific model)"
       ],
       "Q3": [
-        "Alphasense UK",
-        "KAGUROBO カルモア (KAGUROBO Calmoa)",
-        "神栄テクノロジー (Shinyei Technology)",
-        "generic (Electronic nose)",
-        "Evernoa",
-        "Alibaba (Generic)",
-        "headmountedrecorders.com",
-        "Laborie"
+        "未說明",
+        "BACTrack",
+        "汉威科技 (Hanwei)",
+        "電子科學",
+        "神荣",
+        "Smiths Detection",
+        "冀仪 (Jiyi)",
+        "PureAire Monitoring Systems"
       ],
       "Q4": [
-        "倍思 (Baseus)",
-        "generic (China factories)",
-        "Evernoa",
-        "Alibaba (Generic)",
-        "日本新宇宙",
-        "Laborie",
-        "Bruno MD6",
-        "Sens4"
+        "BACTrack",
+        "KETOSCAN",
+        "휴비딕",
+        "eeketone.com",
+        "電子科學",
+        "浙江浙科仪器设备有限公司 (Zhejiang ZK Instruments & Equipment Co., Ltd.)",
+        "冀仪 (Jiyi)",
+        "Bruno MD6"
       ]
     },
     "labels": {
