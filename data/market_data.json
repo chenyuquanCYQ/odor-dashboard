@@ -5,7 +5,7 @@
     "countries": 11,
     "analyzed_count": 4142,
     "pending_count": 21,
-    "updated_at": "2026-05-25T15:07:46"
+    "updated_at": "2026-05-26T15:00:22"
   },
   "charts": {
     "sensor_type": {
@@ -213,44 +213,44 @@
     },
     "brands": {
       "Q1": [
-        "Mettler Toledo",
-        "IL1A-AI",
-        "The eNose Co.",
-        "ナノセント (Nanoscent)",
-        "yanlania",
-        "Chromatotec®",
-        "(未明確公司，為創新獎獲獎項目)",
-        "Vocxi Health"
+        "Vocxi Health",
+        "Alphasense",
+        "IL1A",
+        "Odowatch®",
+        "FIGARO Engineering inc.",
+        "QuinTron Instrument Company, Inc.",
+        "中科微感",
+        "汉威科技 (Hanwei Electronics)"
       ],
       "Q2": [
-        "Toto / Yellosis",
-        "(未明確指出)",
-        "微泰 (Weitai)",
-        "SmartNanotubes Technologies",
-        "YRY",
-        "NObreath",
-        "不詳",
-        "(Generic)"
+        "SYNC",
+        "Smarter Living",
+        "BOSCH",
+        "Sisco",
+        "WG1 (ShowNovo 首昕)",
+        "雅培 (Abbott)",
+        "myBiometry",
+        "(YouTube頻道/開發者)"
       ],
       "Q3": [
-        "The eNose Co.",
-        "AWITE",
-        "duotec GmbH",
-        "神荣",
-        "Generic (CN101354394B Patent)",
-        "Fermion (let-elektronik.dk銷售)",
-        "艾感科技 (Aigan Technology)",
-        "(Generic)"
+        "AP2E",
+        "ASCO",
+        "QuinTron Instrument Company, Inc.",
+        "Edwards Vacuum",
+        "Amerigo Scientific",
+        "AIRSENSE",
+        "SAMON",
+        "AT800"
       ],
       "Q4": [
-        "未知 (Alibaba平台供應商)",
-        "The eNose Co.",
-        "Xtahdge",
-        "SPEC-Sensors",
-        "(Generic)",
-        "北京怡成 (Beijing Yicheng)",
-        "TANITA (タニタ)",
-        "深圳市源晟衡器有限公司 (Shenzhen Yuansheng Hengqi)"
+        "Archigas",
+        "AP2E",
+        "ASCO",
+        "캄컴퍼니 (Kamcompany)",
+        "PCA Technologies / AIRSENSE",
+        "Ketonix AB Sweden",
+        "Shenzhen Jinsenchuan Technology (深圳金森川科技)",
+        "AIRSENSE"
       ]
     },
     "labels": {
