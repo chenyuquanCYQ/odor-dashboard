@@ -5,7 +5,7 @@
     "countries": 11,
     "analyzed_count": 4260,
     "pending_count": 21,
-    "updated_at": "2026-05-28T15:05:47"
+    "updated_at": "2026-05-29T15:00:22"
   },
   "charts": {
     "sensor_type": {
@@ -214,44 +214,44 @@
     },
     "brands": {
       "Q1": [
-        "村田製作所 (Murata Manufacturing Co., Ltd.)",
-        "ナノセント社 (Nanoscent)",
-        "開發團隊",
-        "Senseair",
-        "Milvus Consulting Olfascan",
-        "SACMI",
-        "Breath Diagnostics Inc.",
-        "SmartNanotubes Technologies"
+        "Richen-Med",
+        "Linköping (研究團隊)",
+        "Instrument Solutions",
+        "richen-med",
+        "Thermo Fisher Scientific",
+        "Unknown",
+        "太阳诱电 (Taiyo Yuden)",
+        "漢威科技"
       ],
       "Q2": [
-        "iSOBER",
-        "SmartNanotubes Technologies",
-        "salvatore fracella",
-        "冀仪",
-        "アロマビット",
-        "福盈科技",
-        "coolker",
-        "generic"
+        "(學術團隊/研究機構)",
+        "Unknown",
+        "Smarter Living",
+        "XiuXin",
+        "レボーン (RevoN)",
+        "Bruno MD6",
+        "不詳",
+        "Toto / Yellosis"
       ],
       "Q3": [
-        "日本ガイシ株式会社 (NGK Insulators, Ltd.)",
-        "(Implicit from context: CNIHT)",
-        "Generic (academic context)",
-        "冀仪",
-        "不明 (Unknown)",
-        "Whaliroad",
-        "Chinacare Medical",
-        "Sauermann"
+        "Yingshiwei",
+        "ShowNovo (時代传感)",
+        "(University of Hertfordshire researchers)",
+        "richen-med",
+        "Unknown",
+        "Alpha-MOS",
+        "コーンズ テクノロジー株式会社",
+        "(未明確品牌，來自Hellopro平台)"
       ],
       "Q4": [
-        "(無品牌)",
-        "OMX-SRM (TDM)",
-        "DMT",
-        "カルモア (Kalmor)",
-        "타니타",
-        "冀仪",
-        "The Tone Device",
-        "Shenzhen Yingshiwei Technology Co., Ltd. (Yingshiwei)"
+        "Yingshiwei",
+        "倍思（Baseus）",
+        "Accio",
+        "Unknown",
+        "SIUKE",
+        "smart-nanotubes.com",
+        "冀仪 (JiYi)",
+        "三诺 (Sannuo)"
       ]
     },
     "labels": {
