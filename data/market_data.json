@@ -5,7 +5,7 @@
     "countries": 11,
     "analyzed_count": 4616,
     "pending_count": 21,
-    "updated_at": "2026-06-06T15:04:22"
+    "updated_at": "2026-06-07T15:00:19"
   },
   "charts": {
     "sensor_type": {
@@ -216,44 +216,44 @@
     },
     "brands": {
       "Q1": [
-        "Flavoractiv",
+        "上海機器人產業技術研究院",
+        "Tim et al. (研究團隊)",
+        "Endress+Hauser",
+        "cubic",
+        "Smell Inspector Project",
         "NIOX",
-        "Gemelli Biotech",
-        "レボーン (Revorn)",
-        "Alphasense UK",
-        "Meridian Bioscience",
-        "(株)カルモア",
-        "清華大學系友企業"
+        "Soberlink",
+        "株式会社カルモア"
       ],
       "Q2": [
-        "Diyatel",
-        "Generic Brand",
-        "アロマビット",
-        "冀仪",
-        "ScentSational",
-        "雅培 (Abbott)",
-        "Unspecified",
-        "Unknown/Generic"
+        "Detect-ION",
+        "(Unspecified)",
+        "レボーン (RevoN)",
+        "airthings",
+        "YRY",
+        "三诺",
+        "研究團隊",
+        "Sisco"
       ],
       "Q3": [
-        "MGC Diagnostics",
-        "日本神荣 (SHINYEI)",
-        "Unknown Brand (01763子公司產品)",
-        "Generic Brand",
-        "アロマビット",
-        "Smart Nanotubes Technologies",
-        "Unspecified",
-        "(無品牌，產品系列)"
+        "コーンズ テクノロジー株式会社",
+        "Airworks",
+        "(Unspecified)",
+        "日本神荣SHINYEI",
+        "Kalmor有限公司 (Kalmor Co., Ltd.)",
+        "Wuhan Aliroad Medical Equipment Co., Ltd.",
+        "Zetron",
+        "유브이넥스"
       ],
       "Q4": [
-        "MGC Diagnostics",
-        "Generic Brand",
-        "klaren",
-        "アロマビット",
-        "Coupang (Generic)",
-        "XIXIAN",
-        "Unspecified",
-        "Mijia (米家)"
+        "(Unspecified)",
+        "generic (China wholesale manufacturers)",
+        "オーム(OHM) (OHM Electric)",
+        "Kalmor有限公司 (Kalmor Co., Ltd.)",
+        "オーム(OHM)",
+        "airthings",
+        "든든커머스",
+        "Micfendy"
       ]
     },
     "labels": {
