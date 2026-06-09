@@ -5,7 +5,7 @@
     "countries": 11,
     "analyzed_count": 4634,
     "pending_count": 21,
-    "updated_at": "2026-06-08T15:01:47"
+    "updated_at": "2026-06-09T15:00:17"
   },
   "charts": {
     "sensor_type": {
@@ -216,44 +216,44 @@
     },
     "brands": {
       "Q1": [
-        "日本神荣 (Shinyei)",
-        "汉威科技 (Hanwei Technology)",
-        "神荣",
-        "Pfeiffer",
-        "musascarl.it",
-        "AIRSENSE",
-        "Smell Inspector",
-        "郑州云湛科技有限公司"
+        "INSENT",
+        "SRI Robot",
+        "上海機器人產業技術研究院",
+        "Richen",
+        "Branom",
+        "三洋化成工業株式会社",
+        "The eNose Company",
+        "AIRSENSE Analytics, PCA Technologies"
       ],
       "Q2": [
-        "FoodMarble",
-        "Generic (Amazon JP)",
-        "ShowNovo",
-        "XiuXin",
-        "Detect-ION",
-        "(YouTube頻道/開發者)",
-        "Generic Brand",
-        "Unspecified"
+        "(學術團隊/研究機構)",
+        "The eNose Company",
+        "BACtrack",
+        "福盈科技",
+        "I-PEX株式会社",
+        "I-PEX",
+        "coolker",
+        "WG1 (ShowNovo 首昕)"
       ],
       "Q3": [
-        "费加罗技研",
-        "FoodMarble",
-        "Pfeiffer",
-        "richen-med (瑞臣醫療)",
-        "Picarro, Inc.",
-        "GasDog",
-        "(無品牌，產品系列)",
-        "Generic Brand"
+        "SiBio",
+        "The eNose Company",
+        "汉威科技集团股份有限公司",
+        "Otsuka Japan",
+        "Endress+Hauser",
+        "專利 (Patent CN101354394A)",
+        "北京万联达信科仪器有限公司 (Beijing WanLianda XinKe Instruments)",
+        "北京盈盛恒泰科技有限責任公司"
       ],
       "Q4": [
-        "FoodMarble",
-        "NESS",
-        "Generic (Amazon JP)",
-        "カルモア (Calmor)",
-        "深圳市源晟衡器有限公司",
-        "Ketodoc",
-        "eeketone",
-        "Generic Brand"
+        "TANITA (百利达)",
+        "캄컴퍼니",
+        "SiBio",
+        "北京怡成 (Beijing Yicheng)",
+        "通用",
+        "論文研究 (Research Paper)",
+        "VivaChek (微策)",
+        "sejoy.com"
       ]
     },
     "labels": {
