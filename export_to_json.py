@@ -1,9 +1,18 @@
 """
-export_to_json.py  v2
+export_to_json.py  v3
 同時讀取：
-  1. 本機「氣味檢測器市調_分析結果.xlsx」（有 AI 分析欄位）
+  1. 本機「氣味檢測器市調_分析結果.xlsx」（有 AI 分析欄位 + 發現日期）
   2. Google Sheets 原始資料（補充尚未被 analyze_market.py 處理的新筆數）
-合併後輸出 data/market_data.json，並 git push。
+合併 → ★以「公司正規化 + 型號/網址簽章」去重（同產品不同名/來源收斂）
+     → 由各產品「首次發現」月份算 monthly_trend（修好「每月新增產品數」）
+     → 輸出 data/market_data.json，並 git push。
+
+v3 變更（2026-06）：
+  - 去重邏輯內建（移植自 VOCsDetector/去重整理.py），取代原本「完全同名」弱去重。
+    去重為純字串運算、無 LLM/無 API 成本 → 每次 export 都從頭跑一次即可，不需 checkpoint。
+    （需 checkpoint 的是 analyze_market.py 的 LLM 分析，已用 analyzed_at 跳過已分析列。）
+  - monthly_trend 由 發現日期 計算（原本寫死成空 {} → 圖表永遠空）。
+  - 產品多了 count(收錄次數) / url_count / first_seen / last_seen 欄位。
 
 執行前確認：
   - Google 試算表已設為「知道連結的人可以檢視」（不需 API Key）
@@ -12,6 +21,7 @@ export_to_json.py  v2
 
 import pandas as pd
 import json
+import re
 import subprocess
 import sys
 import urllib.request
@@ -117,166 +127,201 @@ def infer_country(brand: str, desc: str) -> str:
     return "其他/不明"
 
 
-# ── 合併兩個資料來源 ─────────────────────────────────────────────
-def merge_sources(df_local: pd.DataFrame, df_cloud: pd.DataFrame) -> list:
-    products = {}
+# ════════════════════════════════════════════════════════════════
+#  ★ 去重邏輯（移植自 VOCsDetector/去重整理.py）
+#    以「正規化公司 +（型號碼 or 來源網址）簽章」收斂同一產品的重複收錄。
+# ════════════════════════════════════════════════════════════════
+JUNK_SUBS = ["generic","unknown","unspecified","undefined","nobrand","no brand","未知","不明",
+             "無明確","無品牌","無 (","none","notspecified","various","其他品牌","多家","n/a"]
+ALIAS = {  # 正規化鍵(去空白小寫) 子字串 → 正規顯示名
+    "tanita":"Tanita","タニタ":"Tanita","塔尼達":"Tanita","타니타":"Tanita",
+    "airsense":"AIRSENSE Analytics","盈盛恒泰":"AIRSENSE/盈盛恒泰",
+    "i-pex":"I-PEX","ipex":"I-PEX",
+    "太陽誘電":"Taiyo Yuden","taiyoyuden":"Taiyo Yuden","yuden":"Taiyo Yuden",
+    "owlstone":"Owlstone Medical","quintron":"QuinTron","bosch":"Bosch Sensortec",
+    "alphamos":"Alpha MOS","alpham.o.s":"Alpha MOS","bactrack":"BACtrack",
+    "foodmarble":"FoodMarble","senseair":"Senseair","ketoscan":"KETOSCAN",
+    "figaro":"Figaro","sensirion":"Sensirion","aeris":"Aeris",
+    "enose":"The eNose Company","fermion":"Fermion","dfrobot":"DFRobot",
+    "exalenz":"Exalenz Bioscience","shownovo":"ShowNovo","首昕":"ShowNovo",
+    "ketomojo":"Keto-Mojo","niox":"NIOX","omron":"Omron","オムロン":"Omron",
+    "meridian":"Meridian Bioscience","gemelli":"Gemelli Biotech","nanose":"NaNose / Nanose Medical",
+}
+def norm_co(s):
+    s = "" if (s is None or (isinstance(s, float) and pd.isna(s))) else str(s)
+    if s == "不明":
+        s = ""
+    k = re.sub(r"\(.*?\)|（.*?）", "", s).lower()
+    k = re.sub(r"[\s\-_/.,，、()（）\[\]:：]+", "", k)
+    low = re.sub(r"\s+", "", s.lower())
+    if k in ("", "nan") or any(j.replace(" ", "") in k or j.replace(" ", "") in low for j in JUNK_SUBS):
+        return "__unknown__"
+    for sub, canon in ALIAS.items():
+        if sub in k:
+            return canon
+    return s.strip()
 
-    # 1. 先處理本機 xlsx（有完整 AI 分析欄位，優先）
+MODEL_RE = re.compile(r"[A-Za-z]{1,6}[\-‐]?\d{1,4}(?:[.\-]?\d+)?[A-Za-z]{0,4}")
+STOP_CODES = {"co2","pm2","pm10","no2","h2s","nh3","ppm","ppb","app","usb","2nd","3d","ai","io"}
+def codes_of(name):
+    cs = {c.lower().replace("-", "").replace("‐", "") for c in MODEL_RE.findall(str(name))}
+    return {c for c in cs if not c.isdigit() and len(c) >= 3 and c not in STOP_CODES}
+def make_key(co, name, url):
+    cs = codes_of(name)
+    sig = "m:" + "+".join(sorted(cs)) if cs else "u:" + str(url).strip().lower()
+    head = co if co != "__unknown__" else "unk:" + str(url).strip().lower()
+    return head + "||" + sig
+
+
+# ── 收集兩來源的原始列（含發現日期）─────────────────────────────
+def collect_raw(df_local: pd.DataFrame, df_cloud: pd.DataFrame) -> list:
+    records = []
+    seen_names = set()
+
     if not df_local.empty:
         c = {
-            "name":    detect_col(df_local, ["產品名","product_name"]),
-            "brand":   detect_col(df_local, ["品牌","公司","brand"]),
-            "desc":    detect_col(df_local, ["描述","特色","feature"]),
-            "url":     detect_col(df_local, ["網址","url"]),
-            "sensor":  detect_col(df_local, ["sensor_type"]),
-            "form":    detect_col(df_local, ["form_factor"]),
-            "prec":    detect_col(df_local, ["precision_tier"]),
-            "trl":     detect_col(df_local, ["trl"]),
-            "gases":   detect_col(df_local, ["target_gases"]),
-            "output":  detect_col(df_local, ["output_type"]),
-            "eco":     detect_col(df_local, ["ecosystem"]),
-            "segs":    detect_col(df_local, ["application_segments"]),
-            "moat":    detect_col(df_local, ["competitive_moat"]),
-            "feats":   detect_col(df_local, ["key_features"]),
-            "conf":    detect_col(df_local, ["confidence"]),
+            "name":   detect_col(df_local, ["產品名","product_name"]),
+            "brand":  detect_col(df_local, ["品牌","公司","brand"]),
+            "desc":   detect_col(df_local, ["描述","特色","feature"]),
+            "url":    detect_col(df_local, ["網址","url"]),
+            "date":   detect_col(df_local, ["發現日期","發現","日期"]),
+            "sensor": detect_col(df_local, ["sensor_type"]),
+            "form":   detect_col(df_local, ["form_factor"]),
+            "prec":   detect_col(df_local, ["precision_tier"]),
+            "trl":    detect_col(df_local, ["trl"]),
+            "gases":  detect_col(df_local, ["target_gases"]),
+            "output": detect_col(df_local, ["output_type"]),
+            "eco":    detect_col(df_local, ["ecosystem"]),
+            "segs":   detect_col(df_local, ["application_segments"]),
+            "moat":   detect_col(df_local, ["competitive_moat"]),
+            "feats":  detect_col(df_local, ["key_features"]),
+            "conf":   detect_col(df_local, ["confidence"]),
         }
         for _, row in df_local.iterrows():
-            name  = norm(row.get(c["name"],  ""))
-            brand = norm(row.get(c["brand"], ""))
-            desc  = norm(row.get(c["desc"],  ""))
+            name = norm(row.get(c["name"], ""))
             if name == "不明":
                 continue
-            key = name.lower().strip()
-            products[key] = {
-                "name":        name,
-                "brand":       brand,
-                "description": desc,
-                "url":         norm(row.get(c["url"],    "")),
-                "sensor_type": norm(row.get(c["sensor"], "")),
-                "form_factor": norm(row.get(c["form"],   "")),
-                "precision":   norm(row.get(c["prec"],   "")),
-                "trl":         norm(row.get(c["trl"],    "")),
-                "gases":       split_tags(norm(row.get(c["gases"],  ""))),
-                "output_type": norm(row.get(c["output"], "")),
-                "ecosystem":   norm(row.get(c["eco"],    "")),
-                "segments":    split_tags(norm(row.get(c["segs"],   ""))),
-                "moat":        norm(row.get(c["moat"],   "")),
-                "features":    norm(row.get(c["feats"],  "")),
-                "confidence":  norm(row.get(c["conf"],   "")),
-                "country":     infer_country(brand, desc),
-                "source":      "analyzed",
-            }
+            records.append({
+                "name": name, "brand": norm(row.get(c["brand"], "")),
+                "description": norm(row.get(c["desc"], "")), "url": norm(row.get(c["url"], "")),
+                "date": row.get(c["date"]) if c["date"] else None,
+                "sensor_type": norm(row.get(c["sensor"], "")), "form_factor": norm(row.get(c["form"], "")),
+                "precision": norm(row.get(c["prec"], "")), "trl": norm(row.get(c["trl"], "")),
+                "output_type": norm(row.get(c["output"], "")), "ecosystem": norm(row.get(c["eco"], "")),
+                "moat": norm(row.get(c["moat"], "")), "features": norm(row.get(c["feats"], "")),
+                "confidence": norm(row.get(c["conf"], "")),
+                "gases_raw": norm(row.get(c["gases"], "")), "segs_raw": norm(row.get(c["segs"], "")),
+                "source": "analyzed",
+            })
+            seen_names.add(name.lower().strip())
 
-    # 2. 雲端有但本機沒有的，補入為「待分析」
     if not df_cloud.empty:
         c2 = {
-            "name":  detect_col(df_cloud, ["產品名","product"]),
-            "brand": detect_col(df_cloud, ["品牌","公司","brand"]),
-            "desc":  detect_col(df_cloud, ["描述","特色","feature"]),
-            "url":   detect_col(df_cloud, ["網址","url"]),
+            "name":  detect_col(df_cloud, ["產品名", "product"]),
+            "brand": detect_col(df_cloud, ["品牌", "公司", "brand"]),
+            "desc":  detect_col(df_cloud, ["描述", "特色", "feature"]),
+            "url":   detect_col(df_cloud, ["網址", "url"]),
+            "date":  detect_col(df_cloud, ["發現日期", "發現", "日期", "date", "時間"]),
         }
         new_count = 0
         for _, row in df_cloud.iterrows():
-            name  = norm(row.get(c2["name"],  ""))
-            brand = norm(row.get(c2["brand"], ""))
-            desc  = norm(row.get(c2["desc"],  ""))
-            if name == "不明":
+            name = norm(row.get(c2["name"], ""))
+            if name == "不明" or name.lower().strip() in seen_names:
                 continue
-            key = name.lower().strip()
-            if key not in products:
-                products[key] = {
-                    "name":        name,
-                    "brand":       brand,
-                    "description": desc,
-                    "url":         norm(row.get(c2["url"], "")),
-                    "sensor_type": "待分析",
-                    "form_factor": "不明",
-                    "precision":   "不明",
-                    "trl":         "不明",
-                    "gases":       ["待分析"],
-                    "output_type": "不明",
-                    "ecosystem":   "不明",
-                    "segments":    ["待分析"],
-                    "moat":        "不明",
-                    "features":    "不明",
-                    "confidence":  "待分析",
-                    "country":     infer_country(brand, desc),
-                    "source":      "cloud_only",
-                }
-                new_count += 1
+            records.append({
+                "name": name, "brand": norm(row.get(c2["brand"], "")),
+                "description": norm(row.get(c2["desc"], "")), "url": norm(row.get(c2["url"], "")),
+                "date": row.get(c2["date"]) if c2["date"] else None,
+                "sensor_type": "待分析", "form_factor": "不明", "precision": "不明", "trl": "不明",
+                "output_type": "不明", "ecosystem": "不明", "moat": "不明", "features": "不明",
+                "confidence": "待分析", "gases_raw": "待分析", "segs_raw": "待分析",
+                "source": "cloud_only",
+            })
+            new_count += 1
         print(f"  ☁️  雲端補入 {new_count} 筆尚未 AI 分析的新資料")
 
-    return list(products.values())
+    return records
+
+
+# ── 簽章去重 → 產品清單 ─────────────────────────────────────────
+def dedup_records(records: list) -> list:
+    groups = {}
+    for r in records:
+        co = norm_co(r["brand"])
+        key = make_key(co, r["name"], r["url"])
+        groups.setdefault(key, []).append((co, r))
+
+    products = []
+    for key, items in groups.items():
+        co_canon = items[0][0]
+        co_disp = co_canon if co_canon != "__unknown__" else "未知/不明"
+        recs = [r for _, r in items]
+
+        def mode_f(f):
+            vals = [r[f] for r in recs if str(r[f]) not in ("不明", "待分析", "分析失敗", "", "nan")]
+            if vals:
+                return Counter(vals).most_common(1)[0][0]
+            return "待分析" if all(r["source"] != "analyzed" for r in recs) else "不明"
+
+        name = min((r["name"] for r in recs), key=lambda x: (len(x), x))   # 最短乾淨名
+        desc = max((r["description"] for r in recs), key=len)              # 最長描述
+        gases_raw = mode_f("gases_raw")
+        segs_raw  = mode_f("segs_raw")
+
+        ds = [pd.to_datetime(r["date"], errors="coerce") for r in recs if r["date"] is not None]
+        ds = [d for d in ds if pd.notna(d)]
+        first_seen = min(ds).strftime("%Y-%m-%d") if ds else "不明"
+        last_seen  = max(ds).strftime("%Y-%m-%d") if ds else "不明"
+
+        urls = [r["url"] for r in recs if r["url"] != "不明"]
+        brand_text = " ".join(r["brand"] for r in recs)
+
+        products.append({
+            "name": name, "brand": co_disp, "description": desc,
+            "url": urls[0] if urls else "不明",
+            "sensor_type": mode_f("sensor_type"), "form_factor": mode_f("form_factor"),
+            "precision": mode_f("precision"), "trl": mode_f("trl"),
+            "gases": split_tags(gases_raw), "output_type": mode_f("output_type"),
+            "ecosystem": mode_f("ecosystem"), "segments": split_tags(segs_raw),
+            "moat": mode_f("moat"), "features": mode_f("features"), "confidence": mode_f("confidence"),
+            "country": infer_country(brand_text, desc),
+            "source": "analyzed" if any(r["source"] == "analyzed" for r in recs) else "cloud_only",
+            "count": len(recs), "url_count": len(set(urls)),
+            "first_seen": first_seen, "last_seen": last_seen,
+        })
+
+    # 收錄次數高（高曝光）排前面
+    products.sort(key=lambda p: p["count"], reverse=True)
+    return products
 
 
 # ── 應用場景標準化對應表 ─────────────────────────────────────────
 SEGMENT_NORMALIZE = {
-    # 環境監測相關
-    "環境監測": "環境監測",
-    "環境與工業安全": "環境監測",
-    "惡臭監測": "環境監測",
-    "空氣品質": "環境監測",
-    "氣體洩漏偵測": "環境監測",
-    # 工業安全相關
-    "工業安全": "工業安全",
-    "工業": "工業安全",
-    "化工廠排放": "工業安全",
-    "毒氣偵查": "工業安全",
-    "職業安全": "工業安全",
-    # 食品品質相關
-    "食品品質": "食品品質",
-    "食品鮮度": "食品品質",
-    "食品安全": "食品品質",
-    "食品": "食品品質",
-    "鮮度檢測": "食品品質",
-    # 醫療健康相關
-    "醫療健康": "醫療健康",
-    "醫療": "醫療健康",
-    "呼氣診斷": "醫療健康",
-    "疾病診斷": "醫療健康",
-    "呼吸與氣味偵測": "醫療健康",
-    "呼吸與氣味檢測": "醫療健康",
-    "呼吸分析": "醫療健康",
-    "生理氣味監測": "醫療健康",
-    # 亞健康個人相關
-    "個人健康": "亞健康/個人健康",
-    "亞健康": "亞健康/個人健康",
-    "口臭檢測": "亞健康/個人健康",
-    "體臭監測": "亞健康/個人健康",
-    "生酮監測": "亞健康/個人健康",
-    # 智慧家居相關
-    "智慧家居": "智慧家居/IoT",
-    "智慧家居/IoT": "智慧家居/IoT",
-    "家電整合": "智慧家居/IoT",
-    "IoT": "智慧家居/IoT",
-    # 農業相關
-    "農業": "農業",
-    "農業應用": "農業",
-    # 半導體/製造相關
-    "半導體製程": "半導體/製造",
-    "半導體": "半導體/製造",
-    "製程監控": "半導體/製造",
-    # 國防相關
-    "國防": "國防/安全",
-    "爆炸物偵測": "國防/安全",
-    # 研究相關（過濾掉「新品研發」這種無意義標籤）
-    "新品研發": None,
-    "研究": None,
-    "學術研究": None,
-    "不明": None,
-    "待分析": None,
+    "環境監測": "環境監測", "環境與工業安全": "環境監測", "惡臭監測": "環境監測",
+    "空氣品質": "環境監測", "氣體洩漏偵測": "環境監測",
+    "工業安全": "工業安全", "工業": "工業安全", "化工廠排放": "工業安全",
+    "毒氣偵查": "工業安全", "職業安全": "工業安全",
+    "食品品質": "食品品質", "食品鮮度": "食品品質", "食品安全": "食品品質",
+    "食品": "食品品質", "鮮度檢測": "食品品質",
+    "醫療健康": "醫療健康", "醫療": "醫療健康", "呼氣診斷": "醫療健康",
+    "疾病診斷": "醫療健康", "呼吸與氣味偵測": "醫療健康", "呼吸與氣味檢測": "醫療健康",
+    "呼吸分析": "醫療健康", "生理氣味監測": "醫療健康",
+    "個人健康": "亞健康/個人健康", "亞健康": "亞健康/個人健康", "口臭檢測": "亞健康/個人健康",
+    "體臭監測": "亞健康/個人健康", "生酮監測": "亞健康/個人健康",
+    "智慧家居": "智慧家居/IoT", "智慧家居/IoT": "智慧家居/IoT", "家電整合": "智慧家居/IoT", "IoT": "智慧家居/IoT",
+    "農業": "農業", "農業應用": "農業",
+    "半導體製程": "半導體/製造", "半導體": "半導體/製造", "製程監控": "半導體/製造",
+    "國防": "國防/安全", "爆炸物偵測": "國防/安全",
+    "新品研發": None, "研究": None, "學術研究": None, "不明": None, "待分析": None,
 }
 
-def normalize_segment(seg: str) -> str | None:
+def normalize_segment(seg: str):
     seg = seg.strip()
-    # 完全匹配
     if seg in SEGMENT_NORMALIZE:
         return SEGMENT_NORMALIZE[seg]
-    # 部分匹配
     for k, v in SEGMENT_NORMALIZE.items():
         if k in seg or seg in k:
             return v
-    # 過濾掉太短或無意義的標籤
     if len(seg) <= 1:
         return None
     return seg
@@ -297,13 +342,21 @@ def count_list_field(products, field, top=20):
         for tag in p[field]:
             if tag in ("不明","待分析"):
                 continue
-            # 應用場景套用標準化
             if field == "segments":
                 tag = normalize_segment(tag)
                 if tag is None:
                     continue
             c[tag] += 1
     return dict(c.most_common(top))
+
+def monthly_new_products(products):
+    """每月『新增產品數』= 各去重產品依其『首次發現』月份歸戶後計數。"""
+    c = Counter()
+    for p in products:
+        fs = p.get("first_seen", "不明")
+        if fs and fs != "不明" and len(fs) >= 7:
+            c[fs[:7]] += 1          # YYYY-MM
+    return dict(sorted(c.items()))
 
 def build_quadrant(products):
     counts = Counter()
@@ -315,7 +368,7 @@ def build_quadrant(products):
         y = max((v for k,v in PRECISION_SCORE.items() if k in p["precision"]), default=1)
         q = "Q1" if x>=2 and y>=2 else "Q2" if x>=2 else "Q3" if y>=2 else "Q4"
         counts[q] += 1
-        if p["brand"] not in brands[q] and p["brand"] not in ("不明",""):
+        if p["brand"] not in brands[q] and p["brand"] not in ("不明","","未知/不明"):
             brands[q].append(p["brand"])
     return {
         "counts": dict(counts),
@@ -332,7 +385,7 @@ def build_quadrant(products):
 # ── 主流程 ───────────────────────────────────────────────────────
 def main():
     print(f"\n{'='*52}")
-    print(f"  export_to_json.py v2")
+    print(f"  export_to_json.py v3（內建去重 + 每月新增）")
     print(f"  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*52}")
 
@@ -342,8 +395,10 @@ def main():
     if df_local.empty and df_cloud.empty:
         sys.exit("❌ 兩個資料來源都失敗，中止")
 
-    products = merge_sources(df_local, df_cloud)
-    print(f"\n📊 合併後共 {len(products)} 筆")
+    raw = collect_raw(df_local, df_cloud)
+    products = dedup_records(raw)
+    print(f"\n🔁 去重：原始 {len(raw)} 列 → {len(products)} 個產品"
+          f"（縮減 {100*(1-len(products)/max(1,len(raw))):.0f}%）")
 
     analyzed = sum(1 for p in products
                    if p["confidence"] not in ("不明","待分析","分析失敗",""))
@@ -352,11 +407,12 @@ def main():
         "meta": {
             "total":          len(products),
             "brands":         len(set(p["brand"] for p in products
-                                      if p["brand"] not in ("不明",""))),
+                                      if p["brand"] not in ("不明","","未知/不明"))),
             "countries":      len(set(p["country"] for p in products
                                       if p["country"] != "其他/不明")),
             "analyzed_count": analyzed,
             "pending_count":  len(products) - analyzed,
+            "raw_rows":       len(raw),
             "updated_at":     datetime.now().isoformat(timespec="seconds"),
         },
         "charts": {
@@ -370,10 +426,10 @@ def main():
             "target_gases":         count_list_field(products, "gases"),
             "application_segments": count_list_field(products, "segments"),
             "country":              count_field(products, "country"),
-            "monthly_trend":        {},
+            "monthly_trend":        monthly_new_products(products),
         },
         "quadrant": build_quadrant(products),
-        "products": products,  # 全部筆數，不限制
+        "products": products,  # 已去重，全部筆數
     }
 
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -382,7 +438,9 @@ def main():
 
     kb = OUTPUT_FILE.stat().st_size / 1024
     print(f"💾 已輸出：{OUTPUT_FILE}（{kb:.1f} KB）")
-    print(f"   已分析 {analyzed} 筆 ／ 待分析 {len(products)-analyzed} 筆")
+    print(f"   去重後 {len(products)} 個產品｜已分析 {analyzed}｜待分析 {len(products)-analyzed}")
+    mt = output["charts"]["monthly_trend"]
+    print(f"   每月新增（首次發現）: {mt}")
 
     if AUTO_GIT_PUSH:
         git_push(REPO_DIR)
@@ -399,7 +457,7 @@ def git_push(repo_dir: Path):
     for cmd in cmds:
         r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8")
         if r.returncode != 0:
-            if "nothing to commit" in r.stdout + r.stderr:
+            if "nothing to commit" in (r.stdout or "") + (r.stderr or ""):
                 print("  ⚠️  無變更，跳過 commit")
                 return
             print(f"  ❌ 失敗：{r.stderr.strip()}")
