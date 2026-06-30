@@ -6,7 +6,7 @@
     "analyzed_count": 1985,
     "pending_count": 10,
     "raw_rows": 5718,
-    "updated_at": "2026-06-30T03:01:54"
+    "updated_at": "2026-06-30T15:00:23"
   },
   "charts": {
     "sensor_type": {
@@ -220,44 +220,44 @@
     },
     "brands": {
       "Q1": [
-        "Osmotech - Lifeanalytics",
-        "广州瑞普医疗",
-        "廣州瑞普醫療 (Guangzhou Ruipu Medical)",
-        "NIOX",
-        "Tim et al. (研究團隊)",
-        "영진기술(주)",
-        "FlavorActiV",
-        "ナノセント社 (Nanoscent)"
+        "清華系友企業",
+        "Pfeiffer",
+        "Osmotech (Lifeanalytics)",
+        "Chromatotec®",
+        "MSA Safety",
+        "ナノセント社 (NanoScent Ltd.)",
+        "Soberlink",
+        "SRI-Robot"
       ],
       "Q2": [
-        "NIOX",
-        "Ariese",
-        "ShowNovo",
-        "恆翼國際股份有限公司",
-        "Bruno MD6",
+        "Toto",
+        "Vivatmo",
+        "Sisco",
         "レボーン (Revoon)",
-        "XiuXin",
-        "NeOse"
+        "アロマビット (Aroma Bit)",
+        "Sharp",
+        "Keto-Mojo",
+        "XiuXin"
       ],
       "Q3": [
-        "NIOX",
-        "广州瑞普医疗",
-        "ShowNovo",
-        "New Cosmos Electric Co., Ltd.",
-        "新コスモス電機株式会社",
-        "德国苏斯 (Germany SUSS)",
-        "吉歐實業",
-        "유브이넥스"
+        "電子科学 (Densi-Kagaku - Electronic Science)",
+        "汉威科技集团股份有限公司 (Hanwei)",
+        "Medical Innovation Ventures",
+        "アルファ・モス・ジャパン (Alpha MOS Japan)",
+        "MSA Safety",
+        "Teledyne",
+        "NGK (日本礙子株式会社)",
+        "汉威科技 (Hanwei Electronics)"
       ],
       "Q4": [
-        "Shenzhen Jinsenchuan Technology (深圳金森川科技)",
-        "ShowNovo",
-        "smart-nanotubes.com",
-        "OHM電機 (OHM Electric)",
-        "Keto-Mojo",
-        "Aromajoin",
-        "Ascensia Diabetes Care",
-        "ERYUE"
+        "新考思莫施电子",
+        "Contour Next",
+        "新考思莫施电子 (上海) 有限公司 (New Cosmos Electric (Shanghai) Co., Ltd.)",
+        "汉威科技 (Hanwei Electronics)",
+        "Keyto",
+        "H-R-M-K JP",
+        "Shenzhen Hanwei Iot Co., Ltd.",
+        "Gasera"
       ]
     },
     "labels": {
