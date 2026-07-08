@@ -6,7 +6,7 @@
     "analyzed_count": 2095,
     "pending_count": 10,
     "raw_rows": 6061,
-    "updated_at": "2026-07-07T15:02:27"
+    "updated_at": "2026-07-08T15:00:18"
   },
   "charts": {
     "sensor_type": {
@@ -221,44 +221,44 @@
     },
     "brands": {
       "Q1": [
-        "レボーン (Revorn)",
-        "musascarl.it",
-        "Stratuscent",
-        "영진기술(주)",
-        "新コスモス電機 (New Cosmos Electric)",
-        "太阳诱电株式会社",
-        "广州瑞普医疗 (Guangzhou Ruipumedical)",
-        "SMELLDECT"
+        "中科微感（宁波）科技有限公司",
+        "BASELINE",
+        "神栄テクノロジー (Shinyei Technology)",
+        "MSA Safety",
+        "WINOPAL Forschungsbedarf",
+        "ナノセント社 (NanoScent Ltd.)",
+        "リコーグループ",
+        "aroma bit"
       ],
       "Q2": [
-        "アロマビット",
-        "KETOSCAN",
-        "NeOse",
-        "odorate",
-        "Sisco",
-        "Y-Brush",
+        "Ariese",
+        "成功大學",
+        "Vivatmo",
         "通用型",
-        "Keto-Mojo"
+        "ScentSational",
+        "Sharp",
+        "福盈科技深圳有限公司",
+        "aroma bit"
       ],
       "Q3": [
-        "카스 (CAS)",
-        "吉歐實業 (Geo Industrial)",
-        "吉歐實業 (Geo Industries)",
-        "Aryballe",
-        "Test Kits USA",
-        "日本ガイシ株式会社 (NGK Insulators, Ltd.)",
-        "Sensidyne",
-        "PyloPlus®"
+        "中国同辐子公司",
+        "LabMedica",
+        "瑞士聞香器",
+        "GasDetect A/S",
+        "Heliforce",
+        "(株)カルモア",
+        "德国苏斯 (German Soos)",
+        "Smart Nanotubes Technologies"
       ],
       "Q4": [
-        "gemini",
-        "QLZHS",
-        "DIYatel 202S",
-        "Keto-Mojo",
-        "H-R-M-K JP",
-        "유록이네",
-        "Xtahdge",
-        "smelldect"
+        "拾计",
+        "Hydsto",
+        "欧朗凯",
+        "OHM電機 (OHM Electric)",
+        "GazDetect",
+        "OEM/ODM",
+        "カルモア (Calmoa)",
+        "DIYatel"
       ]
     },
     "labels": {
