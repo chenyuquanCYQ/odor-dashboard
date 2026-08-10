@@ -1,0 +1,5 @@
+update_log.txt
+PUSH_FAILED.txt
+__pycache__/
+update_log*.txt
+_backup_*/

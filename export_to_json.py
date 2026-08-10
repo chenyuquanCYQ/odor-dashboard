@@ -389,6 +389,12 @@ def main():
     print(f"  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*52}")
 
+    if AUTO_GIT_PUSH:
+        _git(REPO_DIR, "fetch", "origin", "-q")
+        backlog = unpushed_count(REPO_DIR)
+        if backlog > 0:
+            print(f"⚠️  開跑前偵測到 {backlog} 個 commit 尚未推上遠端（dashboard 目前是舊的）")
+
     df_local = load_local_xlsx(LOCAL_XLSX)
     df_cloud = fetch_gsheet(SHEET_ID)
 
@@ -443,27 +449,71 @@ def main():
     print(f"   每月新增（首次發現）: {mt}")
 
     if AUTO_GIT_PUSH:
-        git_push(REPO_DIR)
+        if not git_push(REPO_DIR):
+            sys.exit(1)          # 讓 auto_update.bat 的 ERROR 分支會被觸發
 
 
-def git_push(repo_dir: Path):
+MARKER = REPO_DIR / "PUSH_FAILED.txt"
+
+
+def _git(repo_dir: Path, *args):
+    return subprocess.run(["git", "-C", str(repo_dir), *args],
+                          capture_output=True, text=True, encoding="utf-8")
+
+
+def unpushed_count(repo_dir: Path) -> int:
+    """本地領先遠端幾個 commit（>0 代表沒推上去，dashboard 不會更新）。"""
+    r = _git(repo_dir, "rev-list", "--count", "origin/main..HEAD")
+    try:
+        return int((r.stdout or "").strip())
+    except ValueError:
+        return -1
+
+
+def alarm(repo_dir: Path, msg: str):
+    """把失敗寫成警示檔 + 大聲印出來（避免像 2026-07 那樣靜默累積 27 個 commit）。"""
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    try:
+        MARKER.write_text(f"[{ts}] {msg}\n", encoding="utf-8")
+    except Exception:
+        pass
+    print("\n" + "!" * 58)
+    print("!!  推送失敗 —— GitHub Pages 的 dashboard 不會更新")
+    print(f"!!  {msg}")
+    print(f"!!  警示檔：{MARKER}")
+    print("!!  修法：git -C \"%s\" push  （若 403 先 cmdkey /delete:git:https://github.com 重新登入）" % repo_dir)
+    print("!" * 58)
+
+
+def git_push(repo_dir: Path) -> bool:
     print("\n🚀 Git 推送...")
-    cmds = [
-        ["git", "-C", str(repo_dir), "add", "data/market_data.json"],
-        ["git", "-C", str(repo_dir), "commit", "-m",
-         f"data: auto update {datetime.now().strftime('%Y-%m-%d %H:%M')}"],
-        ["git", "-C", str(repo_dir), "push"],
-    ]
-    for cmd in cmds:
-        r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8")
+    for args in (["add", "data/market_data.json"],
+                 ["commit", "-m", f"data: auto update {datetime.now().strftime('%Y-%m-%d %H:%M')}"],
+                 ["push"]):
+        r = _git(repo_dir, *args)
         if r.returncode != 0:
-            if "nothing to commit" in (r.stdout or "") + (r.stderr or ""):
+            both = (r.stdout or "") + (r.stderr or "")
+            if args[0] == "commit" and "nothing to commit" in both:
                 print("  ⚠️  無變更，跳過 commit")
-                return
-            print(f"  ❌ 失敗：{r.stderr.strip()}")
-            return
-        print(f"  ✅ {cmd[3]}")
+                continue          # 仍要往下嘗試 push（可能有前幾天卡住的 commit）
+            alarm(repo_dir, f"git {args[0]} 失敗：{(r.stderr or '').strip()[:300]}")
+            return False
+        print(f"  ✅ {args[0]}")
+
+    # ★ 真正的驗收：確認遠端已跟上（僅 returncode==0 不足以保證）
+    _git(repo_dir, "fetch", "origin", "-q")
+    behind = unpushed_count(repo_dir)
+    if behind > 0:
+        alarm(repo_dir, f"push 後仍有 {behind} 個 commit 未上遠端")
+        return False
+    if MARKER.exists():
+        try:
+            MARKER.unlink()
+            print("  🧹 已清除舊的 PUSH_FAILED.txt")
+        except Exception:
+            pass
     print("🎉 完成！GitHub Pages 約 1 分鐘後更新")
+    return True
 
 
 if __name__ == "__main__":
