@@ -3,3 +3,4 @@ PUSH_FAILED.txt
 __pycache__/
 update_log*.txt
 _backup_*/
+auto_update.txt
