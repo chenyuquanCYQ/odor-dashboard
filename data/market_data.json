@@ -6,7 +6,7 @@
     "analyzed_count": 2557,
     "pending_count": 10,
     "raw_rows": 7709,
-    "updated_at": "2026-08-10T15:04:59"
+    "updated_at": "2026-08-11T15:00:32"
   },
   "charts": {
     "sensor_type": {
@@ -225,44 +225,44 @@
     },
     "brands": {
       "Q1": [
-        "Winopal",
-        "영진기술(주)",
-        "SepSolve",
-        "广州瑞普医疗 (Guangzhou Ruipu Medical)",
-        "Bosch Sensortec",
-        "Vocxi Health",
-        "ABB",
-        "ナノセント社"
+        "香港科技大學研究團隊 (HKUST Research Team)",
+        "Taiyo Yuden",
+        "Smell Inspector",
+        "Winopal Forschungsbedarf GmbH",
+        "IL1A-AI",
+        "XEARPRO",
+        "中科微感（宁波）科技有限公司",
+        "DFRobot"
       ],
       "Q2": [
-        "odorate",
-        "Lifeloc Technologies",
-        "XiuXin",
-        "恆翼國際股份有限公司",
-        "涂鸦智能 (Tuya Smart)",
-        "Smarter Living",
+        "salvatore fracella",
+        "KT-68B",
         "三诺 (Sanuo)",
-        "微泰 (Weitai)"
+        "新コスモス電機株式会社 (New Cosmos Electric Co., Ltd.)",
+        "ShowNovo",
+        "odorate（オドレート）",
+        "Unnamed",
+        "レボーン (RevoN)"
       ],
       "Q3": [
-        "Bedfont® Scientific Limited",
-        "(株)カルモア",
-        "Omron",
-        "BreathID (Exalenz)",
-        "Bosch Sensortec",
-        "Let-elektronik",
-        "Sens4",
-        "DLO"
+        "ShowNovo",
+        "万联达",
+        "電子科学 (Densi-Kagaku - Electronic Science)",
+        "万联达 (Wanlianda)",
+        "IMDEA Nanociencia",
+        "BTMETER",
+        "Winsen",
+        "三洋化成工業"
       ],
       "Q4": [
-        "Bedfont® Scientific Limited",
-        "Omron",
-        "SPEC-Sensors",
-        "Bosch Sensortec",
-        "eeketone.com",
-        "eeketone",
+        "ShowNovo",
+        "Ketonix AB Sweden",
+        "Smart Start Inc.",
+        "OHM Electric",
         "Sens4",
-        "오네어 (Onair)"
+        "Bedfont® Scientific Limited",
+        "Aromabit",
+        "POLFA (ポルファ)"
       ]
     },
     "labels": {
