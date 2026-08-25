@@ -6,7 +6,7 @@
     "analyzed_count": 2659,
     "pending_count": 10,
     "raw_rows": 8204,
-    "updated_at": "2026-08-24T15:01:54"
+    "updated_at": "2026-08-25T15:00:23"
   },
   "charts": {
     "sensor_type": {
@@ -223,44 +223,44 @@
     },
     "brands": {
       "Q1": [
-        "chromatotec.com",
-        "ELLONA (艾隆納)",
-        "Senseair",
-        "cubic",
+        "Neotechnology",
+        "NASA",
+        "Yanlania",
+        "Milvus Consulting",
+        "汉威科技 (Hanwei Electronics)",
         "SNIFFI (project/device)",
-        "新コスモス電機 (New Cosmos Electric)",
-        "Taiyo Yuden",
-        "日本INSENT"
+        "SHARP (シャープ)",
+        "日本神荣 (Shinyei)"
       ],
       "Q2": [
-        "涂鸦智能",
+        "三诺 (Sinocare)",
+        "ScentSational",
         "涂鸦智能 (Tuya Smart)",
-        "Smarter Living",
-        "FoodMarble",
-        "NeOse",
-        "Bedfont",
-        "不詳",
-        "YASEE (雅斯)"
+        "Keto-Mojo",
+        "BACtrack",
+        "Lifeloc Technologies",
+        "XiuXin",
+        "coolker"
       ],
       "Q3": [
-        "安徽養和",
-        "ASCO",
-        "新コスモス電機 (New Cosmos Electric)",
-        "新コスモス電機株式会社 (New Cosmos Electric Co., Ltd.)",
-        "瑞谱斯",
-        "Nova Biomedical",
-        "Cubic",
-        "Alpha MOS"
+        "中核集团",
+        "SAMON",
+        "Milvus Consulting",
+        "Servomex",
+        "IDkit Hp®",
+        "Fresenius Instruments",
+        "MSR-Electronic",
+        "commdx.com"
       ],
       "Q4": [
-        "北京依誠 (Beijing Yicheng)",
-        "Shenzhen Ouye Electronic Co.",
-        "新コスモス電機 (New Cosmos Electric)",
+        "TTCSI",
+        "Changsha U De Toptech Electronic Technology Co.,Ltd",
+        "univo",
         "Mijia",
-        "三诺 (Sannuo)",
-        "华欧 (Huaou)",
-        "CareExpert",
-        "百利达 (Tanita)"
+        "OMX",
+        "株式会社シロ産業",
+        "拾计",
+        "휴비딕"
       ]
     },
     "labels": {
