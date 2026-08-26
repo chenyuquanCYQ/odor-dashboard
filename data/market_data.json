@@ -6,7 +6,7 @@
     "analyzed_count": 2659,
     "pending_count": 10,
     "raw_rows": 8204,
-    "updated_at": "2026-08-25T15:00:23"
+    "updated_at": "2026-08-26T15:00:33"
   },
   "charts": {
     "sensor_type": {
@@ -223,44 +223,44 @@
     },
     "brands": {
       "Q1": [
-        "Neotechnology",
-        "NASA",
-        "Yanlania",
-        "Milvus Consulting",
-        "汉威科技 (Hanwei Electronics)",
-        "SNIFFI (project/device)",
-        "SHARP (シャープ)",
-        "日本神荣 (Shinyei)"
+        "日本INSENT",
+        "漢威科技",
+        "村田製作所 (Murata Manufacturing)",
+        "中科微感（宁波）科技有限公司",
+        "irie Co., Ltd.",
+        "Smiths Detection",
+        "未提供 (Not Provided)",
+        "Winopal Forschungsbedarf GmbH"
       ],
       "Q2": [
-        "三诺 (Sinocare)",
-        "ScentSational",
-        "涂鸦智能 (Tuya Smart)",
-        "Keto-Mojo",
-        "BACtrack",
-        "Lifeloc Technologies",
+        "微泰 (Weitai)",
+        "福盈科技",
+        "Shinyei (神栄テクノロジー)",
         "XiuXin",
-        "coolker"
+        "シャープ (Sharp)",
+        "odorate",
+        "odorate (オドレート)",
+        "Smarter Living"
       ],
       "Q3": [
-        "中核集团",
-        "SAMON",
-        "Milvus Consulting",
-        "Servomex",
-        "IDkit Hp®",
-        "Fresenius Instruments",
-        "MSR-Electronic",
-        "commdx.com"
+        "Odometric",
+        "コア (Core)",
+        "安徽养和 (Anhui Yanghe)",
+        "Figaro",
+        "Heliforce C13",
+        "株式会社カルモア (KARUMOA)",
+        "RISE",
+        "ByDrug"
       ],
       "Q4": [
         "TTCSI",
-        "Changsha U De Toptech Electronic Technology Co.,Ltd",
-        "univo",
-        "Mijia",
-        "OMX",
-        "株式会社シロ産業",
-        "拾计",
-        "휴비딕"
+        "Vivatmo (維瓦特莫)",
+        "迪亞特 (Diya Te)",
+        "GDbow",
+        "KAGUROBO カルモア",
+        "Yellosis",
+        "Bruno",
+        "Ketogenic Girl"
       ]
     },
     "labels": {
