@@ -6,7 +6,7 @@
     "analyzed_count": 2662,
     "pending_count": 10,
     "raw_rows": 8243,
-    "updated_at": "2026-08-27T15:02:19"
+    "updated_at": "2026-08-28T15:00:25"
   },
   "charts": {
     "sensor_type": {
@@ -223,44 +223,44 @@
     },
     "brands": {
       "Q1": [
-        "日本神荣 (Shinyei)",
-        "Sharp",
-        "영진기술(주)",
-        "SHARP (シャープ)",
-        "BASELINE",
-        "IRIE",
-        "Milvus Consulting",
-        "德國Pfeiffer"
+        "IRIE (irie)",
+        "Tim et al. (研究團隊)",
+        "未指定 (多個研究團隊開發)",
+        "NIOX",
+        "太阳诱电",
+        "医疗科技股份有限公司",
+        "レボーン (Revorn)",
+        "SNIFFI (project/device)"
       ],
       "Q2": [
-        "Sharp",
+        "不詳",
+        "Vivatmo (von BOSCH)",
+        "新コスモス電機株式会社",
         "NIOX",
-        "シャープ (Sharp)",
-        "Bedfont",
-        "Smarter Living",
-        "FoodMarble",
-        "恆翼國際股份有限公司",
-        "airthings"
+        "レボーン (RevoN)",
+        "郑州云湛科技有限公司 (Zhengzhou Yunzhan Technology Co., Ltd.)",
+        "涂鸦智能 (Tuya Smart)",
+        "Aromabit (アロマビット)"
       ],
       "Q3": [
-        "(株)カルモア",
-        "Milvus Consulting",
-        "NOV",
-        "Sunvou Medical Electronics",
-        "霍尼韦尔 (Honeywell)",
-        "電子科学 (Electronic Science)",
-        "日本神榮 (Shinyei)",
-        "AMETEK"
+        "Otsuka Pharmaceutical Co., Ltd.",
+        "PYtest",
+        "NIOX",
+        "農研機構",
+        "Medical Innovation Ventures",
+        "whhcrk.com",
+        "TH Lübeck (德國-丹麥研究團隊)",
+        "Fresenius Instruments"
       ],
       "Q4": [
-        "Ketowise",
-        "The Tone Device",
-        "YRY",
-        "LiberBeauty",
-        "Kebeteme",
-        "Contour Next",
-        "smart-nanotubes.com",
-        "カルモア (Calmora)"
+        "VivaChek微策",
+        "松下",
+        "カルモア (Calmora)",
+        "Ascensia Diabetes Care",
+        "ABI",
+        "新コスモス電機 (New Cosmos Electric Co., Ltd.)",
+        "AlcoCONNECT",
+        "神栄テクノロジー"
       ]
     },
     "labels": {
