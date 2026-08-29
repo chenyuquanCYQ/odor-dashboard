@@ -6,7 +6,7 @@
     "analyzed_count": 2662,
     "pending_count": 10,
     "raw_rows": 8243,
-    "updated_at": "2026-08-28T15:00:25"
+    "updated_at": "2026-08-29T15:00:31"
   },
   "charts": {
     "sensor_type": {
@@ -223,44 +223,44 @@
     },
     "brands": {
       "Q1": [
-        "IRIE (irie)",
-        "Tim et al. (研究團隊)",
-        "未指定 (多個研究團隊開發)",
-        "NIOX",
-        "太阳诱电",
-        "医疗科技股份有限公司",
-        "レボーン (Revorn)",
-        "SNIFFI (project/device)"
+        "ナノセント (NanoScent)",
+        "KIT",
+        "MIT",
+        "smartindu",
+        "Thermofisher",
+        "Smart Nanotubes",
+        "SRI-Robot",
+        "艾感科技"
       ],
       "Q2": [
-        "不詳",
-        "Vivatmo (von BOSCH)",
-        "新コスモス電機株式会社",
-        "NIOX",
-        "レボーン (RevoN)",
-        "郑州云湛科技有限公司 (Zhengzhou Yunzhan Technology Co., Ltd.)",
-        "涂鸦智能 (Tuya Smart)",
-        "Aromabit (アロマビット)"
+        "PiVIS",
+        "ShowNovo",
+        "Chinese Patent (中國專利)",
+        "Ueecool",
+        "成功大學",
+        "ScentSational",
+        "Sisco",
+        "Keto-Mojo"
       ],
       "Q3": [
-        "Otsuka Pharmaceutical Co., Ltd.",
-        "PYtest",
-        "NIOX",
-        "農研機構",
-        "Medical Innovation Ventures",
-        "whhcrk.com",
-        "TH Lübeck (德國-丹麥研究團隊)",
-        "Fresenius Instruments"
+        "Fresenius Umwelttechnik",
+        "吉歐實業",
+        "新コスモス電機株式会社",
+        "ABB",
+        "RuiBreath",
+        "三洋化成工業 (Sanyo Chemical Industries)",
+        "LabMedica",
+        "QuinTron"
       ],
       "Q4": [
-        "VivaChek微策",
-        "松下",
-        "カルモア (Calmora)",
-        "Ascensia Diabetes Care",
-        "ABI",
-        "新コスモス電機 (New Cosmos Electric Co., Ltd.)",
-        "AlcoCONNECT",
-        "神栄テクノロジー"
+        "eeketone.com (KC-01)",
+        "VivaChek (微策)",
+        "株式会社アロマビット (Aroma Bit)",
+        "Keto-Mojo",
+        "mir",
+        "北京亿城 (Beijing Yicheng)",
+        "QuinTron",
+        "PABO 帕博 (PABO Pabo)"
       ]
     },
     "labels": {
