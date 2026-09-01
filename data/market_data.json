@@ -6,7 +6,7 @@
     "analyzed_count": 2674,
     "pending_count": 10,
     "raw_rows": 8288,
-    "updated_at": "2026-08-31T15:01:35"
+    "updated_at": "2026-09-01T15:00:28"
   },
   "charts": {
     "sensor_type": {
@@ -223,44 +223,44 @@
     },
     "brands": {
       "Q1": [
-        "The eNose Company",
-        "新コスモス電機 (New Cosmos Electric)",
-        "太阳诱电株式会社",
-        "中科微感 (CSMSN)",
-        "汉威科技 (Hanwei Electronics)",
-        "Pfeiffer",
-        "irie Co., Ltd.",
-        "シャープ (SHARP)"
+        "Odowatch®",
+        "株式会社アロマビット",
+        "Yanlania",
+        "SACMI",
+        "ELLONA",
+        "村田製作所",
+        "村田製作所 (Murata Manufacturing)",
+        "yanlania"
       ],
       "Q2": [
-        "Sharp",
-        "BACtrack",
-        "專利 (Patent CN211955226U)",
-        "Sharp (シャープ)",
+        "三诺",
+        "Smarter Living",
+        "Ariese",
+        "PiVIS",
+        "Vivatmo (von BOSCH)",
+        "Sisco",
         "アロマビット",
-        "通用型",
-        "salvatore fracella",
-        "REX-RENTAL"
+        "Aromabit (アロマビット)"
       ],
       "Q3": [
-        "Spirosure",
-        "Servomex",
-        "新コスモス電機 (New Cosmos Electric)",
-        "Richen",
-        "GasDetect A/S",
-        "mybest",
-        "AMETEK",
-        "SNIFFI"
+        "英思科 (Industrial Scientific)",
+        "株式会社アロマビット",
+        "村田製作所",
+        "MDPI (學術論文中描述的裝置)",
+        "Branom Ins",
+        "合肥工業大學",
+        "FDA",
+        "费加罗技研 (Figaro)"
       ],
       "Q4": [
-        "新コスモス電機 (New Cosmos Electric)",
-        "GoSupps",
-        "The Tone Device",
-        "eeketone.com (KC-01)",
-        "Carsien",
-        "Shinyei (神榮)",
-        "KETONIX",
-        "Hydsto"
+        "MQ316",
+        "浙江浙科仪器设备有限公司 (Zhejiang ZK Instruments & Equipment Co., Ltd.)",
+        "北京怡成",
+        "OMED Health (Owlstone Medical)",
+        "KAGUROBO カルモア",
+        "The Mint",
+        "NObreath",
+        "Ketyo"
       ]
     },
     "labels": {
