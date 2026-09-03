@@ -6,7 +6,7 @@
     "analyzed_count": 2688,
     "pending_count": 10,
     "raw_rows": 8325,
-    "updated_at": "2026-09-02T15:02:29"
+    "updated_at": "2026-09-03T15:00:32"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "KIT",
-        "KAGUROBO",
-        "广州瑞普医疗 (Guangzhou Ruipu Medical)",
-        "太阳诱电",
-        "Ainos, Inc.",
-        "Linköping (研究團隊)",
-        "ナノセント社 (NanoScent Ltd.)",
-        "Applied Sensor"
+        "清華大學系友企業",
+        "Smell Inspector",
+        "郑州云湛科技有限公司",
+        "PRECISE (研究專案)",
+        "株式会社カルモア (Karumoa Co., Ltd.)",
+        "シャープ (SHARP)",
+        "Thermofisher",
+        "Instrument Solutions"
       ],
       "Q2": [
-        "Shinyei (神栄テクノロジー)",
-        "微泰 (Weitai)",
-        "BACtrack",
-        "NESS",
-        "Sharp (シャープ)",
-        "KETOSCAN",
-        "Toto / Yellosis",
-        "YASEE (雅斯)"
+        "FoodMarble",
+        "WG1 (ShowNovo 首昕)",
+        "ScentSational",
+        "福盈科技",
+        "Chinese Patent (中國專利)",
+        "Toto",
+        "Aromabit (アロマビット)",
+        "KETOSCAN"
       ],
       "Q3": [
-        "NGK (日本礙子株式会社)",
-        "intendvision",
-        "Siemens Healthineers",
-        "Zhejiang Zheke Instrument (浙江浙科儀器)",
-        "Alpha MOS",
-        "Heliforce C13",
-        "유브이넥스",
-        "Yingshiwei"
+        "ヤナコ",
+        "KAGUROBO カルモア (KAGUROBO Calmoa)",
+        "費加羅技研 (Figaro Engineering Inc.)",
+        "瑞士聞香器",
+        "Smell Inspector (project/product)",
+        "Reslink",
+        "Dingtek",
+        "新コスモス電機"
       ],
       "Q4": [
-        "KIT",
-        "Reflex",
-        "江蘇童醫醫療器械有限公司",
-        "GoSupps",
-        "Yingshiwei",
-        "MR702",
-        "Ketyo",
-        "迪亞特 (Diat)"
+        "倍思",
+        "オーム電機",
+        "OMX",
+        "深圳市华立鑫科技有限公司",
+        "ReFlex Wireless",
+        "신쿠슈BK (Shinkushu BK)",
+        "新考思莫施电子 (上海) 有限公司 (New Cosmos Electric (Shanghai) Co., Ltd.)",
+        "Jeekooe"
       ]
     },
     "labels": {
