@@ -6,7 +6,7 @@
     "analyzed_count": 2688,
     "pending_count": 10,
     "raw_rows": 8325,
-    "updated_at": "2026-09-03T15:00:32"
+    "updated_at": "2026-09-04T15:00:37"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "清華大學系友企業",
-        "Smell Inspector",
-        "郑州云湛科技有限公司",
-        "PRECISE (研究專案)",
-        "株式会社カルモア (Karumoa Co., Ltd.)",
-        "シャープ (SHARP)",
-        "Thermofisher",
-        "Instrument Solutions"
+        "OBRE",
+        "IRIE",
+        "Bosch Sensortec",
+        "日本神荣 (Shinyei)",
+        "Milvus Consulting",
+        "日本INSENT",
+        "Zetron",
+        "IL1A"
       ],
       "Q2": [
         "FoodMarble",
-        "WG1 (ShowNovo 首昕)",
-        "ScentSational",
-        "福盈科技",
-        "Chinese Patent (中國專利)",
-        "Toto",
-        "Aromabit (アロマビット)",
-        "KETOSCAN"
+        "レボーン (Revoon)",
+        "NeOse",
+        "Sharp (シャープ)",
+        "XiuXin",
+        "PiVIS",
+        "Bedfont",
+        "BACtrack"
       ],
       "Q3": [
-        "ヤナコ",
-        "KAGUROBO カルモア (KAGUROBO Calmoa)",
-        "費加羅技研 (Figaro Engineering Inc.)",
-        "瑞士聞香器",
-        "Smell Inspector (project/product)",
-        "Reslink",
-        "Dingtek",
-        "新コスモス電機"
+        "University of Texas at Dallas (Research)",
+        "Quest Diagnostics",
+        "Laborie",
+        "Zetron",
+        "FDA",
+        "日本新宇宙 (New Cosmos Electric)",
+        "NObreath",
+        "增誠科技有限公司"
       ],
       "Q4": [
-        "倍思",
+        "深圳市源晟衡器有限公司 (Shenzhen Yuansheng Hengqi)",
+        "日本新宇宙 (New Cosmos Electric)",
+        "NObreath",
+        "My Aura",
+        "BIOSENSE™",
         "オーム電機",
-        "OMX",
-        "深圳市华立鑫科技有限公司",
-        "ReFlex Wireless",
-        "신쿠슈BK (Shinkushu BK)",
-        "新考思莫施电子 (上海) 有限公司 (New Cosmos Electric (Shanghai) Co., Ltd.)",
-        "Jeekooe"
+        "松下",
+        "Aikesi Electronic Technology"
       ]
     },
     "labels": {
