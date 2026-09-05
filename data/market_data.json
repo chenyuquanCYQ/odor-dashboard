@@ -6,7 +6,7 @@
     "analyzed_count": 2688,
     "pending_count": 10,
     "raw_rows": 8325,
-    "updated_at": "2026-09-04T15:00:37"
+    "updated_at": "2026-09-05T15:00:21"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "OBRE",
-        "IRIE",
-        "Bosch Sensortec",
-        "日本神荣 (Shinyei)",
-        "Milvus Consulting",
-        "日本INSENT",
-        "Zetron",
-        "IL1A"
+        "中国科学院 (Chinese Academy of Sciences)",
+        "Pason Systems Inc.",
+        "SHARP (シャープ)",
+        "SMELLDECT",
+        "無",
+        "新コスモス電機",
+        "東京工科大学",
+        "KAGUROBO カルモア"
       ],
       "Q2": [
-        "FoodMarble",
-        "レボーン (Revoon)",
-        "NeOse",
-        "Sharp (シャープ)",
-        "XiuXin",
-        "PiVIS",
-        "Bedfont",
-        "BACtrack"
+        "恆翼國際股份有限公司",
+        "NIOX",
+        "不詳",
+        "Kunkun Body",
+        "新コスモス電機株式会社",
+        "XiuXin (秀昕)",
+        "YASEE (雅斯)",
+        "Alpha MOS"
       ],
       "Q3": [
-        "University of Texas at Dallas (Research)",
-        "Quest Diagnostics",
-        "Laborie",
-        "Zetron",
-        "FDA",
-        "日本新宇宙 (New Cosmos Electric)",
-        "NObreath",
-        "增誠科技有限公司"
+        "UBiT",
+        "電子科学 (Densi-Kagaku - Electronic Science)",
+        "Sunvou Diagnostics",
+        "IDkit",
+        "コア社 (Core Co.)",
+        "医疗电子股份有限公司",
+        "ETCK",
+        "DLOLab"
       ],
       "Q4": [
-        "深圳市源晟衡器有限公司 (Shenzhen Yuansheng Hengqi)",
-        "日本新宇宙 (New Cosmos Electric)",
-        "NObreath",
-        "My Aura",
-        "BIOSENSE™",
-        "オーム電機",
-        "松下",
-        "Aikesi Electronic Technology"
+        "OHM電機",
+        "Sheng Yi",
+        "Amazon.com",
+        "Oralicon",
+        "怡諾威騰",
+        "Keto-Mojo",
+        "그린원",
+        "深圳市源晟衡器有限公司 (Shenzhen Yuansheng Hengqi)"
       ]
     },
     "labels": {
