@@ -6,7 +6,7 @@
     "analyzed_count": 2697,
     "pending_count": 10,
     "raw_rows": 8363,
-    "updated_at": "2026-09-06T15:02:32"
+    "updated_at": "2026-09-07T15:00:36"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "北京万联达信科仪器有限公司",
-        "KIT",
-        "RISE",
-        "新コスモス電機 (New Cosmos Electric)",
-        "ELLONA (艾隆納)",
-        "NIOX",
-        "Soberlink",
-        "Tuya (涂鴉)"
+        "Air-Q",
+        "Sepsolve",
+        "Exhalon",
+        "Alpha MOS",
+        "神栄テクノロジー (Shinyei Technology)",
+        "하이크마이크로 (Hikmicro)",
+        "영진기술(주) (Youngjin Technology Co., Ltd.)",
+        "Smell Inspector (Kickstarter)"
       ],
       "Q2": [
-        "新コスモス電機株式会社 (New Cosmos Electric Co., Ltd.)",
-        "Ariese",
-        "Unnamed",
-        "NIOX",
-        "福盈科技深圳有限公司",
-        "Aromabit (アロマビット)",
-        "I-PEX",
-        "Bruno MD6"
+        "Vivatmo (from BOSCH)",
+        "Toto / Yellosis",
+        "YASEE (雅斯)",
+        "NESS",
+        "Lifeloc Technologies",
+        "專利 (Patent CN211955226U)",
+        "Keto-Mojo",
+        "三诺"
       ],
       "Q3": [
-        "칼모아",
-        "BL-002",
-        "三洋化成工業",
-        "北京赛尔福知心科技有限公司",
-        "Senseair",
-        "Winsen",
-        "NEDO",
-        "コア (Core)"
+        "Alpha MOS",
+        "電子科學",
+        "德国苏斯 (German Soos)",
+        "Edwards Vacuum",
+        "瑞普医疗",
+        "하니웰",
+        "通用型",
+        "더베스트 라비센"
       ],
       "Q4": [
-        "拾计",
-        "더무 (The Mu)",
-        "Vimaydo",
-        "カルモア (Calmor)",
-        "Amazon.it",
-        "Aromabit",
-        "Aunnhon KC02",
-        "迪亞特 (Deate)"
+        "univo",
+        "オーム(OHM)",
+        "OMX",
+        "電子科學",
+        "Ketonix AB Sweden",
+        "通用型",
+        "Tomicoco",
+        "Evernoa (EVE)"
       ]
     },
     "labels": {
