@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-08T15:01:01"
+    "updated_at": "2026-09-09T15:00:21"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "Tim et al. (研究團隊)",
-        "odorate（オドレート）",
-        "レボーン",
-        "日本神荣 (Shinyei)",
-        "广州瑞普医疗 (Guangzhou Ruipu Medical)",
-        "Stratuscent",
-        "サンワテクノス株式会社 (Sunwa Technos Co., Ltd.)",
-        "未指定 (多個研究團隊開發)"
+        "Cubic",
+        "Stanford researchers",
+        "chromatotec.com",
+        "SNIFFI (project/device)",
+        "Fraunhofer IIS",
+        "THINKSENSO&SENSO",
+        "Exalenz Bioscience",
+        "SMELLDECT"
       ],
       "Q2": [
-        "三诺 (Sanuo)",
-        "odorate（オドレート）",
-        "salvatore fracella",
-        "シャープ (Sharp)",
-        "Lifeloc Technologies",
-        "福盈科技深圳有限公司",
-        "odorate",
-        "不詳"
+        "Keto-Mojo",
+        "涂鸦智能 (Tuya Smart)",
+        "GREENWON",
+        "郑州云湛科技有限公司 (Zhengzhou Yunzhan Technology Co., Ltd.)",
+        "三诺",
+        "Toto",
+        "BACtrack",
+        "涂鸦智能"
       ],
       "Q3": [
-        "北京万联达信科仪器有限公司 (Beijing WanLianda XinKe Instruments)",
-        "Transportation.gov",
-        "コア社 (Core)",
-        "Hanwei Electronics Group",
-        "Sunvou Diagnostics",
-        "Exalenz Bioscience",
-        "明光電子",
-        "汉威科技 (Hanwei)"
+        "ByDrug",
+        "commdx.com",
+        "AMETEK-Land",
+        "日本神榮 (Shinyei)",
+        "whhcrk.com",
+        "Medline",
+        "dL Olab",
+        "SZEEK"
       ],
       "Q4": [
-        "雅培 (Abbott)",
-        "smelldect",
-        "Mint",
-        "SIUKE",
-        "OEM/ODM (Alibaba listing)",
-        "冀仪 (Jiyi)",
-        "오네어 (O'Neare)",
-        "더무 (The Mu)"
+        "Keto-Mojo",
+        "OHM 電機",
+        "AHKUCI",
+        "KetoSens",
+        "OUNUO18",
+        "Test Kits USA",
+        "Breath-Alert",
+        "Omron"
       ]
     },
     "labels": {
