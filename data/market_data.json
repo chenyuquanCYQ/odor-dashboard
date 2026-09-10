@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-09T15:00:21"
+    "updated_at": "2026-09-10T15:00:32"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "Cubic",
-        "Stanford researchers",
-        "chromatotec.com",
-        "SNIFFI (project/device)",
-        "Fraunhofer IIS",
-        "THINKSENSO&SENSO",
-        "Exalenz Bioscience",
-        "SMELLDECT"
+        "汉威科技",
+        "ナノセント社",
+        "Winopal",
+        "FlavorActiV",
+        "SHARP (シャープ)",
+        "Teledyne GFD (泰勒達 GFD)",
+        "株式会社アロマビット",
+        "Smart Nanotubes"
       ],
       "Q2": [
-        "Keto-Mojo",
-        "涂鸦智能 (Tuya Smart)",
-        "GREENWON",
-        "郑州云湛科技有限公司 (Zhengzhou Yunzhan Technology Co., Ltd.)",
-        "三诺",
-        "Toto",
-        "BACtrack",
-        "涂鸦智能"
+        "salvatore fracella",
+        "Sharp",
+        "シャープ (Sharp)",
+        "KT-68B",
+        "涂鸦智能",
+        "アロマビット (Aroma Bit)",
+        "Vivatmo (from BOSCH)",
+        "新コスモス電機株式会社"
       ],
       "Q3": [
-        "ByDrug",
-        "commdx.com",
-        "AMETEK-Land",
+        "三洋化成工業株式会社 (Sanyo Chemical Industries, Ltd.)",
         "日本神榮 (Shinyei)",
-        "whhcrk.com",
-        "Medline",
-        "dL Olab",
-        "SZEEK"
+        "Hellopro (經銷商)",
+        "EASTAK INTERNATIONAL CO., LIMITED",
+        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Yiqi Youxian Gongsi)",
+        "Suπ one",
+        "Kalmor有限公司",
+        "Fresenius Umwelttechnik"
       ],
       "Q4": [
-        "Keto-Mojo",
-        "OHM 電機",
+        "三诺健优 (SANNUO)",
         "AHKUCI",
-        "KetoSens",
-        "OUNUO18",
-        "Test Kits USA",
-        "Breath-Alert",
-        "Omron"
+        "倍思",
+        "Evernoa (EVE)",
+        "더무 (The Mu)",
+        "オドレート",
+        "Zero",
+        "通用型"
       ]
     },
     "labels": {
