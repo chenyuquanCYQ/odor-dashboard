@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-10T15:00:32"
+    "updated_at": "2026-09-11T15:00:23"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "汉威科技",
-        "ナノセント社",
-        "Winopal",
-        "FlavorActiV",
-        "SHARP (シャープ)",
-        "Teledyne GFD (泰勒達 GFD)",
-        "株式会社アロマビット",
-        "Smart Nanotubes"
+        "Balzers Instruments AG",
+        "シャープ (SHARP)",
+        "暖芯迦电子科技有限公司",
+        "SRI-Robot",
+        "三洋化成工業株式会社",
+        "医疗科技股份有限公司",
+        "Flavoractiv",
+        "SLM SmellTech"
       ],
       "Q2": [
-        "salvatore fracella",
-        "Sharp",
-        "シャープ (Sharp)",
-        "KT-68B",
-        "涂鸦智能",
-        "アロマビット (Aroma Bit)",
-        "Vivatmo (from BOSCH)",
-        "新コスモス電機株式会社"
+        "Smarter Living",
+        "Bruno MD6",
+        "新コスモス電機株式会社 (New Cosmos Electric Co., Ltd.)",
+        "ScentSational",
+        "PiVIS",
+        "微泰 (Weitai)",
+        "ShowNovo",
+        "Lifeloc Technologies"
       ],
       "Q3": [
-        "三洋化成工業株式会社 (Sanyo Chemical Industries, Ltd.)",
-        "日本神榮 (Shinyei)",
-        "Hellopro (經銷商)",
-        "EASTAK INTERNATIONAL CO., LIMITED",
-        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Yiqi Youxian Gongsi)",
-        "Suπ one",
-        "Kalmor有限公司",
-        "Fresenius Umwelttechnik"
+        "Ametek Land",
+        "PRONOVA",
+        "吉歐實業",
+        "万联达 (Wanlianda)",
+        "Neurovanna",
+        "北京万联达信科仪器有限公司 (Beijing Wanlianda Information Technology Instrument Co., Ltd.)",
+        "AMETEK",
+        "CLD"
       ],
       "Q4": [
-        "三诺健优 (SANNUO)",
-        "AHKUCI",
-        "倍思",
-        "Evernoa (EVE)",
-        "더무 (The Mu)",
-        "オドレート",
-        "Zero",
-        "通用型"
+        "北京亿城 (Beijing Yicheng)",
+        "迪亞特 (Deate)",
+        "캄컴퍼니 (Kam Company)",
+        "ReFlex Wireless",
+        "冀仪 (JiYi)",
+        "XINNUO",
+        "モノタロウ (MonotaRO)",
+        "Kebeteme"
       ]
     },
     "labels": {
