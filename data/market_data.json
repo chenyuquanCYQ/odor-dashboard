@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-11T15:00:23"
+    "updated_at": "2026-09-14T15:00:21"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "Balzers Instruments AG",
-        "シャープ (SHARP)",
-        "暖芯迦电子科技有限公司",
-        "SRI-Robot",
-        "三洋化成工業株式会社",
-        "医疗科技股份有限公司",
-        "Flavoractiv",
-        "SLM SmellTech"
+        "SCOUT2",
+        "中天",
+        "SmartNanotubes Technologies",
+        "Cubic Sensors & Instruments",
+        "Soberlink",
+        "ナノセント社 (NanoScent Ltd.)",
+        "サンワテクノス株式会社 (Sunwa Technos Corporation)",
+        "Taiyo Yuden"
       ],
       "Q2": [
-        "Smarter Living",
-        "Bruno MD6",
-        "新コスモス電機株式会社 (New Cosmos Electric Co., Ltd.)",
-        "ScentSational",
-        "PiVIS",
-        "微泰 (Weitai)",
+        "KT-68B",
+        "Bedfont",
         "ShowNovo",
-        "Lifeloc Technologies"
+        "Y-Brush",
+        "アロマビット",
+        "odorate",
+        "Chinese Patent (中國專利)",
+        "通用型"
       ],
       "Q3": [
-        "Ametek Land",
-        "PRONOVA",
-        "吉歐實業",
-        "万联达 (Wanlianda)",
-        "Neurovanna",
-        "北京万联达信科仪器有限公司 (Beijing Wanlianda Information Technology Instrument Co., Ltd.)",
-        "AMETEK",
-        "CLD"
+        "明光電子",
+        "dL Olab",
+        "MSR-Electronic",
+        "ALCO9",
+        "汉威科技",
+        "Fermion",
+        "Chinacare Medical",
+        "Futry"
       ],
       "Q4": [
-        "北京亿城 (Beijing Yicheng)",
-        "迪亞特 (Deate)",
-        "캄컴퍼니 (Kam Company)",
-        "ReFlex Wireless",
-        "冀仪 (JiYi)",
-        "XINNUO",
-        "モノタロウ (MonotaRO)",
-        "Kebeteme"
+        "Xiuxin秀昕",
+        "汉威科技",
+        "샘터하우스2",
+        "北京一成 (Beijing Yicheng)",
+        "PABO 帕博 (PABO Pabo)",
+        "Fermion",
+        "Futry",
+        "KAGUROBO カルモア"
       ]
     },
     "labels": {
