@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-14T15:00:21"
+    "updated_at": "2026-09-15T15:00:18"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "SCOUT2",
-        "中天",
-        "SmartNanotubes Technologies",
-        "Cubic Sensors & Instruments",
-        "Soberlink",
-        "ナノセント社 (NanoScent Ltd.)",
-        "サンワテクノス株式会社 (Sunwa Technos Corporation)",
-        "Taiyo Yuden"
+        "アロマビット",
+        "太阳诱电株式会社",
+        "深圳市气迹矩阵科技有限责任公司",
+        "영진테크",
+        "Mantra",
+        "Alpha MOS",
+        "Hellopro",
+        "Fraunhofer IIS"
       ],
       "Q2": [
-        "KT-68B",
-        "Bedfont",
-        "ShowNovo",
-        "Y-Brush",
         "アロマビット",
-        "odorate",
-        "Chinese Patent (中國專利)",
-        "通用型"
+        "NIOX",
+        "KT-68B",
+        "ScentSational",
+        "salvatore fracella",
+        "レボーン (RevoN)",
+        "Toto / Yellosis",
+        "福盈科技"
       ],
       "Q3": [
-        "明光電子",
-        "dL Olab",
-        "MSR-Electronic",
-        "ALCO9",
-        "汉威科技",
-        "Fermion",
-        "Chinacare Medical",
-        "Futry"
+        "KIMO",
+        "Karlsruher Institut für Technologie",
+        "MUI Robotics",
+        "艾感科技 (Aigan Technology)",
+        "CommDX",
+        "Evernoa",
+        "Dräger",
+        "安徽养和"
       ],
       "Q4": [
-        "Xiuxin秀昕",
-        "汉威科技",
-        "샘터하우스2",
-        "北京一成 (Beijing Yicheng)",
-        "PABO 帕博 (PABO Pabo)",
-        "Fermion",
-        "Futry",
-        "KAGUROBO カルモア"
+        "Evernoa",
+        "カルモア (Calmoa)",
+        "迪亞特 (Diya Te)",
+        "神栄テクノロジー",
+        "新コスモス電機 (New Cosmos Electric Co., Ltd.)",
+        "VivaChek微策",
+        "Hydsto",
+        "サンコー"
       ]
     },
     "labels": {
