@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-16T15:00:29"
+    "updated_at": "2026-09-17T15:00:19"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "IRIE (株アイ・イー・イー)",
-        "Teledyne Gas and Flame Detection",
-        "Sepsolve",
-        "IL1A",
-        "OBRE",
-        "irie.co.jp",
-        "Sensigent",
-        "Exhalon"
+        "路安卫士 (Lu'an Weishi)",
+        "新コスモス電機 (New Cosmos Electric)",
+        "浙江浙科仪器设备有限公司",
+        "Linköpings universitet",
+        "株式会社カルモア",
+        "未指定 (多個研究團隊開發)",
+        "NIOX",
+        "ナノセント (NanoScent)"
       ],
       "Q2": [
-        "Sharp",
-        "ShowNovo",
+        "odorate",
+        "福盈科技深圳有限公司",
         "Chinese Patent (中國專利)",
-        "專利 (Patent CN211955226U)",
-        "YASEE (雅斯)",
-        "福盈科技深圳有限公司 (Fuying Technology Shenzhen Co., Ltd.)",
-        "Aromabit (アロマビット)",
-        "KETOSCAN"
+        "NIOX",
+        "新コスモス電機株式会社 (New Cosmos Electric Co., Ltd.)",
+        "Bruno MD6",
+        "Bedfont",
+        "シャープ (Sharp)"
       ],
       "Q3": [
-        "NEDO",
-        "Medical Innovation Ventures",
-        "日本新宇宙",
-        "中科微感 (Ningbo CSMSN Technology Co., Ltd.)",
-        "BreathTek",
-        "江苏童医医疗器械有限公司 (Jiangsu Tongyi Medical Device Co., Ltd.)",
-        "IMDEA Nanociencia",
-        "医疗电子股份有限公司"
+        "ENVEA",
+        "GazDetect",
+        "센텍",
+        "OMED Health",
+        "Bosean",
+        "DLO Lab",
+        "UBiT",
+        "MUI Robotics"
       ],
       "Q4": [
-        "하루한템 (Haru Hantem)",
-        "SHM",
-        "日本新宇宙",
-        "Ohm-Electric",
-        "カルモア (Kalmor)",
-        "SPEC-Sensors",
-        "カルモア (Calmor)",
-        "AlcoCONNECT"
+        "GazDetect",
+        "新宇宙電機",
+        "涂鸦智能 (Tuya)",
+        "센텍",
+        "mir",
+        "신쿠슈BK",
+        "Ketodoc",
+        "歐朗凱"
       ]
     },
     "labels": {
