@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-17T15:00:19"
+    "updated_at": "2026-09-18T15:00:31"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "路安卫士 (Lu'an Weishi)",
-        "新コスモス電機 (New Cosmos Electric)",
-        "浙江浙科仪器设备有限公司",
-        "Linköpings universitet",
-        "株式会社カルモア",
-        "未指定 (多個研究團隊開發)",
-        "NIOX",
-        "ナノセント (NanoScent)"
+        "aroma bit",
+        "サンワテクノス株式会社 (Sunwa Technos Corporation)",
+        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Instrument Co., Ltd.)",
+        "Flavoractiv",
+        "日本神荣 (Shinyei)",
+        "广州瑞普医疗",
+        "SRI Robot",
+        "深圳市气迹矩阵科技有限责任公司"
       ],
       "Q2": [
-        "odorate",
-        "福盈科技深圳有限公司",
-        "Chinese Patent (中國專利)",
-        "NIOX",
-        "新コスモス電機株式会社 (New Cosmos Electric Co., Ltd.)",
-        "Bruno MD6",
-        "Bedfont",
-        "シャープ (Sharp)"
+        "Keto-Mojo",
+        "福盈科技",
+        "FoodMarble",
+        "GREENWON",
+        "Alpha MOS",
+        "シャープ (Sharp)",
+        "Vivatmo (von BOSCH)",
+        "Toto / Yellosis"
       ],
       "Q3": [
-        "ENVEA",
-        "GazDetect",
-        "센텍",
-        "OMED Health",
-        "Bosean",
-        "DLO Lab",
-        "UBiT",
-        "MUI Robotics"
+        "SPBTAR",
+        "Quest Diagnostics (經銷商)",
+        "PyloPLUS™",
+        "英思科",
+        "New Cosmos Electric Co., Ltd.",
+        "新コスモス電機 (New Cosmos Electric)",
+        "不詳",
+        "Sunvou Medical Electronics"
       ],
       "Q4": [
-        "GazDetect",
-        "新宇宙電機",
+        "Bruno",
         "涂鸦智能 (Tuya)",
-        "센텍",
-        "mir",
-        "신쿠슈BK",
-        "Ketodoc",
-        "歐朗凱"
+        "拾计 (ShiJi)",
+        "ヨドバシ",
+        "Reflex",
+        "Panasonic",
+        "新コスモス電機 (New Cosmos Electric)",
+        "不詳"
       ]
     },
     "labels": {
