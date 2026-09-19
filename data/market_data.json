@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-18T15:00:31"
+    "updated_at": "2026-09-19T15:00:28"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "aroma bit",
-        "サンワテクノス株式会社 (Sunwa Technos Corporation)",
-        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Instrument Co., Ltd.)",
-        "Flavoractiv",
-        "日本神荣 (Shinyei)",
-        "广州瑞普医疗",
-        "SRI Robot",
-        "深圳市气迹矩阵科技有限责任公司"
+        "東京工科大学",
+        "irie Co., Ltd.",
+        "Ainos and Kenmec",
+        "AIRSENSE/盈盛恒泰",
+        "Trendtop",
+        "シャープ",
+        "未指定 (多個研究團隊開發)",
+        "广州瑞普医疗 (Guangzhou Ruipu Medical)"
       ],
       "Q2": [
-        "Keto-Mojo",
+        "新コスモス電機株式会社 (New Cosmos Electric Co., Ltd.)",
         "福盈科技",
-        "FoodMarble",
-        "GREENWON",
-        "Alpha MOS",
-        "シャープ (Sharp)",
-        "Vivatmo (von BOSCH)",
-        "Toto / Yellosis"
+        "salvatore fracella",
+        "レボーン (Revoon)",
+        "Bruno MD6",
+        "Lifeloc Technologies",
+        "Shinyei (神栄テクノロジー)",
+        "專利 (Patent CN211955226U)"
       ],
       "Q3": [
-        "SPBTAR",
-        "Quest Diagnostics (經銷商)",
-        "PyloPLUS™",
-        "英思科",
-        "New Cosmos Electric Co., Ltd.",
-        "新コスモス電機 (New Cosmos Electric)",
-        "不詳",
-        "Sunvou Medical Electronics"
+        "浙江浙科儀器設備有限公司 (Zhejiang Zhekai Instrument & Equipment Co., Ltd.)",
+        "센텍",
+        "ureabreathtests.com",
+        "University of Texas at Dallas (Research)",
+        "NEW COSMOS (新コスモス電機)",
+        "新考思莫施电子(上海)有限公司",
+        "AI Sensing Technology",
+        "GasDog"
       ],
       "Q4": [
-        "Bruno",
-        "涂鸦智能 (Tuya)",
-        "拾计 (ShiJi)",
-        "ヨドバシ",
-        "Reflex",
-        "Panasonic",
-        "新コスモス電機 (New Cosmos Electric)",
-        "不詳"
+        "포포",
+        "센텍",
+        "해외직구포포 (Overseas Direct Purchase Popo)",
+        "株式会社アロマビット (Aroma Bit)",
+        "air-q",
+        "北京一成 (Beijing Yicheng)",
+        "ANAMI",
+        "倍思"
       ]
     },
     "labels": {
