@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-19T15:00:28"
+    "updated_at": "2026-09-20T15:00:27"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "東京工科大学",
-        "irie Co., Ltd.",
-        "Ainos and Kenmec",
-        "AIRSENSE/盈盛恒泰",
-        "Trendtop",
-        "シャープ",
-        "未指定 (多個研究團隊開發)",
-        "广州瑞普医疗 (Guangzhou Ruipu Medical)"
+        "Tuya (涂鴉)",
+        "中国科学院 (Chinese Academy of Sciences)",
+        "廣運 (Kwangyuen)",
+        "Thermofisher",
+        "Osmotech (Lifeanalytics)",
+        "Ellona",
+        "村田製作所",
+        "霍尼韦尔 (Honeywell)"
       ],
       "Q2": [
-        "新コスモス電機株式会社 (New Cosmos Electric Co., Ltd.)",
-        "福盈科技",
-        "salvatore fracella",
-        "レボーン (Revoon)",
-        "Bruno MD6",
+        "專利 (Patent CN211955226U)",
+        "新コスモス電機株式会社",
+        "odorate（オドレート）",
         "Lifeloc Technologies",
-        "Shinyei (神栄テクノロジー)",
-        "專利 (Patent CN211955226U)"
+        "FoodMarble",
+        "Toto",
+        "Bruno MD6",
+        "Vivatmo"
       ],
       "Q3": [
-        "浙江浙科儀器設備有限公司 (Zhejiang Zhekai Instrument & Equipment Co., Ltd.)",
-        "센텍",
-        "ureabreathtests.com",
-        "University of Texas at Dallas (Research)",
-        "NEW COSMOS (新コスモス電機)",
-        "新考思莫施电子(上海)有限公司",
-        "AI Sensing Technology",
-        "GasDog"
+        "德尔格 (Dräger)",
+        "中国同辐 (Unnamed Subsidiary)",
+        "OMX (Univo)",
+        "明光電子",
+        "PyloPLUS (Gulf Coast Scientific)",
+        "Transportation.gov",
+        "Branom Ins",
+        "mybest"
       ],
       "Q4": [
-        "포포",
-        "센텍",
-        "해외직구포포 (Overseas Direct Purchase Popo)",
-        "株式会社アロマビット (Aroma Bit)",
-        "air-q",
-        "北京一成 (Beijing Yicheng)",
-        "ANAMI",
-        "倍思"
+        "DIYatel 202S",
+        "Bedfont®",
+        "Diyatel",
+        "深圳市源晟衡器有限公司 (Shenzhen Yuansheng Hengqi)",
+        "雅培 (Abbott)",
+        "OEM/ODM (Alibaba listing)",
+        "Zero",
+        "北京亿城 (Beijing Yicheng)"
       ]
     },
     "labels": {
