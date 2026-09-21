@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-20T15:00:27"
+    "updated_at": "2026-09-21T15:00:22"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "Tuya (涂鴉)",
-        "中国科学院 (Chinese Academy of Sciences)",
-        "廣運 (Kwangyuen)",
-        "Thermofisher",
-        "Osmotech (Lifeanalytics)",
-        "Ellona",
-        "村田製作所",
-        "霍尼韦尔 (Honeywell)"
+        "AMETEK Land",
+        "yanlania",
+        "Cubic",
+        "中天",
+        "Senseair",
+        "開發團隊",
+        "SRI Robot",
+        "神栄テクノロジー (Shinyei Technology)"
       ],
       "Q2": [
-        "專利 (Patent CN211955226U)",
-        "新コスモス電機株式会社",
-        "odorate（オドレート）",
-        "Lifeloc Technologies",
-        "FoodMarble",
+        "KETOSCAN",
+        "シャープ (Sharp)",
+        "成功大學",
         "Toto",
-        "Bruno MD6",
-        "Vivatmo"
+        "レボーン (RevoN)",
+        "SYNC",
+        "FoodMarble",
+        "Vivatmo (von BOSCH)"
       ],
       "Q3": [
-        "德尔格 (Dräger)",
+        "德國Pfeiffer (Pfeiffer)",
         "中国同辐 (Unnamed Subsidiary)",
-        "OMX (Univo)",
-        "明光電子",
-        "PyloPLUS (Gulf Coast Scientific)",
-        "Transportation.gov",
-        "Branom Ins",
-        "mybest"
+        "KIMO",
+        "Senseair",
+        "센텍",
+        "费加罗技研 (Figaro)",
+        "神栄テクノロジー (Shinyei Technology)",
+        "NObreath (NOB)"
       ],
       "Q4": [
-        "DIYatel 202S",
-        "Bedfont®",
-        "Diyatel",
-        "深圳市源晟衡器有限公司 (Shenzhen Yuansheng Hengqi)",
-        "雅培 (Abbott)",
-        "OEM/ODM (Alibaba listing)",
-        "Zero",
-        "北京亿城 (Beijing Yicheng)"
+        "松下 (Panasonic)",
+        "SHM",
+        "센텍",
+        "ACtrack",
+        "Levl",
+        "Micfendy",
+        "迪亞特 (Diate)",
+        "迪亞特 (Deate)"
       ]
     },
     "labels": {
