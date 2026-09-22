@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-21T15:00:22"
+    "updated_at": "2026-09-22T15:01:01"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "AMETEK Land",
-        "yanlania",
-        "Cubic",
-        "中天",
-        "Senseair",
-        "開發團隊",
-        "SRI Robot",
-        "神栄テクノロジー (Shinyei Technology)"
+        "Trio-Smart (Gemelli Biotech)",
+        "cubic",
+        "MIT",
+        "Pfeiffer",
+        "Smiths Detection",
+        "村田製作所 (Murata Manufacturing)",
+        "Innovaer Technologies",
+        "浙江浙科仪器设备有限公司"
       ],
       "Q2": [
+        "Ariese",
+        "Vivatmo",
+        "GREENWON",
+        "不詳",
+        "I-PEX",
+        "研究團隊",
         "KETOSCAN",
-        "シャープ (Sharp)",
-        "成功大學",
-        "Toto",
-        "レボーン (RevoN)",
-        "SYNC",
-        "FoodMarble",
-        "Vivatmo (von BOSCH)"
+        "YASEE (雅斯)"
       ],
       "Q3": [
-        "德國Pfeiffer (Pfeiffer)",
-        "中国同辐 (Unnamed Subsidiary)",
-        "KIMO",
-        "Senseair",
-        "센텍",
-        "费加罗技研 (Figaro)",
-        "神栄テクノロジー (Shinyei Technology)",
-        "NObreath (NOB)"
+        "DLOLab",
+        "Seitron",
+        "Ion Science",
+        "電子科學 (Electronic Science)",
+        "太阳诱电株式会社 (Taiyo Yuden Co., Ltd.)",
+        "費加羅技研",
+        "KAGUROBO カルモア (KAGUROBO Calmoa)",
+        "eLichens"
       ],
       "Q4": [
-        "松下 (Panasonic)",
-        "SHM",
-        "센텍",
-        "ACtrack",
-        "Levl",
-        "Micfendy",
-        "迪亞特 (Diate)",
-        "迪亞特 (Deate)"
+        "Patent",
+        "松下",
+        "北京依誠 (Beijing Yicheng)",
+        "Amazon.it",
+        "WG1",
+        "雅培",
+        "江蘇童醫醫療器械有限公司",
+        "通用"
       ]
     },
     "labels": {
