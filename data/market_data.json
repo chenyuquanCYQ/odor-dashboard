@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-22T15:01:01"
+    "updated_at": "2026-09-23T15:00:44"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "Trio-Smart (Gemelli Biotech)",
-        "cubic",
+        "村田製作所 (Murata Manufacturing Co., Ltd.)",
+        "中科微感（宁波）科技有限公司",
+        "ナノセント社 (Nanoscents Inc.)",
+        "SmartNanotubes Technologies",
+        "上海機器人產業技術研究院",
+        "SMELLDECT",
         "MIT",
-        "Pfeiffer",
-        "Smiths Detection",
-        "村田製作所 (Murata Manufacturing)",
-        "Innovaer Technologies",
-        "浙江浙科仪器设备有限公司"
+        "郑州云湛科技有限公司"
       ],
       "Q2": [
+        "成功大學",
+        "恆翼國際股份有限公司",
+        "YRY",
+        "Xiuxin",
+        "Sharp (シャープ)",
+        "Sisco",
         "Ariese",
-        "Vivatmo",
-        "GREENWON",
-        "不詳",
-        "I-PEX",
-        "研究團隊",
-        "KETOSCAN",
-        "YASEE (雅斯)"
+        "涂鸦智能"
       ],
       "Q3": [
-        "DLOLab",
-        "Seitron",
-        "Ion Science",
-        "電子科學 (Electronic Science)",
-        "太阳诱电株式会社 (Taiyo Yuden Co., Ltd.)",
-        "費加羅技研",
-        "KAGUROBO カルモア (KAGUROBO Calmoa)",
-        "eLichens"
+        "Sens4",
+        "不詳 (見XP-329IIIR為New Cosmos)",
+        "電子科學",
+        "Sensor Electronics",
+        "BreathID (Exalenz)",
+        "szeek",
+        "Sciencedirect.com",
+        "Bruker"
       ],
       "Q4": [
-        "Patent",
-        "松下",
-        "北京依誠 (Beijing Yicheng)",
-        "Amazon.it",
-        "WG1",
+        "EnviteC",
+        "Sens4",
+        "電子科學",
+        "OMX-SRM (TDM)",
         "雅培",
-        "江蘇童醫醫療器械有限公司",
-        "通用"
+        "VivaChek",
+        "カルモア (Calmora)",
+        "캄컴퍼니 (KamCompany)"
       ]
     },
     "labels": {
