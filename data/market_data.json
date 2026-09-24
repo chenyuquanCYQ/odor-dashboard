@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-23T15:00:44"
+    "updated_at": "2026-09-24T15:00:35"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "村田製作所 (Murata Manufacturing Co., Ltd.)",
-        "中科微感（宁波）科技有限公司",
-        "ナノセント社 (Nanoscents Inc.)",
-        "SmartNanotubes Technologies",
-        "上海機器人產業技術研究院",
-        "SMELLDECT",
-        "MIT",
-        "郑州云湛科技有限公司"
+        "하이크마이크로 (Hikmicro)",
+        "Exalenz Bioscience",
+        "清華大學系友企業",
+        "サンワテクノス株式会社 (Sunwa Technos Co., Ltd.)",
+        "ScentSational Scent Sciences",
+        "SPEC Sensors",
+        "シャープ (SHARP)",
+        "新コスモス電機 (New Cosmos Electric Co., Ltd.)"
       ],
       "Q2": [
-        "成功大學",
-        "恆翼國際股份有限公司",
-        "YRY",
-        "Xiuxin",
-        "Sharp (シャープ)",
-        "Sisco",
+        "Keto-Mojo",
         "Ariese",
-        "涂鸦智能"
+        "Bedfont",
+        "ShowNovo",
+        "福盈科技深圳有限公司",
+        "不詳",
+        "Sharp (シャープ)",
+        "XiuXin (秀昕)"
       ],
       "Q3": [
-        "Sens4",
-        "不詳 (見XP-329IIIR為New Cosmos)",
-        "電子科學",
-        "Sensor Electronics",
-        "BreathID (Exalenz)",
-        "szeek",
-        "Sciencedirect.com",
-        "Bruker"
+        "G.A.S. analytische Sensorsysteme",
+        "richen-med.com",
+        "Exalenz Bioscience",
+        "RuiBreath",
+        "Wuzhoumed",
+        "UBiT",
+        "Aromabit",
+        "Branom Ins"
       ],
       "Q4": [
-        "EnviteC",
-        "Sens4",
-        "電子科學",
-        "OMX-SRM (TDM)",
-        "雅培",
-        "VivaChek",
-        "カルモア (Calmora)",
-        "캄컴퍼니 (KamCompany)"
+        "Shenzhen Hanwei Iot Co., Ltd.",
+        "더무 (The Mu)",
+        "小易智测 (Xiaoyi Zhice)",
+        "Gleednc",
+        "해외직구포포 (Overseas Direct Purchase Popo)",
+        "OHM Electric",
+        "Askmuse",
+        "Aromabit"
       ]
     },
     "labels": {
