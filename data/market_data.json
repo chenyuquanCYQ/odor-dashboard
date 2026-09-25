@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-24T15:00:35"
+    "updated_at": "2026-09-25T15:00:39"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "하이크마이크로 (Hikmicro)",
-        "Exalenz Bioscience",
-        "清華大學系友企業",
-        "サンワテクノス株式会社 (Sunwa Technos Co., Ltd.)",
-        "ScentSational Scent Sciences",
-        "SPEC Sensors",
-        "シャープ (SHARP)",
-        "新コスモス電機 (New Cosmos Electric Co., Ltd.)"
+        "IL1A",
+        "广州瑞普医疗 (Guangzhou Ruipumedical)",
+        "Honeywell",
+        "SNIFFI (project/device)",
+        "Bosch Sensortec",
+        "PCA Technologies",
+        "Ainos",
+        "BASELINE"
       ],
       "Q2": [
-        "Keto-Mojo",
-        "Ariese",
-        "Bedfont",
+        "Kunkun Body",
         "ShowNovo",
-        "福盈科技深圳有限公司",
-        "不詳",
-        "Sharp (シャープ)",
-        "XiuXin (秀昕)"
+        "ScentSational",
+        "YRY",
+        "Vivatmo",
+        "GREENWON",
+        "Sisco",
+        "Ainos"
       ],
       "Q3": [
-        "G.A.S. analytische Sensorsysteme",
-        "richen-med.com",
-        "Exalenz Bioscience",
-        "RuiBreath",
-        "Wuzhoumed",
-        "UBiT",
-        "Aromabit",
-        "Branom Ins"
+        "费加罗技研 (Figaro Engineering)",
+        "Bosch Sensortec",
+        "New Cosmos Electric Co., Ltd.",
+        "NEW COSMOS (新コスモス電機)",
+        "吉歐實業 (Geo Industries)",
+        "KAGUROBO カルモア (KAGUROBO Calmoa)",
+        "Sciencedirect.com",
+        "cosmos"
       ],
       "Q4": [
-        "Shenzhen Hanwei Iot Co., Ltd.",
+        "Breathometer",
+        "Keto Coach",
         "더무 (The Mu)",
-        "小易智测 (Xiaoyi Zhice)",
-        "Gleednc",
-        "해외직구포포 (Overseas Direct Purchase Popo)",
-        "OHM Electric",
-        "Askmuse",
-        "Aromabit"
+        "Ishino(イシノ)",
+        "Bosch Sensortec",
+        "Jeekooe",
+        "Anfurt",
+        "百利达"
       ]
     },
     "labels": {
