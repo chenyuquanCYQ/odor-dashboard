@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-25T15:00:39"
+    "updated_at": "2026-09-26T15:00:27"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "IL1A",
-        "广州瑞普医疗 (Guangzhou Ruipumedical)",
-        "Honeywell",
-        "SNIFFI (project/device)",
-        "Bosch Sensortec",
-        "PCA Technologies",
-        "Ainos",
-        "BASELINE"
+        "University of Hertfordshire researchers",
+        "Pason Systems Inc.",
+        "하이크마이크로 (Hikmicro)",
+        "Linköping University (研究員)",
+        "三洋化成工業株式会社",
+        "Osmotech",
+        "サンワテクノス株式会社 (Sunwa Technos Co., Ltd.)",
+        "Zetron"
       ],
       "Q2": [
-        "Kunkun Body",
-        "ShowNovo",
-        "ScentSational",
-        "YRY",
-        "Vivatmo",
-        "GREENWON",
-        "Sisco",
-        "Ainos"
+        "不詳",
+        "レボーン (RevoN)",
+        "Chinese Patent (中國專利)",
+        "KT-68B",
+        "三诺 (Sanuo)",
+        "Smarter Living",
+        "YASEE (雅斯)",
+        "恆翼國際股份有限公司"
       ],
       "Q3": [
-        "费加罗技研 (Figaro Engineering)",
-        "Bosch Sensortec",
-        "New Cosmos Electric Co., Ltd.",
-        "NEW COSMOS (新コスモス電機)",
-        "吉歐實業 (Geo Industries)",
-        "KAGUROBO カルモア (KAGUROBO Calmoa)",
-        "Sciencedirect.com",
-        "cosmos"
+        "하이크마이크로 (Hikmicro)",
+        "Lumen",
+        "코스모스",
+        "神荣",
+        "德国苏斯 (German Soos)",
+        "FoodMarble",
+        "兆为 (Zhaowei)",
+        "太阳诱电株式会社 (Taiyo Yuden Co., Ltd.)"
       ],
       "Q4": [
-        "Breathometer",
-        "Keto Coach",
-        "더무 (The Mu)",
-        "Ishino(イシノ)",
-        "Bosch Sensortec",
-        "Jeekooe",
-        "Anfurt",
-        "百利达"
+        "YZYDF",
+        "Smart Start",
+        "wellgosensor",
+        "Sparkfun",
+        "odorate",
+        "Ketyo",
+        "Tomicoco",
+        "Unbranded (From Shenzhen Hualixin Technology Co., Ltd. listing)"
       ]
     },
     "labels": {
