@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-27T15:00:29"
+    "updated_at": "2026-09-28T15:00:34"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "中科微感 (CSMSN)",
-        "太阳诱电株式会社",
-        "Youngjin Tech (영진테크)",
-        "Air-Q",
-        "Ainos",
-        "MUSA Scarl",
-        "BACtrack",
-        "MIOPAS"
+        "Alpha MOS",
+        "Linköping University (研究員)",
+        "東京工科大学",
+        "IRIE",
+        "SMELLDECT",
+        "Balzers Instruments AG",
+        "PRECISE (研究專案)",
+        "Honeywell"
       ],
       "Q2": [
-        "Toto",
-        "微泰 (Weitai)",
-        "REX-RENTAL",
-        "ShowNovo",
-        "レボーン (Revoon)",
-        "odorate",
-        "salvatore fracella",
-        "GREENWON"
+        "odorate（オドレート）",
+        "Bruno MD6",
+        "WG1 (ShowNovo 首昕)",
+        "專利 (Patent CN211955226U)",
+        "XiuXin",
+        "SYNC",
+        "Alpha MOS",
+        "XiuXin (秀昕)"
       ],
       "Q3": [
-        "HKUST",
-        "北京万联达信科仪器有限公司 (Beijing WanLianda XinKe Instrument Co., Ltd.)",
-        "BL-002",
-        "New Cosmos Electric Co., Ltd. (New Cosmos)",
-        "Kalmor有限公司 (Kalmor Co., Ltd.)",
-        "Winsen Electronics Technology Co., Ltd.",
-        "duotec",
-        "霍尼韦尔 (Honeywell)"
+        "中核",
+        "MGC Diagnostics",
+        "PyloPlus®",
+        "日本神榮 (Shinyei)",
+        "Lumen",
+        "LabMedica",
+        "Suπ one",
+        "由電"
       ],
       "Q4": [
-        "BC-312",
-        "北京亿城 (Beijing Yicheng)",
-        "浙江浙科仪器设备有限公司 (Zhejiang ZK Instruments & Equipment Co., Ltd.)",
-        "日本研製 (Japan-made)",
-        "mojoo",
-        "CozyTemp",
-        "Unbranded (From Shenzhen Hualixin Technology Co., Ltd. listing)",
-        "AllClear Healthcare"
+        "中核",
+        "Gazdetect",
+        "YUNMI",
+        "U-Scan",
+        "Aikesi Electronic Technology",
+        "Shenzhen Ouye Electronic Co. (深圳歐野電子有限公司)",
+        "TDM",
+        "케이엠티엘 (KMTL)"
       ]
     },
     "labels": {
