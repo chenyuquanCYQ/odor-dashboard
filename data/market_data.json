@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-28T15:00:34"
+    "updated_at": "2026-09-29T15:00:46"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "Alpha MOS",
-        "Linköping University (研究員)",
-        "東京工科大学",
-        "IRIE",
-        "SMELLDECT",
-        "Balzers Instruments AG",
-        "PRECISE (研究專案)",
-        "Honeywell"
+        "SACMI",
+        "太阳诱电 (Taiyo Yuden)",
+        "Smiths Detection",
+        "中天",
+        "暖芯迦电子科技有限公司",
+        "汉威科技",
+        "musascarl.it",
+        "广州瑞普医疗 (Guangzhou RuiPu Medical)"
       ],
       "Q2": [
-        "odorate（オドレート）",
-        "Bruno MD6",
-        "WG1 (ShowNovo 首昕)",
-        "專利 (Patent CN211955226U)",
+        "BACtrack",
+        "PiVIS",
         "XiuXin",
-        "SYNC",
-        "Alpha MOS",
-        "XiuXin (秀昕)"
+        "XiuXin (秀昕)",
+        "Lifeloc Technologies",
+        "無",
+        "福盈科技",
+        "SYNC"
       ],
       "Q3": [
-        "中核",
-        "MGC Diagnostics",
-        "PyloPlus®",
+        "DLOLab",
         "日本神榮 (Shinyei)",
-        "Lumen",
-        "LabMedica",
-        "Suπ one",
-        "由電"
+        "ams",
+        "汉威科技 (Hanwei Electronics)",
+        "Honeywell",
+        "EDI Japan株式会社",
+        "mybest",
+        "BreathTek"
       ],
       "Q4": [
-        "中核",
-        "Gazdetect",
-        "YUNMI",
-        "U-Scan",
-        "Aikesi Electronic Technology",
-        "Shenzhen Ouye Electronic Co. (深圳歐野電子有限公司)",
-        "TDM",
-        "케이엠티엘 (KMTL)"
+        "サンコー (Sanko)",
+        "포포 (Pofo)",
+        "Biosense",
+        "BC-312",
+        "汉威科技 (Hanwei Electronics)",
+        "Aunnhon KC02",
+        "GREENWON",
+        "신쿠슈BK"
       ]
     },
     "labels": {
