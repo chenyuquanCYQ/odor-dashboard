@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-29T15:00:46"
+    "updated_at": "2026-09-30T15:00:20"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "SACMI",
-        "太阳诱电 (Taiyo Yuden)",
-        "Smiths Detection",
-        "中天",
-        "暖芯迦电子科技有限公司",
-        "汉威科技",
-        "musascarl.it",
-        "广州瑞普医疗 (Guangzhou RuiPu Medical)"
+        "SmartNanotubes Technologies",
+        "浙江浙科仪器设备有限公司",
+        "Stanford researchers",
+        "上海機器人產業技術研究院",
+        "村田製作所",
+        "Sepsolve",
+        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Instrument Co., Ltd.)",
+        "Milvus Consulting"
       ],
       "Q2": [
-        "BACtrack",
-        "PiVIS",
-        "XiuXin",
-        "XiuXin (秀昕)",
-        "Lifeloc Technologies",
-        "無",
-        "福盈科技",
-        "SYNC"
+        "REX-RENTAL",
+        "Alpha MOS",
+        "通用型",
+        "Unnamed",
+        "アロマビット (Aroma Bit)",
+        "Bruno MD6",
+        "Toto",
+        "アロマビット"
       ],
       "Q3": [
-        "DLOLab",
-        "日本神榮 (Shinyei)",
-        "ams",
-        "汉威科技 (Hanwei Electronics)",
-        "Honeywell",
-        "EDI Japan株式会社",
-        "mybest",
-        "BreathTek"
+        "Sensor Sense (感測器感測)",
+        "村田製作所",
+        "Smell Inspector (project/product)",
+        "Backerclub",
+        "Lumen",
+        "太阳誘電株式会社",
+        "Sciencedirect.com",
+        "AIRSENSE/盈盛恒泰"
       ],
       "Q4": [
-        "サンコー (Sanko)",
-        "포포 (Pofo)",
-        "Biosense",
-        "BC-312",
-        "汉威科技 (Hanwei Electronics)",
-        "Aunnhon KC02",
-        "GREENWON",
-        "신쿠슈BK"
+        "モノタロウ (MonotaRO)",
+        "iSOBER",
+        "Wellgo Sensor",
+        "Carsien",
+        "OMX-SRM (TDM)",
+        "深圳市华立鑫科技有限公司 (Shenzhen Hualixin Technology Co., Ltd.)",
+        "XIXIAN",
+        "Xiuxin秀昕"
       ]
     },
     "labels": {
