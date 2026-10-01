@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-09-30T15:00:20"
+    "updated_at": "2026-10-01T15:00:28"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "SmartNanotubes Technologies",
-        "浙江浙科仪器设备有限公司",
-        "Stanford researchers",
-        "上海機器人產業技術研究院",
-        "村田製作所",
-        "Sepsolve",
-        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Instrument Co., Ltd.)",
-        "Milvus Consulting"
+        "chromatotec.com",
+        "太阳诱电株式会社",
+        "IL1A",
+        "中科微感（宁波）科技有限公司 (CSMSN (Ningbo) Technology Co., Ltd.)",
+        "The eNose Company",
+        "Branom",
+        "AIRSENSE/盈盛恒泰",
+        "duotec GmbH"
       ],
       "Q2": [
-        "REX-RENTAL",
-        "Alpha MOS",
-        "通用型",
-        "Unnamed",
+        "ShowNovo",
+        "PiVIS",
+        "odorate（オドレート）",
+        "Ariese",
+        "シャープ (Sharp)",
         "アロマビット (Aroma Bit)",
-        "Bruno MD6",
-        "Toto",
-        "アロマビット"
+        "YASEE (雅斯)",
+        "NESS"
       ],
       "Q3": [
-        "Sensor Sense (感測器感測)",
-        "村田製作所",
-        "Smell Inspector (project/product)",
-        "Backerclub",
-        "Lumen",
-        "太阳誘電株式会社",
-        "Sciencedirect.com",
-        "AIRSENSE/盈盛恒泰"
+        "宁波爱氪森科技有限公司",
+        "The eNose Company",
+        "Commonwealth Diagnostics",
+        "汉威科技 (Hanwei Electronics)",
+        "ureabreathtests.com",
+        "由電",
+        "三诺",
+        "richen-med.com (Richen Medical)"
       ],
       "Q4": [
-        "モノタロウ (MonotaRO)",
-        "iSOBER",
-        "Wellgo Sensor",
-        "Carsien",
-        "OMX-SRM (TDM)",
-        "深圳市华立鑫科技有限公司 (Shenzhen Hualixin Technology Co., Ltd.)",
-        "XIXIAN",
-        "Xiuxin秀昕"
+        "Quanzhou Huangbo Group Co.,Ltd",
+        "OMX (歐美克斯)",
+        "OMED Health (Owlstone Medical)",
+        "wellgosensor.com",
+        "KetoSens",
+        "Aikesi Electronic Technology",
+        "klaren",
+        "汉威科技 (Hanwei Electronics)"
       ]
     },
     "labels": {
