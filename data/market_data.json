@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-01T15:00:28"
+    "updated_at": "2026-10-02T15:00:23"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
+        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Instrument Co., Ltd.)",
         "chromatotec.com",
-        "太阳诱电株式会社",
-        "IL1A",
-        "中科微感（宁波）科技有限公司 (CSMSN (Ningbo) Technology Co., Ltd.)",
-        "The eNose Company",
-        "Branom",
-        "AIRSENSE/盈盛恒泰",
-        "duotec GmbH"
+        "郑州云湛科技有限公司",
+        "OBRE",
+        "サンワテクノス株式会社",
+        "新コスモス電機",
+        "レボーン",
+        "ナノセント社 (NanoScent)"
       ],
       "Q2": [
-        "ShowNovo",
-        "PiVIS",
-        "odorate（オドレート）",
-        "Ariese",
-        "シャープ (Sharp)",
-        "アロマビット (Aroma Bit)",
-        "YASEE (雅斯)",
-        "NESS"
+        "Aromabit (アロマビット)",
+        "Toto / Yellosis",
+        "Sharp",
+        "Keto-Mojo",
+        "恆翼國際股份有限公司",
+        "レボーン (RevoN)",
+        "ScentSational",
+        "アロマビット (Aroma Bit)"
       ],
       "Q3": [
-        "宁波爱氪森科技有限公司",
-        "The eNose Company",
-        "Commonwealth Diagnostics",
-        "汉威科技 (Hanwei Electronics)",
-        "ureabreathtests.com",
-        "由電",
-        "三诺",
-        "richen-med.com (Richen Medical)"
+        "Lumen",
+        "ASCO",
+        "Yokogawa Electric Corporation",
+        "Sunvou Medical Electronics",
+        "SUTO ITEC",
+        "IMDEA Nanociencia",
+        "Smart Nanotubes Technologies",
+        "Kalmor"
       ],
       "Q4": [
-        "Quanzhou Huangbo Group Co.,Ltd",
-        "OMX (歐美克斯)",
-        "OMED Health (Owlstone Medical)",
-        "wellgosensor.com",
-        "KetoSens",
-        "Aikesi Electronic Technology",
-        "klaren",
-        "汉威科技 (Hanwei Electronics)"
+        "Biosense",
+        "JSC",
+        "오네어 (Onair)",
+        "Shenzhen Jinsenchuan Technology (深圳金森川科技)",
+        "日本研製 (Japan-made)",
+        "百利达",
+        "Vivatmo (by BOSCH)",
+        "DrinkMate"
       ]
     },
     "labels": {
