@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-02T15:00:23"
+    "updated_at": "2026-10-03T15:00:24"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Instrument Co., Ltd.)",
-        "chromatotec.com",
-        "郑州云湛科技有限公司",
-        "OBRE",
-        "サンワテクノス株式会社",
-        "新コスモス電機",
-        "レボーン",
-        "ナノセント社 (NanoScent)"
+        "Respiro Diagnostics",
+        "Smell Inspector",
+        "广州瑞普医疗 (Guangzhou RuiPu Medical)",
+        "FlavorActiV",
+        "Osmotech",
+        "KAGUROBO",
+        "SHARP (シャープ)",
+        "シャープ"
       ],
       "Q2": [
-        "Aromabit (アロマビット)",
-        "Toto / Yellosis",
+        "GREENWON",
+        "無",
         "Sharp",
-        "Keto-Mojo",
-        "恆翼國際股份有限公司",
-        "レボーン (RevoN)",
-        "ScentSational",
-        "アロマビット (Aroma Bit)"
+        "ShowNovo",
+        "XiuXin (秀昕)",
+        "YRY",
+        "Bruno MD6",
+        "Kunkun Body"
       ],
       "Q3": [
-        "Lumen",
-        "ASCO",
-        "Yokogawa Electric Corporation",
-        "Sunvou Medical Electronics",
-        "SUTO ITEC",
-        "IMDEA Nanociencia",
-        "Smart Nanotubes Technologies",
+        "株式会社カルモア (Karumoa)",
+        "Hellopro (經銷商)",
+        "KAGUROBO",
+        "Heliforce",
+        "GasDetect A/S",
+        "汉威科技集团股份有限公司 (Hanwei Technology Group Co., Ltd.)",
+        "コア社 (Core Co.)",
         "Kalmor"
       ],
       "Q4": [
-        "Biosense",
-        "JSC",
-        "오네어 (Onair)",
-        "Shenzhen Jinsenchuan Technology (深圳金森川科技)",
-        "日本研製 (Japan-made)",
-        "百利达",
-        "Vivatmo (by BOSCH)",
-        "DrinkMate"
+        "Baugger",
+        "Nanjing KELISAIKE Safety Equipment Co., Ltd.",
+        "株式会社カルモア (Karumoa)",
+        "Quanzhou Huangbo Group Co.,Ltd",
+        "eeketone.com",
+        "欧朗凯 (Oulang Kai)",
+        "세주엔지니어링 (Sejoo Engineering)",
+        "Kebeteme"
       ]
     },
     "labels": {
