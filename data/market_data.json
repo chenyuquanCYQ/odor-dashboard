@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-03T15:00:24"
+    "updated_at": "2026-10-04T15:00:25"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "Respiro Diagnostics",
-        "Smell Inspector",
-        "广州瑞普医疗 (Guangzhou RuiPu Medical)",
-        "FlavorActiV",
-        "Osmotech",
-        "KAGUROBO",
-        "SHARP (シャープ)",
-        "シャープ"
+        "Ainos and Kenmec",
+        "Alphasense",
+        "Cubic Sensors & Instruments",
+        "中天",
+        "サンワテクノス株式会社 (Sunwa Technos Corporation)",
+        "未說明",
+        "Teledyne GFD (泰勒達 GFD)",
+        "德國Pfeiffer"
       ],
       "Q2": [
-        "GREENWON",
-        "無",
-        "Sharp",
+        "研究團隊",
         "ShowNovo",
-        "XiuXin (秀昕)",
-        "YRY",
-        "Bruno MD6",
-        "Kunkun Body"
+        "Unnamed",
+        "微泰 (Weitai)",
+        "シャープ (Sharp)",
+        "Ueecool",
+        "Aromabit (アロマビット)",
+        "福盈科技"
       ],
       "Q3": [
-        "株式会社カルモア (Karumoa)",
-        "Hellopro (經銷商)",
-        "KAGUROBO",
-        "Heliforce",
-        "GasDetect A/S",
-        "汉威科技集团股份有限公司 (Hanwei Technology Group Co., Ltd.)",
-        "コア社 (Core Co.)",
-        "Kalmor"
+        "ShowNovo",
+        "HORIBA",
+        "Otsuka Japan",
+        "吉歐實業 (Geo Industrial)",
+        "太阳诱电株式会社 (Taiyo Yuden)",
+        "株式会社カルモア (Karumoa Co., Ltd.)",
+        "武汉华承锐康科技有限公司",
+        "江苏童医医疗器械有限公司"
       ],
       "Q4": [
-        "Baugger",
-        "Nanjing KELISAIKE Safety Equipment Co., Ltd.",
-        "株式会社カルモア (Karumoa)",
-        "Quanzhou Huangbo Group Co.,Ltd",
-        "eeketone.com",
-        "欧朗凯 (Oulang Kai)",
-        "세주엔지니어링 (Sejoo Engineering)",
-        "Kebeteme"
+        "ShowNovo",
+        "P Arroyo",
+        "Reflex Wireless",
+        "샘터하우스2",
+        "Ascensia Diabetes Care",
+        "Vivatmo (by BOSCH)",
+        "더무",
+        "株式会社アロマビット (Aroma Bit)"
       ]
     },
     "labels": {
