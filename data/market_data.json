@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-04T15:00:25"
+    "updated_at": "2026-10-05T15:00:58"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "Ainos and Kenmec",
-        "Alphasense",
-        "Cubic Sensors & Instruments",
-        "中天",
+        "Owlstone Medical",
+        "暖芯迦电子科技有限公司",
         "サンワテクノス株式会社 (Sunwa Technos Corporation)",
-        "未說明",
-        "Teledyne GFD (泰勒達 GFD)",
-        "德國Pfeiffer"
+        "musascarl.it",
+        "The eNose Company",
+        "IL1A",
+        "Ainos, Inc.",
+        "PCA Technologies"
       ],
       "Q2": [
-        "研究團隊",
-        "ShowNovo",
-        "Unnamed",
-        "微泰 (Weitai)",
-        "シャープ (Sharp)",
-        "Ueecool",
-        "Aromabit (アロマビット)",
+        "KT-68B",
+        "Y-Brush",
+        "odorate (オドレート)",
+        "新コスモス電機株式会社 (New Cosmos Electric Co., Ltd.)",
+        "XiuXin (秀昕)",
+        "涂鸦智能 (Tuya Smart)",
+        "無",
         "福盈科技"
       ],
       "Q3": [
-        "ShowNovo",
-        "HORIBA",
-        "Otsuka Japan",
-        "吉歐實業 (Geo Industrial)",
-        "太阳诱电株式会社 (Taiyo Yuden)",
-        "株式会社カルモア (Karumoa Co., Ltd.)",
-        "武汉华承锐康科技有限公司",
-        "江苏童医医疗器械有限公司"
+        "Interlink Electronics",
+        "The eNose Company",
+        "尚沃医疗 (Shangwo Medical)",
+        "Halimeter Plus",
+        "SHINYEI",
+        "Sensor Sense (感測器感測)",
+        "Genova Diagnostics",
+        "SICK"
       ],
       "Q4": [
-        "ShowNovo",
-        "P Arroyo",
-        "Reflex Wireless",
-        "샘터하우스2",
-        "Ascensia Diabetes Care",
-        "Vivatmo (by BOSCH)",
-        "더무",
-        "株式会社アロマビット (Aroma Bit)"
+        "新宇宙 (New Cosmos Electric)",
+        "SHINYEI",
+        "迪亞特 (Diater)",
+        "Nothacker",
+        "Amazon.it",
+        "H-R-M-K JP",
+        "신쿠슈BK",
+        "Zero"
       ]
     },
     "labels": {
