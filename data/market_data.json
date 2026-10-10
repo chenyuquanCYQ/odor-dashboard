@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-09T15:00:21"
+    "updated_at": "2026-10-10T15:00:24"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "Bosch Sensortec",
-        "Exhalon",
-        "OBRE",
-        "RISE",
-        "BreathID",
-        "清華系友企業",
-        "中科微感 (CSMSN)",
-        "Thermofisher"
+        "SPEC Sensors",
+        "Breath Diagnostics",
+        "JENLiFE",
+        "Teledyne GFD (泰勒達 GFD)",
+        "IL1A",
+        "Instrument Solutions",
+        "Taiyo Yuden",
+        "Alphasense UK"
       ],
       "Q2": [
-        "YRY",
-        "涂鸦智能",
-        "Lifeloc Technologies",
-        "NESS",
-        "GREENWON",
-        "專利 (Patent CN211955226U)",
-        "Alpha MOS",
-        "レボーン (RevoN)"
+        "PiVIS",
+        "KT-68B",
+        "Ueecool",
+        "SYNC",
+        "レボーン (Revoon)",
+        "odorate（オドレート）",
+        "Aromabit (アロマビット)",
+        "Alpha MOS"
       ],
       "Q3": [
-        "enin_ltech",
-        "PyloPlus",
-        "IDkit",
-        "Zhejiang Zheke Instrument Co., Ltd.",
-        "SICK",
-        "安徽养和 (Anhui YangHe)",
-        "汉威科技集团股份有限公司 (Hanwei Technology Group Co., Ltd.)",
-        "SAMON"
+        "Multiple manufacturers",
+        "Teledyne Gas & Flame Detection",
+        "Figaro",
+        "Pfeiffer (德國)",
+        "コーンズ テクノロジー株式会社",
+        "不詳",
+        "廣州瑞普醫療",
+        "TopTes"
       ],
       "Q4": [
-        "拾计 (Shiji)",
-        "Wellgo Sensor",
-        "迪亞特 (Diya Te)",
-        "Kebeteme",
-        "Sejoy",
-        "Hanwei Electronics (漢威電子)",
-        "Carsien",
-        "サンコー"
+        "캄컴퍼니 (Kam Company)",
+        "샘터하우스2",
+        "KETONIX",
+        "迪亞特 (Diate)",
+        "제로(Zero)",
+        "不詳",
+        "欧朗凯",
+        "紫陽科技 (Ziyang Technology)"
       ]
     },
     "labels": {
