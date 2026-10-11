@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-10T15:00:24"
+    "updated_at": "2026-10-11T15:00:25"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "SPEC Sensors",
-        "Breath Diagnostics",
-        "JENLiFE",
-        "Teledyne GFD (泰勒達 GFD)",
-        "IL1A",
-        "Instrument Solutions",
-        "Taiyo Yuden",
-        "Alphasense UK"
+        "Air-Q",
+        "中科微感（宁波）科技有限公司 (CSMSN)",
+        "Breath Diagnostics Inc.",
+        "NASA",
+        "Ellona",
+        "Sepsolve",
+        "SHARP (シャープ)",
+        "영진기술(주)"
       ],
       "Q2": [
-        "PiVIS",
-        "KT-68B",
-        "Ueecool",
-        "SYNC",
-        "レボーン (Revoon)",
-        "odorate（オドレート）",
-        "Aromabit (アロマビット)",
-        "Alpha MOS"
+        "Y-Brush",
+        "シャープ (Sharp)",
+        "ScentSational",
+        "三诺 (Sannuo)",
+        "Sharp",
+        "Xiuxin",
+        "福盈科技深圳有限公司 (Fuying Technology Shenzhen Co., Ltd.)",
+        "Bedfont"
       ],
       "Q3": [
-        "Multiple manufacturers",
-        "Teledyne Gas & Flame Detection",
-        "Figaro",
-        "Pfeiffer (德國)",
-        "コーンズ テクノロジー株式会社",
-        "不詳",
-        "廣州瑞普醫療",
-        "TopTes"
+        "费加罗技研 (Figaro)",
+        "株式会社カナデン",
+        "Zhejiang Zheke Instrument",
+        "Wuhan Aliroad Medical Equipment Co., Ltd.",
+        "Hellopro (供應商)",
+        "コア (Core)",
+        "Test Kits USA",
+        "Tancola"
       ],
       "Q4": [
-        "캄컴퍼니 (Kam Company)",
-        "샘터하우스2",
-        "KETONIX",
-        "迪亞特 (Diate)",
-        "제로(Zero)",
-        "不詳",
-        "欧朗凯",
-        "紫陽科技 (Ziyang Technology)"
+        "欧朗凯 (OralChroma)",
+        "Diyatel",
+        "新考思莫施电子 (上海) 有限公司 (New Cosmos Electric (Shanghai) Co., Ltd.)",
+        "北京亿城 (Beijing Yicheng)",
+        "JSC",
+        "Test Kits USA",
+        "해외직구포포 (Overseas Direct Purchase Popo)",
+        "北京怡成 (Beijing Yicheng)"
       ]
     },
     "labels": {
