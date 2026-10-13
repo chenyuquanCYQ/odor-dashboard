@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-12T15:00:24"
+    "updated_at": "2026-10-13T15:00:25"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "サンワテクノス株式会社 (Sunwa Technos Co., Ltd.)",
-        "chromatotec.com",
-        "Cubic",
-        "中科微感 (CSMSN)",
-        "Linköping University (研究員)",
-        "Alpha MOS",
-        "Alphasense",
-        "NOSI"
+        "汉威科技",
+        "サンワテクノス株式会社 (Sunwa Technos Corporation)",
+        "Scentroid",
+        "新コスモス電機 (New Cosmos Electric Co., Ltd.)",
+        "神荣",
+        "開發團隊",
+        "Zetron",
+        "XEARPRO"
       ],
       "Q2": [
-        "Shinyei (神栄テクノロジー)",
-        "KT-68B",
-        "Sharp",
+        "研究團隊",
+        "SYNC",
+        "Unnamed",
+        "三诺",
+        "NIOX",
+        "airthings",
         "Sisco",
-        "Aromabit (アロマビット)",
-        "通用型",
-        "新コスモス電機株式会社 (New Cosmos Electric Co., Ltd.)",
-        "ScentSational"
+        "Xiuxin"
       ],
       "Q3": [
-        "路安卫士",
+        "神荣",
+        "Servomex",
+        "Shine Bright EYM",
+        "株式会社カルモア (KARUMOA)",
+        "Alibaba.com",
+        "CommDX",
         "霍尼韦尔",
-        "Siemens Healthineers",
-        "GasDetect A/S",
-        "TH Lübeck (德國-丹麥研究團隊)",
-        "INTERSCAN (美国)",
-        "CLD",
-        "Laborie"
+        "AMETEK"
       ],
       "Q4": [
-        "eeketone",
-        "wellgosensor",
-        "Trio-Smart®",
-        "DIYatel",
-        "雅培",
-        "KISSME",
-        "カルモア (Kalmor)",
-        "Unbranded (Alibaba listing)"
+        "深圳市华立鑫科技有限公司",
+        "論文研究 (Research Paper)",
+        "Micfendy",
+        "OHM電機 (OHM Electric)",
+        "Ho-honey",
+        "Alibaba.com",
+        "Amazon.com",
+        "Shenzhen Hanwei Iot Co., Ltd."
       ]
     },
     "labels": {
