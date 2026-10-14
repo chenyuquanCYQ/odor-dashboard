@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-13T15:00:25"
+    "updated_at": "2026-10-14T15:00:26"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "汉威科技",
-        "サンワテクノス株式会社 (Sunwa Technos Corporation)",
-        "Scentroid",
+        "Richen-Med",
+        "太阳诱电 (Taiyo Yuden)",
         "新コスモス電機 (New Cosmos Electric Co., Ltd.)",
-        "神荣",
-        "開發團隊",
-        "Zetron",
-        "XEARPRO"
+        "香港科技大學研究團隊 (HKUST Research Team)",
+        "Stratuscent",
+        "MIT researchers",
+        "シャープ (SHARP)",
+        "清華大學系友企業"
       ],
       "Q2": [
-        "研究團隊",
-        "SYNC",
-        "Unnamed",
-        "三诺",
-        "NIOX",
-        "airthings",
-        "Sisco",
-        "Xiuxin"
+        "Smarter Living",
+        "I-PEX",
+        "Sharp (シャープ)",
+        "アロマビット (Aroma Bit)",
+        "福盈科技深圳有限公司",
+        "恆翼國際股份有限公司",
+        "Shinyei (神栄テクノロジー)",
+        "新コスモス電機株式会社"
       ],
       "Q3": [
-        "神荣",
-        "Servomex",
-        "Shine Bright EYM",
-        "株式会社カルモア (KARUMOA)",
-        "Alibaba.com",
-        "CommDX",
-        "霍尼韦尔",
-        "AMETEK"
+        "szeek",
+        "(株)カルモア",
+        "Thermo Fisher Scientific",
+        "EDI Japan株式会社",
+        "新コスモス電機 (New Cosmos Electric)",
+        "日本神榮",
+        "MUI Robotics",
+        "吉歐實業 (Geo Industrial)"
       ],
       "Q4": [
-        "深圳市华立鑫科技有限公司",
-        "論文研究 (Research Paper)",
-        "Micfendy",
-        "OHM電機 (OHM Electric)",
-        "Ho-honey",
-        "Alibaba.com",
-        "Amazon.com",
-        "Shenzhen Hanwei Iot Co., Ltd."
+        "Aunnhon",
+        "eeketone",
+        "Nothacker",
+        "Bedfont®",
+        "株式会社アロマビット (Aroma Bit)",
+        "株式会社レックス",
+        "新コスモス電機 (New Cosmos Electric)",
+        "日本神榮"
       ]
     },
     "labels": {
