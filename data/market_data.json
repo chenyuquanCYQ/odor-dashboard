@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-15T15:00:24"
+    "updated_at": "2026-10-16T15:00:24"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "太阳诱电株式会社",
-        "Chromatotec®",
-        "医疗科技股份有限公司",
-        "Fraunhofer IIS",
-        "Open source project",
-        "日本INSENT",
-        "シャープ (SHARP)",
-        "レボーン (Revorn)"
+        "Osmotech - Lifeanalytics",
+        "SmartNanotubes Technologies",
+        "Thermofisher",
+        "清華大學系友企業",
+        "Taiyo Yuden",
+        "Exhalon",
+        "KIT",
+        "AIRSENSE/盈盛恒泰"
       ],
       "Q2": [
-        "福盈科技深圳有限公司 (Fuying Technology Shenzhen Co., Ltd.)",
-        "恆翼國際股份有限公司",
-        "coolker",
-        "郑州云湛科技有限公司 (Zhengzhou Yunzhan Technology Co., Ltd.)",
-        "Aromabit (アロマビット)",
-        "NESS",
-        "不詳",
+        "REX-RENTAL",
+        "airthings",
+        "Bruno MD6",
+        "KT-68B",
+        "研究團隊",
+        "XiuXin (秀昕)",
+        "Unnamed",
         "WG1 (ShowNovo 首昕)"
       ],
       "Q3": [
-        "Chromatotec®",
-        "合肥工業大學 (開發方)",
-        "廣州瑞普醫療",
-        "PYtest",
-        "SepSolve",
-        "ALCO9",
-        "Kalmor有限公司 (Kalmor Co., Ltd.)",
-        "アルファ・モス・ジャパン (Alpha MOS Japan)"
+        "Neurovanna",
+        "intendvision",
+        "Tancola",
+        "DLO Lab",
+        "浙江浙科儀器設備有限公司 (Zhejiang Zhekai Instrument & Equipment Co., Ltd.)",
+        "GasDetect A/S",
+        "szeek",
+        "richen-med (瑞臣醫療)"
       ],
       "Q4": [
-        "KETONIX",
-        "sejoy",
-        "オーム",
-        "倍思 (Baseus)",
-        "Tanita",
-        "Lifeloc Technologies",
-        "Bedfont®",
-        "怡諾威騰"
+        "Trio-Smart® (屬 Gemelli Biotech)",
+        "迪亞特 (Diat)",
+        "カルモア (Karumoa)",
+        "ヨドバシ",
+        "倍思",
+        "Keto Coach",
+        "迪亞特 (Diyat)",
+        "WellGo Sensor"
       ]
     },
     "labels": {
