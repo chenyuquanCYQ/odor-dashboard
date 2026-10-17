@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-16T15:00:24"
+    "updated_at": "2026-10-17T15:00:23"
   },
   "charts": {
     "sensor_type": {
@@ -224,43 +224,43 @@
     },
     "brands": {
       "Q1": [
-        "Osmotech - Lifeanalytics",
-        "SmartNanotubes Technologies",
-        "Thermofisher",
-        "清華大學系友企業",
-        "Taiyo Yuden",
-        "Exhalon",
-        "KIT",
-        "AIRSENSE/盈盛恒泰"
+        "SepSolve",
+        "Trendtop",
+        "Yanlania",
+        "北京万联达信科仪器有限公司",
+        "Stanford researchers",
+        "Winopal Forschungsbedarf GmbH",
+        "新コスモス電機 (New Cosmos Electric)",
+        "XEARPRO"
       ],
       "Q2": [
-        "REX-RENTAL",
-        "airthings",
+        "Ueecool",
+        "NIOX",
+        "KETOSCAN",
+        "Vivatmo (von BOSCH)",
+        "Kunkun Body",
         "Bruno MD6",
-        "KT-68B",
-        "研究團隊",
-        "XiuXin (秀昕)",
-        "Unnamed",
-        "WG1 (ShowNovo 首昕)"
+        "郑州云湛科技有限公司 (Zhengzhou Yunzhan Technology Co., Ltd.)",
+        "Toto / Yellosis"
       ],
       "Q3": [
-        "Neurovanna",
-        "intendvision",
-        "Tancola",
-        "DLO Lab",
-        "浙江浙科儀器設備有限公司 (Zhejiang Zhekai Instrument & Equipment Co., Ltd.)",
-        "GasDetect A/S",
-        "szeek",
-        "richen-med (瑞臣醫療)"
+        "SepSolve",
+        "IMDEA Nanoscience",
+        "中国科学院",
+        "Let-elektronik",
+        "headmountedrecorders.com",
+        "Suπ one",
+        "Multiple manufacturers",
+        "Wuhan Aliroad Medical Equipment Co., Ltd."
       ],
       "Q4": [
-        "Trio-Smart® (屬 Gemelli Biotech)",
-        "迪亞特 (Diat)",
-        "カルモア (Karumoa)",
-        "ヨドバシ",
-        "倍思",
-        "Keto Coach",
-        "迪亞特 (Diyat)",
+        "三诺 (SanNuo)",
+        "odometric.com",
+        "华立鑫科技",
+        "新考思莫施电子 (上海) 有限公司 (New Cosmos Electric (Shanghai) Co., Ltd.)",
+        "Caire",
+        "sejoy",
+        "ReFleX Wireless",
         "WellGo Sensor"
       ]
     },
