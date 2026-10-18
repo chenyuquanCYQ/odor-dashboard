@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-17T15:00:23"
+    "updated_at": "2026-10-18T15:00:25"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "SepSolve",
-        "Trendtop",
-        "Yanlania",
-        "北京万联达信科仪器有限公司",
-        "Stanford researchers",
+        "aroma bit",
+        "NIOX",
         "Winopal Forschungsbedarf GmbH",
-        "新コスモス電機 (New Cosmos Electric)",
-        "XEARPRO"
+        "廣運 (Kwangyuen)",
+        "Zetron",
+        "ナノセント社 (NanoScent Ltd.)",
+        "村田製作所",
+        "PRECISE (研究專案)"
       ],
       "Q2": [
-        "Ueecool",
         "NIOX",
-        "KETOSCAN",
-        "Vivatmo (von BOSCH)",
-        "Kunkun Body",
-        "Bruno MD6",
-        "郑州云湛科技有限公司 (Zhengzhou Yunzhan Technology Co., Ltd.)",
-        "Toto / Yellosis"
+        "Ueecool",
+        "通用型",
+        "Smarter Living",
+        "新コスモス電機株式会社",
+        "I-PEX",
+        "研究團隊",
+        "BACtrack"
       ],
       "Q3": [
-        "SepSolve",
-        "IMDEA Nanoscience",
-        "中国科学院",
-        "Let-elektronik",
-        "headmountedrecorders.com",
-        "Suπ one",
-        "Multiple manufacturers",
-        "Wuhan Aliroad Medical Equipment Co., Ltd."
+        "GOYOJO",
+        "Agscent",
+        "アロマビット (Aromabit)",
+        "Alpha MOS",
+        "日本神榮",
+        "New Cosmos Electric Co., Ltd.",
+        "Genova Diagnostics",
+        "Shine Bright EYM"
       ],
       "Q4": [
-        "三诺 (SanNuo)",
-        "odometric.com",
+        "アロマビット (Aromabit)",
+        "Fenom Flo™",
+        "Oasser",
+        "Askmuse",
         "华立鑫科技",
-        "新考思莫施电子 (上海) 有限公司 (New Cosmos Electric (Shanghai) Co., Ltd.)",
-        "Caire",
-        "sejoy",
-        "ReFleX Wireless",
-        "WellGo Sensor"
+        "日本神榮",
+        "eeketone",
+        "Accio"
       ]
     },
     "labels": {
