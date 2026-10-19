@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-18T15:00:25"
+    "updated_at": "2026-10-19T15:00:23"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "aroma bit",
-        "NIOX",
-        "Winopal Forschungsbedarf GmbH",
-        "廣運 (Kwangyuen)",
-        "Zetron",
-        "ナノセント社 (NanoScent Ltd.)",
-        "村田製作所",
-        "PRECISE (研究專案)"
+        "Musascarl",
+        "THINKSENSO&SENSO",
+        "Teledyne GFD (泰勒達 GFD)",
+        "FlavorActiv",
+        "Thermo Fisher Scientific",
+        "BACtrack",
+        "サンワテクノス株式会社 (Sunwa Technos Corporation)",
+        "日本INSENT"
       ],
       "Q2": [
-        "NIOX",
-        "Ueecool",
-        "通用型",
-        "Smarter Living",
-        "新コスモス電機株式会社",
-        "I-PEX",
-        "研究團隊",
-        "BACtrack"
+        "Sharp (シャープ)",
+        "微泰 (Weitai)",
+        "Keto-Mojo",
+        "郑州云湛科技有限公司 (Zhengzhou Yunzhan Technology Co., Ltd.)",
+        "REX-RENTAL",
+        "涂鸦智能",
+        "KT-68B",
+        "odorate（オドレート）"
       ],
       "Q3": [
-        "GOYOJO",
-        "Agscent",
-        "アロマビット (Aromabit)",
-        "Alpha MOS",
-        "日本神榮",
-        "New Cosmos Electric Co., Ltd.",
-        "Genova Diagnostics",
-        "Shine Bright EYM"
+        "Tunable",
+        "兆为 (Zhaowei)",
+        "AI Sensing Technology",
+        "Multiple manufacturers",
+        "BL-002",
+        "Airworks",
+        "Bedfont Scientific Limited",
+        "Owlstone Medical"
       ],
       "Q4": [
-        "アロマビット (Aromabit)",
-        "Fenom Flo™",
-        "Oasser",
-        "Askmuse",
-        "华立鑫科技",
-        "日本神榮",
-        "eeketone",
-        "Accio"
+        "Breath-AlertTM",
+        "GAIYI",
+        "北京亿城 (Beijing Yicheng)",
+        "Hualixin",
+        "미르호",
+        "浙江浙科仪器设备有限公司 (Zhejiang ZK Instruments & Equipment Co., Ltd.)",
+        "カルモア (Karumoa)",
+        "Alibaba"
       ]
     },
     "labels": {
