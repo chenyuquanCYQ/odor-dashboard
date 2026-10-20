@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-19T15:00:23"
+    "updated_at": "2026-10-20T15:00:21"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "Musascarl",
-        "THINKSENSO&SENSO",
-        "Teledyne GFD (泰勒達 GFD)",
-        "FlavorActiv",
-        "Thermo Fisher Scientific",
-        "BACtrack",
-        "サンワテクノス株式会社 (Sunwa Technos Corporation)",
-        "日本INSENT"
+        "日本INSENT",
+        "Osmotech - Lifeanalytics",
+        "德國Pfeiffer",
+        "广州瑞普医疗 (Guangzhou Ruipumedical)",
+        "Neotechnology",
+        "MIOPAS",
+        "Ainos",
+        "サンワテクノス株式会社"
       ],
       "Q2": [
-        "Sharp (シャープ)",
-        "微泰 (Weitai)",
-        "Keto-Mojo",
-        "郑州云湛科技有限公司 (Zhengzhou Yunzhan Technology Co., Ltd.)",
-        "REX-RENTAL",
-        "涂鸦智能",
-        "KT-68B",
-        "odorate（オドレート）"
+        "Shinyei (神栄テクノロジー)",
+        "salvatore fracella",
+        "airthings",
+        "Ariese",
+        "三诺",
+        "三诺 (Sinocare)",
+        "Kunkun Body",
+        "微泰 (Weitai)"
       ],
       "Q3": [
-        "Tunable",
-        "兆为 (Zhaowei)",
-        "AI Sensing Technology",
-        "Multiple manufacturers",
-        "BL-002",
-        "Airworks",
-        "Bedfont Scientific Limited",
-        "Owlstone Medical"
+        "SPBTAR",
+        "日本神荣 (SHINYEI)",
+        "Let-elektronik",
+        "CAR-035",
+        "New Cosmos Electric Co., Ltd. (New Cosmos)",
+        "コア社 (Core)",
+        "EASTAK INTERNATIONAL CO., LIMITED",
+        "(株)カルモア"
       ],
       "Q4": [
-        "Breath-AlertTM",
-        "GAIYI",
-        "北京亿城 (Beijing Yicheng)",
-        "Hualixin",
-        "미르호",
-        "浙江浙科仪器设备有限公司 (Zhejiang ZK Instruments & Equipment Co., Ltd.)",
-        "カルモア (Karumoa)",
-        "Alibaba"
+        "汉威科技 (Hanwei Technology)",
+        "New Cosmos",
+        "Amazon.it",
+        "캄컴퍼니 (Kam Company)",
+        "GoSupps",
+        "XINNUO",
+        "Levl",
+        "yingshiwei"
       ]
     },
     "labels": {
