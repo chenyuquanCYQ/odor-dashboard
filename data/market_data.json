@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-20T15:00:21"
+    "updated_at": "2026-10-21T15:00:22"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "日本INSENT",
-        "Osmotech - Lifeanalytics",
-        "德國Pfeiffer",
-        "广州瑞普医疗 (Guangzhou Ruipumedical)",
-        "Neotechnology",
-        "MIOPAS",
-        "Ainos",
-        "サンワテクノス株式会社"
+        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Instrument Co., Ltd.)",
+        "Smiths Detection",
+        "ナノセント",
+        "MIT Researchers",
+        "中天",
+        "Ellona",
+        "SNIFFI (project/device)",
+        "中科微感"
       ],
       "Q2": [
-        "Shinyei (神栄テクノロジー)",
-        "salvatore fracella",
-        "airthings",
-        "Ariese",
-        "三诺",
-        "三诺 (Sinocare)",
-        "Kunkun Body",
-        "微泰 (Weitai)"
+        "Ainos",
+        "Vivatmo",
+        "成功大學",
+        "odorate（オドレート）",
+        "通用型",
+        "新コスモス電機株式会社",
+        "NESS",
+        "Ariese"
       ],
       "Q3": [
-        "SPBTAR",
-        "日本神荣 (SHINYEI)",
-        "Let-elektronik",
-        "CAR-035",
-        "New Cosmos Electric Co., Ltd. (New Cosmos)",
-        "コア社 (Core)",
-        "EASTAK INTERNATIONAL CO., LIMITED",
-        "(株)カルモア"
+        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Instrument Co., Ltd.)",
+        "株式会社カルモア (Karumoa)",
+        "Werfen",
+        "Gulf Coast Scientific",
+        "尚沃医疗",
+        "Zhejiang Zheke Instrument",
+        "MESTEK",
+        "The eNose Company"
       ],
       "Q4": [
-        "汉威科技 (Hanwei Technology)",
-        "New Cosmos",
-        "Amazon.it",
-        "캄컴퍼니 (Kam Company)",
-        "GoSupps",
-        "XINNUO",
-        "Levl",
-        "yingshiwei"
+        "小易智测 (Xiaoyi Zhice)",
+        "株式会社カルモア (Karumoa)",
+        "Contour Next",
+        "倍思",
+        "Shenzhen Ouye Electronic Co. (深圳歐野電子有限公司)",
+        "Futry",
+        "TDM",
+        "Trio-Smart® (屬 Gemelli Biotech)"
       ]
     },
     "labels": {
