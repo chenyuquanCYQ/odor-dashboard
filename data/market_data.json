@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-21T15:00:22"
+    "updated_at": "2026-10-22T15:00:24"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Instrument Co., Ltd.)",
-        "Smiths Detection",
-        "ナノセント",
-        "MIT Researchers",
-        "中天",
-        "Ellona",
-        "SNIFFI (project/device)",
-        "中科微感"
+        "レボーン",
+        "Exalenz Bioscience",
+        "上海机器人产业技术研究院",
+        "Chromatotec®",
+        "Sensitron",
+        "東京工科大学",
+        "浙江浙科仪器设备有限公司",
+        "Cubic Sensors & Instruments"
       ],
       "Q2": [
-        "Ainos",
-        "Vivatmo",
-        "成功大學",
-        "odorate（オドレート）",
-        "通用型",
-        "新コスモス電機株式会社",
+        "Lifeloc Technologies",
         "NESS",
-        "Ariese"
+        "福盈科技深圳有限公司",
+        "Toto",
+        "研究團隊",
+        "Shinyei (神栄テクノロジー)",
+        "不詳",
+        "Sharp (シャープ)"
       ],
       "Q3": [
-        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Instrument Co., Ltd.)",
-        "株式会社カルモア (Karumoa)",
-        "Werfen",
-        "Gulf Coast Scientific",
-        "尚沃医疗",
-        "Zhejiang Zheke Instrument",
-        "MESTEK",
-        "The eNose Company"
+        "Bright Sensors SA",
+        "太阳诱电株式会社 (Taiyo Yuden Co., Ltd.)",
+        "WLD600",
+        "센텍",
+        "PyloPlus®",
+        "Unbranded",
+        "NOV",
+        "Let-elektronik"
       ],
       "Q4": [
-        "小易智测 (Xiaoyi Zhice)",
-        "株式会社カルモア (Karumoa)",
-        "Contour Next",
-        "倍思",
-        "Shenzhen Ouye Electronic Co. (深圳歐野電子有限公司)",
-        "Futry",
-        "TDM",
-        "Trio-Smart® (屬 Gemelli Biotech)"
+        "캄컴퍼니 (CamCompany)",
+        "센텍",
+        "Aunnhon",
+        "eeketone.com (KC-01)",
+        "Amazon.it",
+        "Unbranded",
+        "가제트가제트",
+        "迪亞特 (Diat)"
       ]
     },
     "labels": {
