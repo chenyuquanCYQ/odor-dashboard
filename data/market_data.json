@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-22T15:00:24"
+    "updated_at": "2026-10-23T15:00:27"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "レボーン",
-        "Exalenz Bioscience",
+        "中国科学院 (Chinese Academy of Sciences)",
+        "Chromatotec",
+        "Shinyei",
         "上海机器人产业技术研究院",
-        "Chromatotec®",
-        "Sensitron",
-        "東京工科大学",
-        "浙江浙科仪器设备有限公司",
-        "Cubic Sensors & Instruments"
+        "Winopal Forschungsbedarf GmbH",
+        "Applied Sensor",
+        "サンワテクノス株式会社 (Sanwa Technos Corporation)",
+        "Ainos"
       ],
       "Q2": [
-        "Lifeloc Technologies",
-        "NESS",
-        "福盈科技深圳有限公司",
-        "Toto",
-        "研究團隊",
-        "Shinyei (神栄テクノロジー)",
-        "不詳",
+        "Keto-Mojo",
+        "ShowNovo",
+        "NeOse",
+        "WG1 (ShowNovo 首昕)",
+        "シャープ (Sharp)",
+        "odorate (オドレート)",
+        "BACtrack",
         "Sharp (シャープ)"
       ],
       "Q3": [
-        "Bright Sensors SA",
-        "太阳诱电株式会社 (Taiyo Yuden Co., Ltd.)",
-        "WLD600",
-        "센텍",
-        "PyloPlus®",
-        "Unbranded",
-        "NOV",
-        "Let-elektronik"
+        "air-Q",
+        "北京万联达信科仪器有限公司 (Beijing Wanlianda Information Technology Instrument Co., Ltd.)",
+        "Shinyei",
+        "Sensidyne, LP",
+        "不詳",
+        "Wuzhoumed",
+        "万联达",
+        "NEDO"
       ],
       "Q4": [
-        "캄컴퍼니 (CamCompany)",
-        "센텍",
-        "Aunnhon",
-        "eeketone.com (KC-01)",
-        "Amazon.it",
-        "Unbranded",
-        "가제트가제트",
-        "迪亞特 (Diat)"
+        "Shinyei",
+        "OHM Electric",
+        "DrinkMate",
+        "不詳",
+        "Patent",
+        "华立鑫科技",
+        "OHM電機",
+        "BIOSENSE™"
       ]
     },
     "labels": {
