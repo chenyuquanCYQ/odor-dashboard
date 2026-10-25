@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-24T15:00:25"
+    "updated_at": "2026-10-25T15:00:24"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "上海机器人产业技术研究院",
-        "Chromatotec®",
-        "神栄テクノロジー (Shinyei Technology)",
-        "Exhalon",
-        "三洋化成工業株式会社",
-        "Ainos",
-        "Vocxi Health",
-        "THINKSENSO&SENSO"
+        "サンワテクノス株式会社 (Sunwa Technos Corporation)",
+        "INSENT",
+        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Instrument Co., Ltd.)",
+        "MIT researchers",
+        "ELLONA (艾隆納)",
+        "東京工科大学",
+        "IRIE",
+        "ナノセント (Nanoscent)"
       ],
       "Q2": [
-        "SYNC",
-        "新コスモス電機株式会社",
-        "專利 (Patent CN211955226U)",
-        "アロマビット (Aroma Bit)",
+        "airthings",
+        "odorate（オドレート）",
+        "微泰 (Weitai)",
+        "通用型",
+        "無",
+        "レボーン (RevoN)",
         "Ainos",
-        "シャープ (Sharp)",
-        "福盈科技深圳有限公司 (Fuying Technology Shenzhen Co., Ltd.)",
-        "coolker"
+        "Lifeloc Technologies"
       ],
       "Q3": [
-        "北京万联达信科仪器有限公司 (Beijing Wanlianda Information Technology Instrument Co., Ltd.)",
-        "YJJ",
-        "コア (Core)",
-        "Unbranded",
-        "费加罗技研",
-        "太阳誘電株式会社",
-        "OMX (Univo)",
-        "Futry"
+        "SiBio",
+        "株式会社カルモア (KARUMOA)",
+        "코스모스 (Cosmos)",
+        "通用型",
+        "Amerigo Scientific",
+        "ヤナコ",
+        "北京万联达信科仪器有限公司 (Beijing WanLianda XinKe Instrument Co., Ltd.)",
+        "Alibaba.com"
       ],
       "Q4": [
-        "北京依誠 (Beijing Yicheng)",
-        "OHM",
-        "Unbranded",
-        "U-Scan",
-        "Futry",
-        "北京怡成 (Beijing Yicheng)",
-        "迪亞特 (Diyatel)",
-        "Accio"
+        "MQ316",
+        "Precision Xtra",
+        "PTDHE",
+        "air-q",
+        "Breath-AlertTM",
+        "通用型",
+        "华立鑫科技",
+        "Alibaba.com"
       ]
     },
     "labels": {
