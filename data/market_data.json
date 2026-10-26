@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-25T15:00:24"
+    "updated_at": "2026-10-26T15:00:24"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "サンワテクノス株式会社 (Sunwa Technos Corporation)",
-        "INSENT",
-        "北京万联达信科仪器有限公司 (Beijing Wanlianda Xinke Instrument Co., Ltd.)",
-        "MIT researchers",
-        "ELLONA (艾隆納)",
-        "東京工科大学",
-        "IRIE",
-        "ナノセント (Nanoscent)"
+        "SmartNanotubes Technologies",
+        "NIOX",
+        "BACtrack",
+        "Teledyne GFD (泰勒達 GFD)",
+        "Teledyne GFD",
+        "Ainos and Kenmec",
+        "Mantra",
+        "ABB"
       ],
       "Q2": [
-        "airthings",
-        "odorate（オドレート）",
-        "微泰 (Weitai)",
-        "通用型",
-        "無",
-        "レボーン (RevoN)",
-        "Ainos",
-        "Lifeloc Technologies"
+        "Keto-Mojo",
+        "NIOX",
+        "salvatore fracella",
+        "Vivatmo",
+        "BACtrack",
+        "YRY",
+        "Alpha MOS",
+        "KT-68B"
       ],
       "Q3": [
-        "SiBio",
-        "株式会社カルモア (KARUMOA)",
-        "코스모스 (Cosmos)",
-        "通用型",
-        "Amerigo Scientific",
-        "ヤナコ",
-        "北京万联达信科仪器有限公司 (Beijing WanLianda XinKe Instrument Co., Ltd.)",
-        "Alibaba.com"
+        "德国苏斯 (German Soos)",
+        "神荣",
+        "Picarro, Inc.",
+        "德尔格 (Dräger)",
+        "EXALON",
+        "PyloPlus",
+        "RISE",
+        "Eurotron"
       ],
       "Q4": [
-        "MQ316",
-        "Precision Xtra",
-        "PTDHE",
-        "air-q",
-        "Breath-AlertTM",
-        "通用型",
-        "华立鑫科技",
-        "Alibaba.com"
+        "odometric.com",
+        "Ascensia Diabetes Care",
+        "拾计 (ShiJi)",
+        "ReFlex Wireless",
+        "Detect-ION",
+        "Yugoo",
+        "Shenzhen Ouye Electronic Co. (深圳歐野電子有限公司)",
+        "New Cosmos"
       ]
     },
     "labels": {
