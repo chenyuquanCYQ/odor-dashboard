@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-26T15:00:24"
+    "updated_at": "2026-10-27T15:00:24"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "SmartNanotubes Technologies",
-        "NIOX",
-        "BACtrack",
-        "Teledyne GFD (泰勒達 GFD)",
-        "Teledyne GFD",
-        "Ainos and Kenmec",
-        "Mantra",
-        "ABB"
+        "BASELINE",
+        "未提供 (Not Provided)",
+        "Tim et al. (研究團隊)",
+        "清華系友企業",
+        "未說明",
+        "サンワテクノス株式会社",
+        "Alphasense",
+        "三洋化成工業株式会社"
       ],
       "Q2": [
-        "Keto-Mojo",
-        "NIOX",
-        "salvatore fracella",
-        "Vivatmo",
         "BACtrack",
-        "YRY",
-        "Alpha MOS",
-        "KT-68B"
+        "Bedfont",
+        "レボーン (RevoN)",
+        "シャープ (Sharp)",
+        "Sharp",
+        "Lifeloc Technologies",
+        "GREENWON",
+        "三诺 (Sanuo)"
       ],
       "Q3": [
-        "德国苏斯 (German Soos)",
-        "神荣",
-        "Picarro, Inc.",
-        "德尔格 (Dräger)",
-        "EXALON",
-        "PyloPlus",
-        "RISE",
-        "Eurotron"
+        "未說明",
+        "武漢華科銳科生物醫藥有限公司 (Wuhan HCRK Bio-Medical Co., Ltd.)",
+        "Unbranded (Alibaba listing)",
+        "NEW COSMOS",
+        "Milvus Consulting",
+        "Sciencedirect.com",
+        "電子科学",
+        "アロマビット (AromaBit)"
       ],
       "Q4": [
-        "odometric.com",
-        "Ascensia Diabetes Care",
-        "拾计 (ShiJi)",
-        "ReFlex Wireless",
-        "Detect-ION",
-        "Yugoo",
-        "Shenzhen Ouye Electronic Co. (深圳歐野電子有限公司)",
-        "New Cosmos"
+        "Shenzhen Yingshiwei Technology Co., Ltd. (深圳市英視威科技有限公司)",
+        "AHKUCI",
+        "sejoy",
+        "江苏金坛市华欧 (Jiangsu Jintan Huaou)",
+        "ヨドバシ",
+        "Aunnhon KC02",
+        "Unbranded (Alibaba listing)",
+        "NEW COSMOS"
       ]
     },
     "labels": {
