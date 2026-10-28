@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-27T15:00:24"
+    "updated_at": "2026-10-28T15:00:21"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "BASELINE",
-        "未提供 (Not Provided)",
-        "Tim et al. (研究團隊)",
-        "清華系友企業",
-        "未說明",
-        "サンワテクノス株式会社",
-        "Alphasense",
-        "三洋化成工業株式会社"
+        "Sensigent",
+        "chromatotec.com",
+        "Critical Environment Technologies",
+        "Smiths Detection",
+        "深圳市气迹矩阵科技有限责任公司",
+        "duotec GmbH",
+        "ナノセント (NanoScent)",
+        "ナノセント社"
       ],
       "Q2": [
+        "odorate（オドレート）",
+        "Toto / Yellosis",
+        "SYNC",
+        "Ariese",
+        "KETOSCAN",
+        "Aromabit (アロマビット)",
         "BACtrack",
-        "Bedfont",
-        "レボーン (RevoN)",
-        "シャープ (Sharp)",
-        "Sharp",
-        "Lifeloc Technologies",
-        "GREENWON",
-        "三诺 (Sanuo)"
+        "PiVIS"
       ],
       "Q3": [
-        "未說明",
-        "武漢華科銳科生物醫藥有限公司 (Wuhan HCRK Bio-Medical Co., Ltd.)",
-        "Unbranded (Alibaba listing)",
-        "NEW COSMOS",
-        "Milvus Consulting",
-        "Sciencedirect.com",
-        "電子科学",
-        "アロマビット (AromaBit)"
+        "北京万联达信科仪器有限公司 (Beijing WanLianda XinKe Instruments)",
+        "(株)カルモア",
+        "Heliforce",
+        "Meridian Bioscience",
+        "Seitron",
+        "HKUST",
+        "德国苏斯 (German Soos)",
+        "Lumen"
       ],
       "Q4": [
-        "Shenzhen Yingshiwei Technology Co., Ltd. (深圳市英視威科技有限公司)",
-        "AHKUCI",
-        "sejoy",
-        "江苏金坛市华欧 (Jiangsu Jintan Huaou)",
-        "ヨドバシ",
-        "Aunnhon KC02",
-        "Unbranded (Alibaba listing)",
-        "NEW COSMOS"
+        "カルモア (Calmoa)",
+        "cosmos新宇宙 (New Cosmos)",
+        "Ascensia Diabetes Care",
+        "Ohm-Electric",
+        "迪亞特",
+        "Yellosis",
+        "Sparkfun",
+        "DIYatel (迪亞特爾)"
       ]
     },
     "labels": {
