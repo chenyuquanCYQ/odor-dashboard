@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-29T15:00:26"
+    "updated_at": "2026-10-30T15:00:25"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "SMELLDECT",
-        "MIT Researchers",
-        "Sensigent",
-        "The eNose Company",
-        "NOSI",
-        "ELLONA (艾隆納)",
-        "duotec",
-        "Senseair"
+        "广州瑞普医疗",
+        "郑州云湛科技有限公司",
+        "Osmotech",
+        "ナノセント (NanoScent)",
+        "SRI-Robot",
+        "Smart Nanotubes",
+        "Alphasense UK",
+        "duotec"
       ],
       "Q2": [
-        "KETOSCAN",
+        "Lifeloc Technologies",
+        "Smarter Living",
+        "ScentSational",
+        "Vivatmo (from BOSCH)",
+        "通用型",
+        "Bedfont",
         "NESS",
-        "微泰 (Weitai)",
-        "NeOse",
-        "Vivatmo (von BOSCH)",
-        "三诺 (Sannuo)",
-        "salvatore fracella",
-        "恆翼國際股份有限公司"
+        "アロマビット (Aroma Bit)"
       ],
       "Q3": [
-        "OEM/ODM (Made-in-China)",
-        "Nova Analytical Systems",
-        "hwsensor.en.made-in-china.com",
-        "duotec",
-        "SHINYEI",
-        "센텍",
-        "PyloPLUS™",
-        "Sensor Electronics"
+        "广州瑞普医疗",
+        "Sensor Electronics",
+        "艾感科技 (Aigan Technology)",
+        "未說明",
+        "コア社 (Core Co.)",
+        "Honeywell",
+        "NObreath®",
+        "アロマビット (AromaBit)"
       ],
       "Q4": [
-        "mir",
-        "Electromaker",
-        "歐朗凱",
-        "CozyTemp",
-        "SDU 研究團隊",
-        "SHINYEI",
-        "센텍",
-        "新コスモス電機"
+        "Lifeloc Technologies",
+        "迪亞特 (Diyate)",
+        "포포",
+        "江苏金坛市华欧 (Jiangsu Jintan Huaou)",
+        "Ho-honey",
+        "カルモア (Karumoa)",
+        "Biosense",
+        "OHM"
       ]
     },
     "labels": {
