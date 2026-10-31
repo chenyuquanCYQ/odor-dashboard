@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-30T15:00:25"
+    "updated_at": "2026-10-31T15:00:23"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "广州瑞普医疗",
-        "郑州云湛科技有限公司",
-        "Osmotech",
-        "ナノセント (NanoScent)",
-        "SRI-Robot",
-        "Smart Nanotubes",
-        "Alphasense UK",
-        "duotec"
+        "irie Co., Ltd.",
+        "レボーン",
+        "smartindu",
+        "廣運 (Kwangyuen)",
+        "Yanlania",
+        "Breath Diagnostics Inc.",
+        "Endress+Hauser",
+        "ナノセント (Nanoscent)"
       ],
       "Q2": [
-        "Lifeloc Technologies",
-        "Smarter Living",
-        "ScentSational",
-        "Vivatmo (from BOSCH)",
-        "通用型",
-        "Bedfont",
+        "Ainos",
         "NESS",
-        "アロマビット (Aroma Bit)"
+        "Sisco",
+        "Smarter Living",
+        "アロマビット (Aroma Bit)",
+        "Ariese",
+        "レボーン (Revoon)",
+        "ScentSational"
       ],
       "Q3": [
-        "广州瑞普医疗",
-        "Sensor Electronics",
-        "艾感科技 (Aigan Technology)",
-        "未說明",
-        "コア社 (Core Co.)",
-        "Honeywell",
-        "NObreath®",
-        "アロマビット (AromaBit)"
+        "费加罗技研 (Figaro)",
+        "由電",
+        "霍尼韦尔",
+        "费加罗技研",
+        "三洋化成 (Sanyo Chemical)",
+        "Hellopro (經銷商)",
+        "電子科学",
+        "日本新宇宙"
       ],
       "Q4": [
-        "Lifeloc Technologies",
-        "迪亞特 (Diyate)",
-        "포포",
-        "江苏金坛市华欧 (Jiangsu Jintan Huaou)",
-        "Ho-honey",
-        "カルモア (Karumoa)",
-        "Biosense",
-        "OHM"
+        "サンコー (Sanko)",
+        "Amazon.it",
+        "迪亞特 (Diyat)",
+        "DrinkMate",
+        "三洋化成 (Sanyo Chemical)",
+        "深圳市源晟衡器有限公司 (Shenzhen Yuansheng Hengqi)",
+        "日本新宇宙",
+        "怡諾威騰"
       ]
     },
     "labels": {
