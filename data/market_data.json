@@ -6,7 +6,7 @@
     "analyzed_count": 2703,
     "pending_count": 10,
     "raw_rows": 8375,
-    "updated_at": "2026-10-31T15:00:23"
+    "updated_at": "2026-11-01T15:00:27"
   },
   "charts": {
     "sensor_type": {
@@ -224,44 +224,44 @@
     },
     "brands": {
       "Q1": [
-        "irie Co., Ltd.",
-        "レボーン",
-        "smartindu",
-        "廣運 (Kwangyuen)",
-        "Yanlania",
-        "Breath Diagnostics Inc.",
-        "Endress+Hauser",
-        "ナノセント (Nanoscent)"
+        "廣州瑞普醫療 (Guangzhou Ruipu Medical)",
+        "Tim et al. (研究團隊)",
+        "Emerson",
+        "JENLiFE",
+        "odorate（オドレート）",
+        "Pfeiffer",
+        "新コスモス電機",
+        "日本INSENT"
       ],
       "Q2": [
-        "Ainos",
-        "NESS",
-        "Sisco",
-        "Smarter Living",
-        "アロマビット (Aroma Bit)",
-        "Ariese",
+        "Vivatmo (from BOSCH)",
+        "SYNC",
+        "專利 (Patent CN211955226U)",
         "レボーン (Revoon)",
-        "ScentSational"
+        "odorate（オドレート）",
+        "I-PEX",
+        "シャープ (Sharp)",
+        "Vivatmo"
       ],
       "Q3": [
-        "费加罗技研 (Figaro)",
-        "由電",
-        "霍尼韦尔",
-        "费加罗技研",
-        "三洋化成 (Sanyo Chemical)",
-        "Hellopro (經銷商)",
-        "電子科学",
-        "日本新宇宙"
+        "Branom Ins",
+        "万联达",
+        "Made-in-China.com",
+        "SAMON",
+        "新コスモス電機",
+        "Evernoa®",
+        "Eurotron",
+        "코스모스 (Cosmos)"
       ],
       "Q4": [
-        "サンコー (Sanko)",
-        "Amazon.it",
-        "迪亞特 (Diyat)",
-        "DrinkMate",
-        "三洋化成 (Sanyo Chemical)",
-        "深圳市源晟衡器有限公司 (Shenzhen Yuansheng Hengqi)",
-        "日本新宇宙",
-        "怡諾威騰"
+        "新考思莫施电子 (上海) 有限公司 (New Cosmos Electric (Shanghai) Co., Ltd.)",
+        "新コスモス電機",
+        "Oasser",
+        "浙江浙科仪器设备有限公司 (Zhejiang ZK Instruments & Equipment Co., Ltd.)",
+        "Bosch Sensortec",
+        "ヨドバシ",
+        "カルモア (Calmor)",
+        "Omron"
       ]
     },
     "labels": {
