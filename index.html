@@ -299,6 +299,21 @@
 </div>
 
 <script>
+// 資料新鮮度：頁面更新時間 + 最新一筆新資料日期；超過 STALE_DAYS 天沒有新資料就標紅（2026-11-01 新增）
+const STALE_DAYS = 7;
+function renderFreshness(elId, updatedAt, lastDate, label) {
+  const el = document.getElementById(elId);
+  if (!el) return;
+  let html = "頁面更新：" + String(updatedAt || "").replace("T", " ");
+  const d = String(lastDate || "").slice(0, 10);
+  if (d) {
+    const days = Math.floor((Date.now() - new Date(d + "T00:00:00+08:00").getTime()) / 86400000);
+    const stale = days > STALE_DAYS;
+    html += '<br><span style="' + (stale ? 'color:#d64545;font-weight:600' : '') + '">' + label + "：" + d +
+            (stale ? "　⚠ 已 " + days + " 天沒有新資料" : "") + "</span>";
+  }
+  el.innerHTML = html;
+}
 // ── 資料載入 ─────────────────────────────────────────────────────
 // 修改這個路徑為你的 GitHub Pages URL
 const DATA_URL = "data/market_data.json";
@@ -330,8 +345,9 @@ function renderDashboard(d) {
   const charts = d.charts;
   ALL_PRODUCTS = d.products || [];
 
-  // 更新時間
-  document.getElementById("last-updated").textContent = "更新：" + meta.updated_at.replace("T"," ");
+  // 更新時間 + 最新資料日期
+  const lastData = ALL_PRODUCTS.reduce((m, p) => { const v = p.last_seen || p.first_seen || ""; return v > m ? v : m; }, "");
+  renderFreshness("last-updated", meta.updated_at, lastData, "最新資料");
 
   // KPI
   document.getElementById("kpi-total").textContent     = meta.total.toLocaleString();
