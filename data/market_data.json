@@ -6,7 +6,7 @@
     "analyzed_count": 2744,
     "pending_count": 10,
     "raw_rows": 8499,
-    "updated_at": "2026-11-02T15:06:43"
+    "updated_at": "2026-11-03T15:00:24"
   },
   "charts": {
     "sensor_type": {
@@ -225,44 +225,44 @@
     },
     "brands": {
       "Q1": [
-        "smartindu",
-        "Osmotech - Lifeanalytics",
-        "上海机器人产业技术研究院",
-        "Soberlink",
-        "Applied Sensor",
-        "太阳诱电",
-        "Irie (入江)",
-        "Musascarl"
+        "廣州瑞普醫療 (Guangzhou Ruipu Medical)",
+        "Balzers Instruments AG",
+        "Sepsolve",
+        "Cubic Sensors & Instruments",
+        "中科微感 (CSMSN)",
+        "レボーン (Revorn)",
+        "ScentSational Scent Sciences",
+        "Smell Inspector"
       ],
       "Q2": [
-        "Alpha MOS",
-        "Sisco",
-        "Vivatmo (von BOSCH)",
-        "Y-Brush",
-        "恆翼國際股份有限公司",
-        "Toto / Yellosis",
-        "Sharp",
-        "研究團隊"
+        "不詳",
+        "FoodMarble",
+        "odorate (オドレート)",
+        "Smarter Living",
+        "レボーン (RevoN)",
+        "WG1 (ShowNovo 首昕)",
+        "XiuXin (秀昕)",
+        "成功大學"
       ],
       "Q3": [
-        "air-Q",
-        "NEW COSMOS (新コスモス電機)",
-        "日本新宇宙 (New Cosmos Electric Co., Ltd.)",
-        "Edwards Vacuum",
-        "費加羅技研 (Figaro Engineering Inc.)",
-        "Evernoa®",
-        "费加罗技研 (Figaro Engineering)",
-        "Omron"
+        "北京华源康达医疗设备有限公司",
+        "Sensor Sense (感測器感測)",
+        "吉歐實業 (Geo Industries)",
+        "AP2E",
+        "Yingshiwei",
+        "電子科学 (Densi-Kagaku - Electronic Science)",
+        "Circassia",
+        "Milvus Consulting"
       ],
       "Q4": [
-        "OHM 電機",
-        "Breath-Alert",
-        "三诺健优 (SANNUO)",
-        "Omron",
-        "그린원",
-        "カルモア (Calmora)",
-        "YOLU",
-        "BIOSENSE™"
+        "Yingshiwei",
+        "Circassia",
+        "KAGUROBO カルモア",
+        "Ketodoc",
+        "深圳市源晟衡器有限公司 (Shenzhen Yuansheng Hengqi)",
+        "サファイア",
+        "欧朗凯 (Oracare)",
+        "Nothacker"
       ]
     },
     "labels": {
