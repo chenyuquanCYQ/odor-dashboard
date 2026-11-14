@@ -1,27 +1,27 @@
 {
   "meta": {
-    "total": 2948,
-    "brands": 1151,
+    "total": 2955,
+    "brands": 1154,
     "countries": 11,
-    "analyzed_count": 2938,
+    "analyzed_count": 2945,
     "pending_count": 10,
-    "raw_rows": 9108,
-    "updated_at": "2026-11-13T15:01:35"
+    "raw_rows": 9140,
+    "updated_at": "2026-11-14T15:02:18"
   },
   "charts": {
     "sensor_type": {
-      "陣列式/混合型": 936,
+      "陣列式/混合型": 941,
       "電化學/不明": 185,
       "陣列式/不明": 121,
-      "混合型": 96,
+      "混合型": 95,
       "MEMS": 79,
       "陣列式": 79,
       "電化學": 74,
-      "電化學/混合型": 56,
+      "電化學/混合型": 57,
       "NDIR": 56,
       "電化學/陣列式": 36,
       "半導體感測器/陣列式": 23,
-      "MOS (Metal Oxide Semiconductor)": 21,
+      "MOS (Metal Oxide Semiconductor)": 22,
       "電化學/半導體陣列式": 20,
       "電化學/光學（針對NO）": 19,
       "陣列式/電化學/不明": 18,
@@ -32,17 +32,17 @@
       "半導體感測器陣列式": 10
     },
     "form_factor": {
-      "手持可攜式": 1694,
+      "手持可攜式": 1699,
       "桌面設備": 387,
       "嵌入式模組": 251,
       "手持可攜式/桌面設備": 111,
-      "固定式": 61,
+      "固定式": 62,
       "消費穿戴": 40,
       "桌面設備/手持可攜式": 15,
       "桌面設備/不明": 13,
       "手持可攜式/固定式": 12,
       "固定式/桌面設備": 10,
-      "手持可攜式/消費穿戴": 6,
+      "手持可攜式/消費穿戴": 7,
       "檢測套件/試劑盒": 6,
       "固定式/嵌入式模組": 5,
       "消費穿戴/手持可攜式": 4,
@@ -54,9 +54,9 @@
       "嵌入式模組/桌面設備": 3
     },
     "precision_tier": {
-      "消費電子級": 1416,
-      "工業級": 829,
-      "實驗室級": 604,
+      "消費電子級": 1417,
+      "工業級": 834,
+      "實驗室級": 605,
       "醫療級": 14,
       "實驗室級/工業級": 13,
       "工業級/實驗室級": 3,
@@ -72,8 +72,8 @@
       "消費電子級 (Consumer Grade)": 1
     },
     "trl": {
-      "小量商用": 1647,
-      "成熟商用": 1001,
+      "小量商用": 1652,
+      "成熟商用": 1003,
       "研發中": 247,
       "原型": 18,
       "小量商用/成熟商用": 5,
@@ -83,14 +83,14 @@
       "小量商用 (用於特定診斷)": 1
     },
     "output_type": {
-      "精確數值(ppm-ppb)": 921,
-      "分級顯示": 822,
+      "精確數值(ppm-ppb)": 926,
+      "分級顯示": 824,
       "氣味指紋圖譜": 331,
       "分級顯示/精確數值(ppm-ppb)": 227,
       "分級顯示/氣味指紋圖譜": 111,
       "氣味指紋圖譜/精確數值(ppm-ppb)": 92,
       "精確數值(ppb)": 54,
-      "分級顯示,精確數值(ppm-ppb)": 51,
+      "分級顯示,精確數值(ppm-ppb)": 50,
       "精確數值(ppm-ppb), 氣味指紋圖譜": 24,
       "氣味指紋圖譜/分級顯示": 23,
       "精確數值(ppm-ppb)/分級顯示": 20,
@@ -105,11 +105,11 @@
       "分級顯示/不明": 6
     },
     "ecosystem": {
-      "無": 1562,
-      "藍牙App": 572,
+      "無": 1565,
+      "藍牙App": 575,
       "AI驅動": 127,
       "藍牙App/AI驅動": 115,
-      "IoT雲端": 51,
+      "IoT雲端": 52,
       "藍牙App/IoT雲端": 45,
       "藍牙App/不明": 38,
       "藍牙App, IoT雲端": 37,
@@ -127,9 +127,9 @@
       "藍牙App, AI驅動": 8
     },
     "competitive_moat": {
-      "純硬體": 1155,
-      "軟硬整合": 559,
-      "標準化認證": 535,
+      "純硬體": 1159,
+      "軟硬整合": 561,
+      "標準化認證": 536,
       "演算法IP": 300,
       "軟硬整合/演算法IP": 93,
       "演算法IP/軟硬整合": 31,
@@ -149,13 +149,13 @@
       "演算法IP, 軟硬整合": 3
     },
     "target_gases": {
-      "VOCs": 1457,
-      "多種": 1445,
-      "乙醇": 445,
-      "丙酮": 149,
-      "H2S": 137,
+      "VOCs": 1461,
+      "多種": 1448,
+      "乙醇": 446,
+      "丙酮": 150,
+      "H2S": 138,
       "NO": 104,
-      "NH3": 93,
+      "NH3": 94,
       "CO": 87,
       "H2": 83,
       "酮體": 82,
@@ -171,13 +171,13 @@
       "血糖相關代謝物": 15
     },
     "application_segments": {
-      "醫療健康": 1988,
-      "環境監測": 830,
-      "工業安全": 736,
-      "食品品質": 468,
-      "智慧家居/IoT": 201,
+      "醫療健康": 1992,
+      "環境監測": 834,
+      "工業安全": 739,
+      "食品品質": 469,
+      "智慧家居/IoT": 202,
       "個人護理": 23,
-      "國防/安全": 17,
+      "國防/安全": 18,
       "安全監測": 16,
       "農業": 14,
       "交通安全": 9,
@@ -193,10 +193,10 @@
       "商務": 3
     },
     "country": {
-      "其他/不明": 2438,
+      "其他/不明": 2444,
       "日本": 158,
       "美國": 142,
-      "中國": 117,
+      "中國": 118,
       "德國": 25,
       "以色列": 22,
       "台灣": 16,
@@ -214,56 +214,56 @@
       "2026-07": 416,
       "2026-08": 273,
       "2026-09": 29,
-      "2026-11": 235
+      "2026-11": 242
     }
   },
   "quadrant": {
     "counts": {
-      "Q3": 1035,
-      "Q4": 1321,
-      "Q1": 422,
+      "Q3": 1040,
+      "Q4": 1322,
+      "Q1": 423,
       "Q2": 170
     },
     "brands": {
       "Q1": [
-        "广州瑞普医疗",
-        "RIKEN KEIKI",
-        "Oizom",
-        "Ainos, Inc.",
-        "AMETEK Land",
-        "Hellopro",
-        "Ainos and Kenmec",
-        "Trio-Smart (Gemelli Biotech)"
+        "JENLiFE",
+        "Smell Inspector Project",
+        "ナノセント (Nanoscent)",
+        "广州瑞普医疗 (Guangzhou Ruipumedical)",
+        "Emerson",
+        "Teledyne GFD",
+        "Chromatotec®",
+        "未提供 (Not Provided)"
       ],
       "Q2": [
-        "霍尼韦尔 (Honeywell)",
+        "アロマビット (Aroma Bit)",
+        "YASEE (雅斯)",
+        "晨澤盛業",
         "Unnamed",
-        "成功大學",
+        "Alpha MOS",
         "I-PEX",
-        "Ariese",
-        "Aromabit (アロマビット)",
-        "ScentSational",
-        "涂鸦智能 (Tuya Smart)"
+        "レボーン (RevoN)",
+        "FoodMarble"
       ],
       "Q3": [
-        "怡成",
-        "GazDetect",
-        "广州瑞普医疗",
-        "NObreath (NOB)",
-        "コア社 (Core Co.)",
-        "eLichens",
-        "Aryballe",
-        "中国同辐"
+        "アロマビット (Aromabit)",
+        "Teledyne GFD",
+        "日本新宇宙",
+        "通用感測器",
+        "德國Pfeiffer (Pfeiffer)",
+        "KAGUROBO カルモア",
+        "電子科学 (Densi-Kagaku - Electronic Science)",
+        "Zhengzhou Winsen Electronics Technology Co., Ltd. (Winsen)"
       ],
       "Q4": [
-        "GazDetect",
-        "怡成",
-        "NObreath (NOB)",
-        "松下",
-        "Aunnhon KC02",
-        "北京亿成 (Beijing Yicheng)",
-        "源晟衡器",
-        "kissme"
+        "アロマビット (Aromabit)",
+        "Breath-AlertTM",
+        "Sensirion",
+        "北京亿城 (Beijing Yicheng)",
+        "日本新宇宙",
+        "그린원",
+        "ERYUE",
+        "Panasonic"
       ]
     },
     "labels": {
@@ -299,10 +299,10 @@
       "confidence": "高",
       "country": "其他/不明",
       "source": "analyzed",
-      "count": 106,
+      "count": 107,
       "url_count": 1,
       "first_seen": "2026-03-23",
-      "last_seen": "2026-11-10"
+      "last_seen": "2026-11-14"
     },
     {
       "name": "TANITA 口臭偵測器 HC-212S",
@@ -355,10 +355,10 @@
       "confidence": "中",
       "country": "日本",
       "source": "analyzed",
-      "count": 80,
+      "count": 81,
       "url_count": 24,
       "first_seen": "2026-04-07",
-      "last_seen": "2026-11-12"
+      "last_seen": "2026-11-14"
     },
     {
       "name": "HC-150MPK (口臭偵測器)",
@@ -421,7 +421,7 @@
       "brand": "QuinTron",
       "description": "一系列呼吸測試儀器，用於識別或排除消化問題，如小腸細菌過度生長 (SIBO) 和腸道產甲烷菌過度生長 (IMO)。",
       "url": "https://www.breathtests.com/",
-      "sensor_type": "混合型",
+      "sensor_type": "陣列式/混合型",
       "form_factor": "桌面設備",
       "precision": "實驗室級",
       "trl": "成熟商用",
@@ -439,10 +439,10 @@
       "confidence": "高",
       "country": "美國",
       "source": "analyzed",
-      "count": 53,
+      "count": 54,
       "url_count": 1,
       "first_seen": "2026-04-07",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-14"
     },
     {
       "name": "DIYatel 202S",
@@ -493,10 +493,10 @@
       "confidence": "高",
       "country": "其他/不明",
       "source": "analyzed",
-      "count": 48,
+      "count": 49,
       "url_count": 1,
       "first_seen": "2026-04-07",
-      "last_seen": "2026-11-09"
+      "last_seen": "2026-11-14"
     },
     {
       "name": "においセンサ",
@@ -752,6 +752,35 @@
       "last_seen": "2026-08-16"
     },
     {
+      "name": "JSC-016",
+      "brand": "AHKUCI",
+      "description": "AHKUCI JSC-016，具有高精度，便攜易用的異味氣體檢測儀，也可用於口臭和口氣檢測。",
+      "url": "https://www.alibaba.com/product-detail/Odor-Gas-Detector-bad-Breath-Tester_1601253313734.html",
+      "sensor_type": "陣列式/混合型",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "小量商用",
+      "gases": [
+        "VOCs",
+        "多種"
+      ],
+      "output_type": "分級顯示/精確數值(ppm-ppb)",
+      "ecosystem": "無",
+      "segments": [
+        "醫療健康",
+        "食品品質"
+      ],
+      "moat": "純硬體",
+      "features": "高精度, 可攜式, 易於使用",
+      "confidence": "中",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 35,
+      "url_count": 2,
+      "first_seen": "2026-04-28",
+      "last_seen": "2026-11-14"
+    },
+    {
       "name": "口臭检测器 (口臭檢測器)",
       "brand": "Bosch Sensortec",
       "description": "這是一款嵌入式AI的微機電系統感測器，典型的應用包括口臭檢測器、連接裝置和智能家居。",
@@ -835,35 +864,6 @@
       "url_count": 1,
       "first_seen": "2026-04-11",
       "last_seen": "2026-11-12"
-    },
-    {
-      "name": "JSC-016",
-      "brand": "AHKUCI",
-      "description": "AHKUCI JSC-016，具有高精度，便攜易用的異味氣體檢測儀，也可用於口臭和口氣檢測。",
-      "url": "https://www.alibaba.com/product-detail/Odor-Gas-Detector-bad-Breath-Tester_1601253313734.html",
-      "sensor_type": "陣列式/混合型",
-      "form_factor": "手持可攜式",
-      "precision": "消費電子級",
-      "trl": "小量商用",
-      "gases": [
-        "VOCs",
-        "多種"
-      ],
-      "output_type": "分級顯示/精確數值(ppm-ppb)",
-      "ecosystem": "無",
-      "segments": [
-        "醫療健康",
-        "食品品質"
-      ],
-      "moat": "純硬體",
-      "features": "高精度, 可攜式, 易於使用",
-      "confidence": "中",
-      "country": "其他/不明",
-      "source": "analyzed",
-      "count": 34,
-      "url_count": 2,
-      "first_seen": "2026-04-28",
-      "last_seen": "2026-11-13"
     },
     {
       "name": "Nurnesy Bad Breath Tester",
@@ -1036,6 +1036,33 @@
       "last_seen": "2026-04-07"
     },
     {
+      "name": "Tanita FitScan HC-312F Portable Breath Checker",
+      "brand": "Tanita",
+      "description": "這是一款智能氣味檢測器和數位口臭監測器，採用先進日本技術，快速準確檢測揮發性硫化合物 (VSC)。",
+      "url": "https://www.amazon.com/Tanita-Checker-HC-312SF-Instructions-Improved/dp/B073K25HYS",
+      "sensor_type": "電化學/陣列式",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "成熟商用",
+      "gases": [
+        "多種"
+      ],
+      "output_type": "分級顯示",
+      "ecosystem": "無",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "純硬體",
+      "features": "便攜式, 口氣檢測, 6級數位顯示",
+      "confidence": "高",
+      "country": "日本",
+      "source": "analyzed",
+      "count": 29,
+      "url_count": 5,
+      "first_seen": "2026-04-07",
+      "last_seen": "2026-11-14"
+    },
+    {
       "name": "BACtrack S80 呼氣測試儀",
       "brand": "BACtrack",
       "description": "專業級準確度，經DOT和NHTSA批准，FDA 510(k)清除，用於個人使用的便攜式呼氣酒精測試儀。",
@@ -1116,33 +1143,6 @@
       "url_count": 2,
       "first_seen": "2026-07-15",
       "last_seen": "2026-11-09"
-    },
-    {
-      "name": "Tanita FitScan HC-312F Portable Breath Checker",
-      "brand": "Tanita",
-      "description": "這是一款智能氣味檢測器和數位口臭監測器，採用先進日本技術，快速準確檢測揮發性硫化合物 (VSC)。",
-      "url": "https://www.amazon.com/Tanita-Checker-HC-312SF-Instructions-Improved/dp/B073K25HYS",
-      "sensor_type": "電化學/陣列式",
-      "form_factor": "手持可攜式",
-      "precision": "消費電子級",
-      "trl": "成熟商用",
-      "gases": [
-        "多種"
-      ],
-      "output_type": "分級顯示",
-      "ecosystem": "無",
-      "segments": [
-        "醫療健康"
-      ],
-      "moat": "純硬體",
-      "features": "便攜式, 口氣檢測, 6級數位顯示",
-      "confidence": "高",
-      "country": "日本",
-      "source": "analyzed",
-      "count": 28,
-      "url_count": 5,
-      "first_seen": "2026-04-07",
-      "last_seen": "2026-11-10"
     },
     {
       "name": "ERYUE Bad Breath Tester",
@@ -1228,6 +1228,34 @@
       "last_seen": "2026-11-10"
     },
     {
+      "name": "WG1 口气检测仪 (WG1 口氣檢測儀)",
+      "brand": "ShowNovo",
+      "description": "精準測量口臭氣體中的主要揮發性硫化物，提供科學有效的口氣感知及口臭治理監測手段，支援藍牙連接手機APP。",
+      "url": "https://www.shownovo.com/g/products/3/shownovowg1.html",
+      "sensor_type": "電化學/陣列式",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "小量商用",
+      "gases": [
+        "揮發性硫化物",
+        "VOCs"
+      ],
+      "output_type": "分級顯示/精確數值(ppm-ppb)",
+      "ecosystem": "藍牙App",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "軟硬整合",
+      "features": "精準測量, 口氣感知, 口臭治理監測",
+      "confidence": "高",
+      "country": "中國",
+      "source": "analyzed",
+      "count": 27,
+      "url_count": 5,
+      "first_seen": "2026-04-07",
+      "last_seen": "2026-11-14"
+    },
+    {
       "name": "GM-512B Breath Gas Sensor (GM-512B呼氣氣體感測器)",
       "brand": "YJJ",
       "description": "MEMS呼吸檢測氣體感測器，可靠測量硫化氫、酒精和丙酮。(MEMS breath detection gas sensor, reliably measures hydrogen sulfide, alcohol, and acetone.)",
@@ -1286,34 +1314,6 @@
       "url_count": 5,
       "first_seen": "2026-03-23",
       "last_seen": "2026-11-07"
-    },
-    {
-      "name": "WG1 口气检测仪 (WG1 口氣檢測儀)",
-      "brand": "ShowNovo",
-      "description": "精準測量口臭氣體中的主要揮發性硫化物，提供科學有效的口氣感知及口臭治理監測手段，支援藍牙連接手機APP。",
-      "url": "https://www.shownovo.com/g/products/3/shownovowg1.html",
-      "sensor_type": "電化學/陣列式",
-      "form_factor": "手持可攜式",
-      "precision": "消費電子級",
-      "trl": "小量商用",
-      "gases": [
-        "揮發性硫化物",
-        "VOCs"
-      ],
-      "output_type": "分級顯示/精確數值(ppm-ppb)",
-      "ecosystem": "藍牙App",
-      "segments": [
-        "醫療健康"
-      ],
-      "moat": "軟硬整合",
-      "features": "精準測量, 口氣感知, 口臭治理監測",
-      "confidence": "高",
-      "country": "中國",
-      "source": "analyzed",
-      "count": 26,
-      "url_count": 5,
-      "first_seen": "2026-04-07",
-      "last_seen": "2026-08-14"
     },
     {
       "name": "MQ316 Breath Odour Sensor (MQ316 呼吸氣味感測器)",
@@ -1428,6 +1428,34 @@
       "last_seen": "2026-11-02"
     },
     {
+      "name": "HC-212M",
+      "brand": "Tanita",
+      "description": "迷你型口臭檢測器，方便攜帶，可測量口臭程度。(Mini breath checker, portable, measures bad breath level.)",
+      "url": "https://api-img.tanita.co.jp/v=1666504229/files/user/support/manual/hc_series/hc212s_m_co.pdf",
+      "sensor_type": "陣列式/混合型",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "成熟商用",
+      "gases": [
+        "VOCs",
+        "多種"
+      ],
+      "output_type": "分級顯示",
+      "ecosystem": "無",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "純硬體",
+      "features": "迷你型, 方便攜帶, 口臭檢測",
+      "confidence": "中",
+      "country": "日本",
+      "source": "analyzed",
+      "count": 24,
+      "url_count": 5,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-11-14"
+    },
+    {
       "name": "B/Bチェッカー mBA-21 (B/B檢查器 mBA-21)",
       "brand": "未知/不明",
       "description": "這是一款口腔氣體測量器，能個別測量口腔內氣體、呼氣氣體和鼻腔異味，以推斷氣味來源。",
@@ -1482,34 +1510,6 @@
       "url_count": 1,
       "first_seen": "2026-06-27",
       "last_seen": "2026-09-06"
-    },
-    {
-      "name": "HC-212M",
-      "brand": "Tanita",
-      "description": "迷你型口臭檢測器，方便攜帶，可測量口臭程度。(Mini breath checker, portable, measures bad breath level.)",
-      "url": "https://api-img.tanita.co.jp/v=1666504229/files/user/support/manual/hc_series/hc212s_m_co.pdf",
-      "sensor_type": "陣列式/混合型",
-      "form_factor": "手持可攜式",
-      "precision": "消費電子級",
-      "trl": "成熟商用",
-      "gases": [
-        "VOCs",
-        "多種"
-      ],
-      "output_type": "分級顯示",
-      "ecosystem": "無",
-      "segments": [
-        "醫療健康"
-      ],
-      "moat": "純硬體",
-      "features": "口臭偵測, 手持式, 氣味檢測",
-      "confidence": "中",
-      "country": "日本",
-      "source": "analyzed",
-      "count": 23,
-      "url_count": 5,
-      "first_seen": "2026-04-11",
-      "last_seen": "2026-11-08"
     },
     {
       "name": "Trio-Smart",
@@ -1568,6 +1568,36 @@
       "url_count": 1,
       "first_seen": "2026-04-07",
       "last_seen": "2026-11-01"
+    },
+    {
+      "name": "TGS2603",
+      "brand": "费加罗技研",
+      "description": "空氣污染/臭味感測器，對胺系、硫系惡臭物質有高靈敏度 (Air pollution/odor sensor, highly sensitive to amine-based and sulfur-based malodorous substances).",
+      "url": "https://www.figaro.co.jp/cn/product/entry/tgs2603.html",
+      "sensor_type": "MOS (Metal Oxide Semiconductor)",
+      "form_factor": "嵌入式模組",
+      "precision": "工業級",
+      "trl": "小量商用",
+      "gases": [
+        "胺系惡臭物質",
+        "硫系惡臭物質",
+        "VOCs"
+      ],
+      "output_type": "精確數值(ppm-ppb)",
+      "ecosystem": "無",
+      "segments": [
+        "環境監測",
+        "工業安全"
+      ],
+      "moat": "純硬體",
+      "features": "低功耗, 胺系敏感, 硫系敏感",
+      "confidence": "中",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 22,
+      "url_count": 1,
+      "first_seen": "2026-06-02",
+      "last_seen": "2026-11-14"
     },
     {
       "name": "NDIR解決方案",
@@ -1734,36 +1764,6 @@
       "url_count": 1,
       "first_seen": "2026-05-27",
       "last_seen": "2026-07-15"
-    },
-    {
-      "name": "TGS2603",
-      "brand": "费加罗技研",
-      "description": "空氣污染/臭味感測器，對胺系、硫系惡臭物質有高靈敏度 (Air pollution/odor sensor, highly sensitive to amine-based and sulfur-based malodorous substances).",
-      "url": "https://www.figaro.co.jp/cn/product/entry/tgs2603.html",
-      "sensor_type": "MOS (Metal Oxide Semiconductor)",
-      "form_factor": "嵌入式模組",
-      "precision": "工業級",
-      "trl": "小量商用",
-      "gases": [
-        "胺系惡臭物質",
-        "硫系惡臭物質",
-        "VOCs"
-      ],
-      "output_type": "精確數值(ppm-ppb)",
-      "ecosystem": "無",
-      "segments": [
-        "環境監測",
-        "工業安全"
-      ],
-      "moat": "純硬體",
-      "features": "低功耗, 胺系敏感, 硫系敏感",
-      "confidence": "中",
-      "country": "其他/不明",
-      "source": "analyzed",
-      "count": 21,
-      "url_count": 1,
-      "first_seen": "2026-06-02",
-      "last_seen": "2026-11-06"
     },
     {
       "name": "Ketosis Tester (酮症測試儀)",
@@ -2105,6 +2105,35 @@
       "last_seen": "2026-11-08"
     },
     {
+      "name": "Smart Breath Odor Detector",
+      "brand": "YRY",
+      "description": "智能口臭檢測器，可持續監測呼吸氣味，減少社交焦慮，並監測口腔護理效果，立即判斷1-4級氣味水平。",
+      "url": "https://www.amazon.com/live/video/0cabc996698a4d1eaa1b57d349de1872",
+      "sensor_type": "陣列式/混合型",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "小量商用",
+      "gases": [
+        "VOCs",
+        "多種"
+      ],
+      "output_type": "分級顯示",
+      "ecosystem": "藍牙App",
+      "segments": [
+        "醫療健康",
+        "智慧家居"
+      ],
+      "moat": "軟硬整合",
+      "features": "持續監測, 社交焦慮緩解, 氣味分級",
+      "confidence": "中",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 19,
+      "url_count": 1,
+      "first_seen": "2026-04-07",
+      "last_seen": "2026-11-14"
+    },
+    {
       "name": "Ketone Breath Meter (酮體呼氣計)",
       "brand": "未知/不明",
       "description": "這是一款消費電子健康裝置，高精度酮體呼吸分析儀，用於丙酮呼吸檢測，是脂肪燃燒和酮症的指標。",
@@ -2130,6 +2159,34 @@
       "url_count": 1,
       "first_seen": "2026-04-07",
       "last_seen": "2026-08-23"
+    },
+    {
+      "name": "HC-21CO",
+      "brand": "Tanita",
+      "description": "口臭檢測儀，設計為與HC-212系列相似的便攜型。",
+      "url": "https://api-img.tanita.co.jp/v=1666504229/files/user/support/manual/hc_series/hc212s_m_co.pdf",
+      "sensor_type": "陣列式/混合型",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "成熟商用",
+      "gases": [
+        "VOCs",
+        "多種"
+      ],
+      "output_type": "分級顯示",
+      "ecosystem": "無",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "純硬體",
+      "features": "口臭偵測, 手持式, 簡易操作",
+      "confidence": "中",
+      "country": "日本",
+      "source": "analyzed",
+      "count": 19,
+      "url_count": 1,
+      "first_seen": "2026-04-11",
+      "last_seen": "2026-11-14"
     },
     {
       "name": "AIRE®",
@@ -2243,35 +2300,6 @@
       "last_seen": "2026-04-02"
     },
     {
-      "name": "Smart Breath Odor Detector",
-      "brand": "YRY",
-      "description": "智能口臭檢測器，可持續監測呼吸氣味，減少社交焦慮，並監測口腔護理效果，立即判斷1-4級氣味水平。",
-      "url": "https://www.amazon.com/live/video/0cabc996698a4d1eaa1b57d349de1872",
-      "sensor_type": "陣列式/混合型",
-      "form_factor": "手持可攜式",
-      "precision": "消費電子級",
-      "trl": "小量商用",
-      "gases": [
-        "VOCs",
-        "多種"
-      ],
-      "output_type": "分級顯示",
-      "ecosystem": "藍牙App",
-      "segments": [
-        "醫療健康",
-        "智慧家居"
-      ],
-      "moat": "軟硬整合",
-      "features": "持續監測, 社交焦慮緩解, 氣味分級",
-      "confidence": "中",
-      "country": "其他/不明",
-      "source": "analyzed",
-      "count": 18,
-      "url_count": 1,
-      "first_seen": "2026-04-07",
-      "last_seen": "2026-11-10"
-    },
-    {
       "name": "Portable Breath Detector (便攜式口氣檢測儀)",
       "brand": "Xtahdge",
       "description": "採用半導體感測器，高靈敏度，快速反應，數位和卡通模式顯示結果 (Adopts semiconductor sensor, high sensitivity, fast response, displays results in digital and cartoon modes)",
@@ -2330,34 +2358,6 @@
       "url_count": 1,
       "first_seen": "2026-04-07",
       "last_seen": "2026-05-28"
-    },
-    {
-      "name": "HC-21CO",
-      "brand": "Tanita",
-      "description": "口臭檢測器系列產品之一，採用半導體氣體感測器。",
-      "url": "https://api-img.tanita.co.jp/v=1666504229/files/user/support/manual/hc_series/hc212s_m_co.pdf",
-      "sensor_type": "陣列式/混合型",
-      "form_factor": "手持可攜式",
-      "precision": "消費電子級",
-      "trl": "成熟商用",
-      "gases": [
-        "VOCs",
-        "多種"
-      ],
-      "output_type": "分級顯示",
-      "ecosystem": "無",
-      "segments": [
-        "醫療健康"
-      ],
-      "moat": "純硬體",
-      "features": "口臭偵測, 手持式, 簡易操作",
-      "confidence": "中",
-      "country": "日本",
-      "source": "analyzed",
-      "count": 18,
-      "url_count": 1,
-      "first_seen": "2026-04-11",
-      "last_seen": "2026-11-08"
     },
     {
       "name": "MQ316 Breath Odor Gas Sensor (MQ316呼氣氣體感測器)",
@@ -4097,6 +4097,64 @@
       "last_seen": "2026-11-12"
     },
     {
+      "name": "BreathAlert™ (口氣警報器)",
+      "brand": "Tanita",
+      "description": "消費電子健康裝置，掌上型監測器，檢測和測量惱人或尷尬的口氣氣味。",
+      "url": "https://www.rdhmag.com/home/article/16407569/breathalert153-breath-checker",
+      "sensor_type": "陣列式/混合型",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "小量商用",
+      "gases": [
+        "VOCs",
+        "多種"
+      ],
+      "output_type": "分級顯示",
+      "ecosystem": "藍牙App",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "軟硬整合",
+      "features": "便攜式, 口氣異味檢測, 呼吸測量",
+      "confidence": "高",
+      "country": "日本",
+      "source": "analyzed",
+      "count": 13,
+      "url_count": 1,
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-11-14"
+    },
+    {
+      "name": "AIRSENSE 可攜式電子鼻 PEN",
+      "brand": "AIRSENSE Analytics",
+      "description": "革命性的精密可攜式電子鼻，能高精度檢測和識別氣味與化學成分。包含10種高靈敏加熱型金屬氧化物感測器，體積緊湊（1.8毫升），小巧精密，反應快速（小於1秒），測量高效（約1分鐘），感測器具保護裝置壽命長。模仿人類嗅覺系統，利用氣體感測器陣列模式識別氣味，用於惡臭監測與分析。",
+      "url": "https://airsense.com/product/portable-electronic-nose/",
+      "sensor_type": "陣列式/混合型",
+      "form_factor": "手持可攜式",
+      "precision": "工業級",
+      "trl": "小量商用",
+      "gases": [
+        "VOCs",
+        "多種"
+      ],
+      "output_type": "氣味指紋圖譜",
+      "ecosystem": "AI驅動",
+      "segments": [
+        "食品品質",
+        "環境監測",
+        "工業安全"
+      ],
+      "moat": "軟硬整合",
+      "features": "精確檢測/無線連接/數據分析",
+      "confidence": "高",
+      "country": "德國",
+      "source": "analyzed",
+      "count": 12,
+      "url_count": 1,
+      "first_seen": "2026-03-23",
+      "last_seen": "2026-11-14"
+    },
+    {
       "name": "香氣及氣味監測感測器",
       "brand": "Sensigent",
       "description": "這些感測器基於多陣列技術，專用於在全球各種環境中進行香氣和氣味的檢測與監測。",
@@ -4435,64 +4493,6 @@
       "url_count": 1,
       "first_seen": "2026-06-16",
       "last_seen": "2026-11-09"
-    },
-    {
-      "name": "BreathAlert™ (口氣警報器)",
-      "brand": "Tanita",
-      "description": "消費電子健康裝置，掌上型監測器，檢測和測量惱人或尷尬的口氣氣味。",
-      "url": "https://www.rdhmag.com/home/article/16407569/breathalert153-breath-checker",
-      "sensor_type": "陣列式/混合型",
-      "form_factor": "手持可攜式",
-      "precision": "消費電子級",
-      "trl": "小量商用",
-      "gases": [
-        "VOCs",
-        "多種"
-      ],
-      "output_type": "分級顯示",
-      "ecosystem": "藍牙App",
-      "segments": [
-        "醫療健康"
-      ],
-      "moat": "軟硬整合",
-      "features": "便攜式, 口氣異味檢測, 呼吸測量",
-      "confidence": "高",
-      "country": "日本",
-      "source": "analyzed",
-      "count": 12,
-      "url_count": 1,
-      "first_seen": "2026-07-20",
-      "last_seen": "2026-11-13"
-    },
-    {
-      "name": "AIRSENSE 可攜式電子鼻 PEN",
-      "brand": "AIRSENSE Analytics",
-      "description": "革命性的精密可攜式電子鼻，能高精度檢測和識別氣味與化學成分。包含10種高靈敏加熱型金屬氧化物感測器，體積緊湊（1.8毫升），小巧精密，反應快速（小於1秒），測量高效（約1分鐘），感測器具保護裝置壽命長。模仿人類嗅覺系統，利用氣體感測器陣列模式識別氣味，用於惡臭監測與分析。",
-      "url": "https://airsense.com/product/portable-electronic-nose/",
-      "sensor_type": "陣列式/混合型",
-      "form_factor": "手持可攜式",
-      "precision": "工業級",
-      "trl": "小量商用",
-      "gases": [
-        "VOCs",
-        "多種"
-      ],
-      "output_type": "氣味指紋圖譜",
-      "ecosystem": "AI驅動",
-      "segments": [
-        "食品品質",
-        "環境監測",
-        "工業安全"
-      ],
-      "moat": "軟硬整合",
-      "features": "精確檢測/無線連接/數據分析",
-      "confidence": "高",
-      "country": "德國",
-      "source": "analyzed",
-      "count": 11,
-      "url_count": 1,
-      "first_seen": "2026-03-23",
-      "last_seen": "2026-11-13"
     },
     {
       "name": "HT601B 氣體嗅探器",
@@ -5406,6 +5406,36 @@
       "last_seen": "2026-07-06"
     },
     {
+      "name": "BreathID® Smart (智能呼氣ID)",
+      "brand": "Meridian Bioscience",
+      "description": "緊湊、自動化的尿素呼氣測試系統，透過13C-尿素呼氣試驗，10-15分鐘內快速檢測活躍的幽門螺桿菌，非放射性。",
+      "url": "https://www.meridianbioscience.com/diagnostics/platforms/urea-breath/breathid-smart/",
+      "sensor_type": "陣列式/混合型",
+      "form_factor": "桌面設備",
+      "precision": "實驗室級",
+      "trl": "小量商用",
+      "gases": [
+        "VOCs",
+        "H2S",
+        "NH3",
+        "多種"
+      ],
+      "output_type": "分級顯示",
+      "ecosystem": "無",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "標準化認證",
+      "features": "自動化, 尿素呼氣測試, 診斷準確性",
+      "confidence": "高",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 10,
+      "url_count": 1,
+      "first_seen": "2026-05-07",
+      "last_seen": "2026-11-14"
+    },
+    {
       "name": "Ketone Breath Tester (酮體呼吸測試儀)",
       "brand": "未知/不明",
       "description": "針對生酮飲食酮症測試設計，3秒快速讀取和同步至應用程式，含分析儀和10個吸嘴。",
@@ -6076,36 +6106,6 @@
       "url_count": 1,
       "first_seen": "2026-05-04",
       "last_seen": "2026-05-25"
-    },
-    {
-      "name": "BreathID® Smart (智能呼氣ID)",
-      "brand": "Meridian Bioscience",
-      "description": "緊湊、自動化的尿素呼氣測試系統，透過13C-尿素呼氣試驗，10-15分鐘內快速檢測活躍的幽門螺桿菌，非放射性。",
-      "url": "https://www.meridianbioscience.com/diagnostics/platforms/urea-breath/breathid-smart/",
-      "sensor_type": "陣列式/混合型",
-      "form_factor": "桌面設備",
-      "precision": "實驗室級",
-      "trl": "小量商用",
-      "gases": [
-        "VOCs",
-        "H2S",
-        "NH3",
-        "多種"
-      ],
-      "output_type": "分級顯示",
-      "ecosystem": "無",
-      "segments": [
-        "醫療健康"
-      ],
-      "moat": "標準化認證",
-      "features": "自動化, 尿素呼氣測試, 診斷準確性",
-      "confidence": "高",
-      "country": "其他/不明",
-      "source": "analyzed",
-      "count": 9,
-      "url_count": 1,
-      "first_seen": "2026-05-07",
-      "last_seen": "2026-11-13"
     },
     {
       "name": "aroma bit",
@@ -8979,6 +8979,35 @@
       "last_seen": "2026-11-12"
     },
     {
+      "name": "秀昕口气检测仪 (秀昕口氣檢測儀)",
+      "brand": "Xiuxin秀昕",
+      "description": "智慧家用口氣檢測儀，用於自我檢測口臭，可監測口腔和腸胃氣味，便攜精準。",
+      "url": "https://www.taobao.com/list/item/QUtjaU53WUN6b1JWVnZJNi9FVjFIUT09.htm",
+      "sensor_type": "陣列式/混合型",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "小量商用",
+      "gases": [
+        "VOCs",
+        "多種"
+      ],
+      "output_type": "分級顯示",
+      "ecosystem": "藍牙App",
+      "segments": [
+        "醫療健康",
+        "智慧家居"
+      ],
+      "moat": "軟硬整合",
+      "features": "口臭自測, 腸胃監測, 便攜",
+      "confidence": "中",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 7,
+      "url_count": 1,
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-14"
+    },
+    {
       "name": "HERACLES 電子鼻 & 嗅覺計",
       "brand": "Alpha MOS",
       "description": "透過閃光氣相層析技術，實現快速客觀的氣味分析，能分析產品氣味及其組成的氣味分子，並能在不到60秒內分析揮發性有機化合物 (VOCs)。",
@@ -10758,33 +10787,33 @@
       "last_seen": "2026-11-11"
     },
     {
-      "name": "Xiuxin秀昕口气检测仪 (Xiuxin秀昕 口氣檢測儀)",
-      "brand": "Xiuxin秀昕",
-      "description": "智慧家用口氣檢測儀，用於自我檢測口臭，可監測口腔和腸胃氣味，便攜精準。",
-      "url": "https://www.taobao.com/list/item/QUtjaU53WUN6b1JWVnZJNi9FVjFIUT09.htm",
-      "sensor_type": "陣列式/混合型",
-      "form_factor": "手持可攜式",
-      "precision": "消費電子級",
+      "name": "MEMS臭味传感器 (MEMS 臭味傳感器)",
+      "brand": "DFRobot",
+      "description": "可定性測量臭味氣體濃度，適用於口氣檢測器、異味檢測，包含HCHO, CO, CH4, VOC, NH3, H2S, EtOH, Smoke, Odor等傳感器類型。",
+      "url": "https://wiki.dfrobot.com.cn/_SKU_SEN0571_Fermion_MEMS_Odor_Sensor",
+      "sensor_type": "MEMS",
+      "form_factor": "嵌入式模組",
+      "precision": "工業級",
       "trl": "小量商用",
       "gases": [
         "VOCs",
         "多種"
       ],
-      "output_type": "分級顯示",
-      "ecosystem": "藍牙App",
+      "output_type": "精確數值(ppm-ppb)",
+      "ecosystem": "無",
       "segments": [
         "醫療健康",
-        "智慧家居"
+        "食品品質"
       ],
-      "moat": "軟硬整合",
-      "features": "口臭自測, 腸胃監測, 便攜",
-      "confidence": "中",
+      "moat": "純硬體",
+      "features": "定性測量, 臭味氣體, 氣味檢測",
+      "confidence": "高",
       "country": "其他/不明",
       "source": "analyzed",
       "count": 6,
       "url_count": 1,
-      "first_seen": "2026-11-02",
-      "last_seen": "2026-11-11"
+      "first_seen": "2026-11-08",
+      "last_seen": "2026-11-14"
     },
     {
       "name": "NeOse™ Handheld Digital Nose",
@@ -12677,6 +12706,33 @@
       "last_seen": "2026-07-04"
     },
     {
+      "name": "UBiT® (UBiT®)",
+      "brand": "Otsuka",
+      "description": "非侵入性且非放射性的套件，用於定性檢測人體胃部與幽門螺桿菌相關的尿素酶活性。",
+      "url": "https://otsuka.pk/productdetail-74",
+      "sensor_type": "不明",
+      "form_factor": "檢測試劑/試紙 (Diagnostic Agent)",
+      "precision": "實驗室級",
+      "trl": "成熟商用",
+      "gases": [
+        "13C-Urea"
+      ],
+      "output_type": "定性/半定量檢測結果",
+      "ecosystem": "無",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "標準化認證",
+      "features": "呼氣分析, 幽門螺旋桿菌檢測, 放射性標記",
+      "confidence": "高",
+      "country": "英國",
+      "source": "analyzed",
+      "count": 5,
+      "url_count": 1,
+      "first_seen": "2026-06-12",
+      "last_seen": "2026-11-14"
+    },
+    {
       "name": "FeNO 儀器 (FeNO儀器)",
       "brand": "未知/不明",
       "description": "非侵入性呼氣檢測儀，測量呼吸道炎症程度（呼氣中的一氧化氮），用於氣喘診斷和管理。",
@@ -13246,34 +13302,88 @@
       "last_seen": "2026-11-08"
     },
     {
-      "name": "MEMS臭味传感器 (MEMS 臭味傳感器)",
-      "brand": "DFRobot",
-      "description": "可定性測量臭味氣體濃度，適用於口氣檢測器、異味檢測，包含HCHO, CO, CH4, VOC, NH3, H2S, EtOH, Smoke, Odor等傳感器類型。",
-      "url": "https://wiki.dfrobot.com.cn/_SKU_SEN0571_Fermion_MEMS_Odor_Sensor",
-      "sensor_type": "MEMS",
-      "form_factor": "嵌入式模組",
-      "precision": "工業級",
+      "name": "JCW-085 Odor Gas Detector",
+      "brand": "未知/不明",
+      "description": "半導體傳感器，LCD顯示屏，可充電，用於個人用途的便攜式口臭測試儀",
+      "url": "https://www.alibaba.com/pla/Odor-Gas-Detector-Semi-conductor-Sensor-LCD_1601756117695.html?mark=google_shopping&biz=pla&searchText=smart+health&product_id=1601756117695&pcy=de_en",
+      "sensor_type": "半導體感測器/陣列式",
+      "form_factor": "手持可攜式/消費穿戴",
+      "precision": "消費電子級",
       "trl": "小量商用",
       "gases": [
+        "口臭相關氣體",
         "VOCs",
         "多種"
       ],
-      "output_type": "精確數值(ppm-ppb)",
+      "output_type": "分級顯示",
       "ecosystem": "無",
       "segments": [
-        "口氣",
-        "異味檢測",
-        "醫療健康"
+        "醫療健康",
+        "個人護理"
       ],
       "moat": "純硬體",
-      "features": "定性測量, 臭味氣體, 適用多場景",
+      "features": "便攜式,LCD顯示屏,口臭測試",
+      "confidence": "中",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 5,
+      "url_count": 1,
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-14"
+    },
+    {
+      "name": "DrinkMate (DrinkMate)",
+      "brand": "DrinkMate",
+      "description": "小巧易用，連接Android手機後，配合應用程式透過半導體感測器呼氣，查看血液酒精含量。",
+      "url": "https://www.ifanr.com/451500",
+      "sensor_type": "半導體感測器/電化學（推測）",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "小量商用",
+      "gases": [
+        "乙醇"
+      ],
+      "output_type": "分級顯示/精確數值(推測)",
+      "ecosystem": "藍牙App",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "軟硬整合",
+      "features": "手機App連動, 呼氣檢測, 血液酒精含量",
+      "confidence": "中",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 5,
+      "url_count": 1,
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-14"
+    },
+    {
+      "name": "Evernoa (FeNO檢測儀)",
+      "brand": "Evernoa",
+      "description": "便攜式FeNO設備，用於測量呼出氣體中的一氧化氮分數，以評估氣道炎症。",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40297648/",
+      "sensor_type": "電化學/光學（針對NO）",
+      "form_factor": "手持可攜式",
+      "precision": "醫療級",
+      "trl": "成熟商用",
+      "gases": [
+        "NO"
+      ],
+      "output_type": "精確數值(ppb)",
+      "ecosystem": "藍牙App",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "標準化認證",
+      "features": "便攜式, 呼氣分析, 氣道炎症評估",
       "confidence": "高",
       "country": "其他/不明",
       "source": "analyzed",
       "count": 5,
       "url_count": 1,
-      "first_seen": "2026-11-08",
-      "last_seen": "2026-11-12"
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-14"
     },
     {
       "name": "NeOse",
@@ -15649,33 +15759,6 @@
       "last_seen": "2026-06-27"
     },
     {
-      "name": "UBiT® (UBiT®)",
-      "brand": "Otsuka",
-      "description": "非侵入性且非放射性的套件，用於定性檢測人體胃部與幽門螺桿菌相關的尿素酶活性。",
-      "url": "https://otsuka.pk/productdetail-74",
-      "sensor_type": "不明",
-      "form_factor": "檢測試劑/試紙 (Diagnostic Agent)",
-      "precision": "實驗室級",
-      "trl": "成熟商用",
-      "gases": [
-        "13C-Urea"
-      ],
-      "output_type": "定性/半定量檢測結果",
-      "ecosystem": "無",
-      "segments": [
-        "醫療健康"
-      ],
-      "moat": "標準化認證",
-      "features": "呼氣分析, 幽門螺旋桿菌檢測, 放射性標記",
-      "confidence": "高",
-      "country": "英國",
-      "source": "analyzed",
-      "count": 4,
-      "url_count": 1,
-      "first_seen": "2026-06-12",
-      "last_seen": "2026-11-09"
-    },
-    {
       "name": "Electrochemical Sensor Non Contact Digital Breath Alcohol Tester (電化學感測器非接觸數位呼吸酒精測試儀)",
       "brand": "未知/不明",
       "description": "電化學感測器非接觸式數位呼吸酒精測試儀，帶有紅藍燈。",
@@ -16604,35 +16687,6 @@
       "last_seen": "2026-11-10"
     },
     {
-      "name": "JCW-085 Odor Gas Detector",
-      "brand": "未知/不明",
-      "description": "半導體傳感器，LCD顯示屏，可充電，用於個人用途的便攜式口臭測試儀",
-      "url": "https://www.alibaba.com/pla/Odor-Gas-Detector-Semi-conductor-Sensor-LCD_1601756117695.html?mark=google_shopping&biz=pla&searchText=smart+health&product_id=1601756117695&pcy=de_en",
-      "sensor_type": "半導體感測器/陣列式",
-      "form_factor": "手持可攜式",
-      "precision": "消費電子級",
-      "trl": "小量商用",
-      "gases": [
-        "口臭相關氣體",
-        "VOCs"
-      ],
-      "output_type": "分級顯示",
-      "ecosystem": "無",
-      "segments": [
-        "醫療健康",
-        "個人護理"
-      ],
-      "moat": "純硬體",
-      "features": "便攜式,LCD顯示屏,口臭測試",
-      "confidence": "中",
-      "country": "其他/不明",
-      "source": "analyzed",
-      "count": 4,
-      "url_count": 1,
-      "first_seen": "2026-11-02",
-      "last_seen": "2026-11-13"
-    },
-    {
       "name": "Jeekooe 입냄새 테스트기（Jeekooe 口臭測試儀）",
       "brand": "Jeekooe",
       "description": "獲得KC認證的充電式口臭測量儀，可進行3000次測量。",
@@ -16686,60 +16740,6 @@
       "url_count": 1,
       "first_seen": "2026-11-04",
       "last_seen": "2026-11-12"
-    },
-    {
-      "name": "酒精检测仪DrinkMate (酒精檢測儀DrinkMate)",
-      "brand": "DrinkMate",
-      "description": "小巧易用，連接Android手機後，配合應用程式透過半導體感測器呼氣，查看血液酒精含量。",
-      "url": "https://www.ifanr.com/451500",
-      "sensor_type": "半導體感測器/電化學（推測）",
-      "form_factor": "手持可攜式",
-      "precision": "消費電子級",
-      "trl": "小量商用",
-      "gases": [
-        "乙醇"
-      ],
-      "output_type": "分級顯示/精確數值(推測)",
-      "ecosystem": "藍牙App",
-      "segments": [
-        "醫療健康"
-      ],
-      "moat": "軟硬整合",
-      "features": "手機App連動, 呼氣檢測, 血液酒精含量",
-      "confidence": "中",
-      "country": "其他/不明",
-      "source": "analyzed",
-      "count": 4,
-      "url_count": 1,
-      "first_seen": "2026-11-06",
-      "last_seen": "2026-11-11"
-    },
-    {
-      "name": "Evernoa (FeNO 檢測設備)",
-      "brand": "Evernoa",
-      "description": "便攜式FeNO設備，用於測量呼出氣體中的一氧化氮分數，以評估氣道炎症。",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40297648/",
-      "sensor_type": "電化學/光學（針對NO）",
-      "form_factor": "手持可攜式",
-      "precision": "消費電子級",
-      "trl": "成熟商用",
-      "gases": [
-        "NO"
-      ],
-      "output_type": "精確數值(ppb)",
-      "ecosystem": "藍牙App",
-      "segments": [
-        "醫療健康"
-      ],
-      "moat": "標準化認證",
-      "features": "便攜式, 呼氣分析, 氣道炎症評估",
-      "confidence": "高",
-      "country": "其他/不明",
-      "source": "analyzed",
-      "count": 4,
-      "url_count": 1,
-      "first_seen": "2026-11-09",
-      "last_seen": "2026-11-13"
     },
     {
       "name": "OMX-ADM 氣味偵測器/電子鼻",
@@ -20103,6 +20103,33 @@
       "last_seen": "2026-07-05"
     },
     {
+      "name": "NObreath (FeNO檢測儀)",
+      "brand": "Bedfont® Scientific Limited",
+      "description": "快速、非侵入性測量呼氣一氧化氮水平，用於檢測和管理哮喘引起的氣道炎症。",
+      "url": "https://www.bedfont.com/bedfont-scientific-limited-highlights-feno-testings-role-in-childhood-asthma-for-world-health-day-2025/",
+      "sensor_type": "電化學/光學 (針對NO)",
+      "form_factor": "手持可攜式",
+      "precision": "實驗室級",
+      "trl": "成熟商用",
+      "gases": [
+        "NO"
+      ],
+      "output_type": "精確數值(ppb)",
+      "ecosystem": "藍牙App/不明",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "標準化認證/臨床驗證",
+      "features": "非侵入性, 快速測量, 氣道炎症檢測",
+      "confidence": "高",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 3,
+      "url_count": 1,
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-11-14"
+    },
+    {
       "name": "SHM-TLA16_迷你型指揮棒酒測器 (SHM-TLA16_迷你型指揮棒酒測器)",
       "brand": "SHM",
       "description": "迷你型指揮棒酒精測試儀，一吹即測，數秒見結果。",
@@ -21636,6 +21663,36 @@
       "last_seen": "2026-11-12"
     },
     {
+      "name": "noseStick BB (氣味傳感器 noseStick BB)",
+      "brand": "I-PEX",
+      "description": "i-pex推出之新產品，可連接智能手機或PC，通過專用應用程序進行氣味識別。",
+      "url": "https://newscast.jp/news/7733964",
+      "sensor_type": "陣列式/混合型",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "小量商用",
+      "gases": [
+        "VOCs",
+        "多種"
+      ],
+      "output_type": "氣味指紋圖譜",
+      "ecosystem": "藍牙App/AI驅動",
+      "segments": [
+        "食品品質",
+        "環境監測",
+        "醫療健康"
+      ],
+      "moat": "軟硬整合/演算法IP",
+      "features": "氣味識別, 智慧型手機連接, 專用App",
+      "confidence": "高",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 3,
+      "url_count": 1,
+      "first_seen": "2026-11-08",
+      "last_seen": "2026-11-14"
+    },
+    {
       "name": "NObreath (FeNO 檢測設備)",
       "brand": "NObreath",
       "description": "攜帶型呼氣一氧化氮(FeNO)檢測設備，用於評估氣道炎症。",
@@ -21716,6 +21773,35 @@
       "url_count": 1,
       "first_seen": "2026-11-11",
       "last_seen": "2026-11-13"
+    },
+    {
+      "name": "Portable WASP-XM Gas Analyzer PID VOC Pump-priming Gas Detector (便攜式WASP-XM氣體分析儀PID VOC泵浦式氣體檢測器)",
+      "brand": "未知/不明",
+      "description": "可攜式WASP-XM氣體分析儀，PID VOC泵吸式氣體檢測器，帶TFT LCD顯示屏和可充電鋰電池。",
+      "url": "https://www.alibaba.com/product-detail/Portable-gas-analyzer-PID-VOC-pump_60602719778.html",
+      "sensor_type": "PID (Photoionization Detector)",
+      "form_factor": "手持可攜式",
+      "precision": "工業級",
+      "trl": "成熟商用",
+      "gases": [
+        "VOCs",
+        "多種"
+      ],
+      "output_type": "精確數值(ppm-ppb)",
+      "ecosystem": "無",
+      "segments": [
+        "工業安全",
+        "環境監測"
+      ],
+      "moat": "純硬體",
+      "features": "可攜式,TFT LCD顯示屏,可充電鋰電池",
+      "confidence": "高",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 3,
+      "url_count": 1,
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-14"
     },
     {
       "name": "SmartNose series 电子鼻（载气式）",
@@ -29151,33 +29237,6 @@
       "last_seen": "2026-07-03"
     },
     {
-      "name": "Bedfont® NObreath® FeNO device (Bedfont® NObreath® FeNO 裝置)",
-      "brand": "Bedfont® Scientific Limited",
-      "description": "快速、非侵入性測量呼氣一氧化氮水平，用於檢測和管理哮喘引起的氣道炎症。",
-      "url": "https://www.bedfont.com/bedfont-scientific-limited-highlights-feno-testings-role-in-childhood-asthma-for-world-health-day-2025/",
-      "sensor_type": "電化學/光學 (針對NO)",
-      "form_factor": "手持可攜式",
-      "precision": "醫療級",
-      "trl": "成熟商用",
-      "gases": [
-        "NO"
-      ],
-      "output_type": "精確數值(ppb)",
-      "ecosystem": "藍牙App/不明",
-      "segments": [
-        "醫療健康"
-      ],
-      "moat": "標準化認證/臨床驗證",
-      "features": "非侵入性, 快速測量, 氣道炎症檢測",
-      "confidence": "高",
-      "country": "其他/不明",
-      "source": "analyzed",
-      "count": 2,
-      "url_count": 1,
-      "first_seen": "2026-07-02",
-      "last_seen": "2026-07-25"
-    },
-    {
       "name": "Otsuka Japan 13C-urea breath test diagnostic agent (日本大塚製藥 13C-尿素呼氣測試診斷劑)",
       "brand": "Otsuka Pakistan",
       "description": "測量呼氣中的13C-尿素以檢測幽門螺桿菌的存在。",
@@ -32424,36 +32483,6 @@
       "last_seen": "2026-11-12"
     },
     {
-      "name": "ニオイセンサ 新製品「noseStick BB」 (氣味感測器 新產品「noseStick BB」)",
-      "brand": "I-PEX",
-      "description": "氣味感測器新產品，可連接智慧型手機或PC，透過專用應用程式識別氣味。",
-      "url": "https://newscast.jp/news/7733964",
-      "sensor_type": "陣列式/混合型",
-      "form_factor": "嵌入式模組",
-      "precision": "消費電子級",
-      "trl": "小量商用",
-      "gases": [
-        "VOCs",
-        "多種"
-      ],
-      "output_type": "氣味指紋圖譜",
-      "ecosystem": "藍牙App/AI驅動",
-      "segments": [
-        "食品品質",
-        "環境監測",
-        "智慧家居"
-      ],
-      "moat": "軟硬整合/演算法IP",
-      "features": "氣味識別, 智慧型手機連接, 專用App",
-      "confidence": "高",
-      "country": "其他/不明",
-      "source": "analyzed",
-      "count": 2,
-      "url_count": 1,
-      "first_seen": "2026-11-08",
-      "last_seen": "2026-11-10"
-    },
-    {
       "name": "UBiT® (UBiT® 紅外線幽門螺旋桿菌尿素呼氣試驗儀)",
       "brand": "DLOlab",
       "description": "紅外線幽門螺旋桿菌尿素呼氣試驗，用於非侵入性檢測尿素酶活性。",
@@ -32739,35 +32768,6 @@
       "last_seen": "2026-11-12"
     },
     {
-      "name": "Portable WASP-XM Gas Analyzer PID VOC Pump-priming Gas Detector (WASP-XM 可攜式氣體分析儀 PID VOC 泵吸式氣體檢測器)",
-      "brand": "未知/不明",
-      "description": "可攜式WASP-XM氣體分析儀，PID VOC泵吸式氣體檢測器，帶TFT LCD顯示屏和可充電鋰電池。",
-      "url": "https://www.alibaba.com/product-detail/Portable-gas-analyzer-PID-VOC-pump_60602719778.html",
-      "sensor_type": "PID/VOC Pump-priming",
-      "form_factor": "手持可攜式",
-      "precision": "工業級",
-      "trl": "成熟商用",
-      "gases": [
-        "VOCs",
-        "多種"
-      ],
-      "output_type": "分級顯示,精確數值(ppm-ppb)",
-      "ecosystem": "無",
-      "segments": [
-        "工業安全",
-        "環境監測"
-      ],
-      "moat": "純硬體",
-      "features": "可攜式,TFT LCD顯示屏,可充電鋰電池",
-      "confidence": "高",
-      "country": "其他/不明",
-      "source": "analyzed",
-      "count": 2,
-      "url_count": 1,
-      "first_seen": "2026-11-11",
-      "last_seen": "2026-11-13"
-    },
-    {
       "name": "Portable Breath Alcohol Tester (便攜式呼氣酒精測試儀)",
       "brand": "未知/不明",
       "description": "酒精傳感器，用於呼吸氣體檢測器和環境傳感器，檢測酒精氣味。",
@@ -32794,6 +32794,60 @@
       "url_count": 1,
       "first_seen": "2026-11-12",
       "last_seen": "2026-11-12"
+    },
+    {
+      "name": "BreePoot Breath Ketone Meter (BreePoot 呼吸酮體計)",
+      "brand": "BreePoot",
+      "description": "用於生酮飲食的非接觸式酮體呼吸計，無需口吹管，無耗材。",
+      "url": "https://www.amazon.com/Best-Sellers-Ketone-Breath-Meters/zgbs/hpc/23681825011",
+      "sensor_type": "不明",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "小量商用",
+      "gases": [
+        "酮體"
+      ],
+      "output_type": "分級顯示",
+      "ecosystem": "無",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "純硬體",
+      "features": "非接觸式, 呼氣檢測, 生酮飲食",
+      "confidence": "中",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 2,
+      "url_count": 1,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-14"
+    },
+    {
+      "name": "AP012 呼吸酒精测试仪 (AP012 呼吸酒精測試儀)",
+      "brand": "未知/不明",
+      "description": "專業酒精測試儀，利用電化學反應鉑Vs乙醇分子，提供穩定可靠的測量技術。",
+      "url": "https://chinese.alibaba.com/product-detail/Factory-Innovative-Digital-Breathalyser-Alcohol-Breath-1600545936239.html",
+      "sensor_type": "電化學",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "成熟商用",
+      "gases": [
+        "乙醇"
+      ],
+      "output_type": "分級顯示",
+      "ecosystem": "無",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "純硬體",
+      "features": "電化學反應, 鉑Vs乙醇分子, 穩定可靠",
+      "confidence": "高",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 2,
+      "url_count": 1,
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-14"
     },
     {
       "name": "氣味分析系統-電子鼻（實驗室/車載兩用）",
@@ -84165,33 +84219,6 @@
       "last_seen": "2026-11-13"
     },
     {
-      "name": "BreePoot Breath Ketone Meter (BreePoot 呼氣酮體儀)",
-      "brand": "BreePoot",
-      "description": "無需咬嘴的非接觸式酮體檢測儀，適用於生酮飲食。",
-      "url": "https://www.amazon.com/Best-Sellers-Ketone-Breath-Meters/zgbs/hpc/23681825011",
-      "sensor_type": "不明",
-      "form_factor": "手持可攜式",
-      "precision": "消費電子級",
-      "trl": "小量商用",
-      "gases": [
-        "酮體"
-      ],
-      "output_type": "分級顯示",
-      "ecosystem": "無",
-      "segments": [
-        "醫療健康"
-      ],
-      "moat": "純硬體",
-      "features": "非接觸式, 呼氣檢測, 生酮飲食",
-      "confidence": "中",
-      "country": "其他/不明",
-      "source": "analyzed",
-      "count": 1,
-      "url_count": 1,
-      "first_seen": "2026-11-13",
-      "last_seen": "2026-11-13"
-    },
-    {
       "name": "XP-329ⅢR (XP-329ⅢR 便攜式氣味檢測儀)",
       "brand": "新考思莫施电子(上海)有限公司 (New Cosmos Electric Shanghai Co., Ltd.)",
       "description": "數位實時顯示氣味強弱，可切換級別顯示和臭氣指數，用於多種食品或香料測量。",
@@ -84221,31 +84248,208 @@
       "last_seen": "2026-11-13"
     },
     {
-      "name": "专业呼吸酒精测试仪AP012 (專業呼吸酒精測試儀AP012)",
-      "brand": "未知/不明",
-      "description": "專業酒精測試儀，利用電化學反應鉑Vs乙醇分子，提供穩定可靠的測量技術。",
-      "url": "https://chinese.alibaba.com/product-detail/Factory-Innovative-Digital-Breathalyser-Alcohol-Breath-1600545936239.html",
-      "sensor_type": "電化學",
+      "name": "ポータブルニオイセンサー POLFA (便攜式氣味傳感器 POLFA)",
+      "brand": "カルモア",
+      "description": "輕量化設計，用於現場臭氣管理和氣味測量的便攜式氣味傳感器。",
+      "url": "https://www.karumoa.co.jp/product/sensor/polfa/",
+      "sensor_type": "陣列式/混合型",
+      "form_factor": "手持可攜式",
+      "precision": "工業級",
+      "trl": "小量商用",
+      "gases": [
+        "VOCs",
+        "多種"
+      ],
+      "output_type": "精確數值(ppm-ppb)",
+      "ecosystem": "藍牙App",
+      "segments": [
+        "環境監測",
+        "工業安全"
+      ],
+      "moat": "純硬體",
+      "features": "便攜式, 現場臭氣管理, 輕量化設計",
+      "confidence": "中",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 1,
+      "url_count": 1,
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-14"
+    },
+    {
+      "name": "Odor Breath Tester (異味呼吸測試儀)",
+      "brand": "DIYatel",
+      "description": "新設計的異味呼吸測試儀/口臭檢測器，準確、快速、易用，適用於居家個人衛生。",
+      "url": "https://www.alibaba.com/product-detail/new-design-odor-breath-tester-bad_1600094447516.html",
+      "sensor_type": "陣列式/混合型",
       "form_factor": "手持可攜式",
       "precision": "消費電子級",
-      "trl": "成熟商用",
+      "trl": "小量商用",
       "gases": [
-        "乙醇"
+        "VOCs",
+        "多種"
       ],
       "output_type": "分級顯示",
       "ecosystem": "無",
       "segments": [
-        "醫療健康"
+        "醫療健康",
+        "智慧家居"
       ],
       "moat": "純硬體",
-      "features": "電化學反應, 鉑Vs乙醇分子, 穩定可靠",
+      "features": "準確, 快速, 易用",
+      "confidence": "中",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 1,
+      "url_count": 1,
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-14"
+    },
+    {
+      "name": "气味检测产品 (嗅覺傳感器模組)",
+      "brand": "whhcrk",
+      "description": "小型化金屬氧化物半導體（MOX）傳感器模組，可檢測呼出氣中酒精、室內甲醛等。",
+      "url": "http://www.whhcrk.com/page69",
+      "sensor_type": "MOS (Metal Oxide Semiconductor)",
+      "form_factor": "嵌入式模組",
+      "precision": "工業級",
+      "trl": "小量商用",
+      "gases": [
+        "酒精 (Ethanol)",
+        "甲醛 (Formaldehyde)",
+        "VOCs"
+      ],
+      "output_type": "精確數值(ppm-ppb)",
+      "ecosystem": "無",
+      "segments": [
+        "環境監測",
+        "智慧家居"
+      ],
+      "moat": "純硬體",
+      "features": "小型化, 酒精檢測, 甲醛檢測",
       "confidence": "高",
       "country": "其他/不明",
       "source": "analyzed",
       "count": 1,
       "url_count": 1,
-      "first_seen": "2026-11-13",
-      "last_seen": "2026-11-13"
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-14"
+    },
+    {
+      "name": "血酮体测试仪 (血酮體測試儀)",
+      "brand": "beijingyicheng.com.cn (Beijing Yicheng)",
+      "description": "語音血酮體測試儀 (帶藍牙功能) 和T-3型血酮體測試儀，用於糖尿病、生酮飲食和減重監測。",
+      "url": "https://www.beijingyicheng.com.cn/index/chanpin.html",
+      "sensor_type": "不明",
+      "form_factor": "手持可攜式",
+      "precision": "消費電子級",
+      "trl": "小量商用",
+      "gases": [
+        "丙酮"
+      ],
+      "output_type": "分級顯示",
+      "ecosystem": "藍牙App",
+      "segments": [
+        "醫療健康"
+      ],
+      "moat": "軟硬整合",
+      "features": "語音提示, 藍牙連接, 糖尿病監測",
+      "confidence": "中",
+      "country": "中國",
+      "source": "analyzed",
+      "count": 1,
+      "url_count": 1,
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-14"
+    },
+    {
+      "name": "BACtrack Mobile Smartphone Breathalyzer (BACtrack 行動智能手機酒精呼吸分析儀)",
+      "brand": "BACtrack",
+      "description": "與智能手機應用程式整合的警用級酒精呼吸分析儀，無線傳輸血液酒精含量 (BAC)。",
+      "url": "https://www.amazon.com/live/video/0d4e458d624c495295b2f5f0e9e7673e",
+      "sensor_type": "電化學/混合型",
+      "form_factor": "手持可攜式",
+      "precision": "工業級",
+      "trl": "成熟商用",
+      "gases": [
+        "乙醇"
+      ],
+      "output_type": "精確數值(BAC)",
+      "ecosystem": "藍牙App",
+      "segments": [
+        "醫療健康",
+        "國防"
+      ],
+      "moat": "標準化認證",
+      "features": "智能手機整合, 警用級, 無線傳輸",
+      "confidence": "高",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 1,
+      "url_count": 1,
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-14"
+    },
+    {
+      "name": "YJ-Odor 惡臭測定裝置 (YJ-Odor 惡臭測量裝置)",
+      "brand": "Youngjin Tech",
+      "description": "基於IoT的固定式惡臭測量裝置，用於檢測惡臭排放設施中的硫系、胺系和VOCs類氣體。",
+      "url": "http://youngjintech.com/products-5/?bmode=view&idx=13225978",
+      "sensor_type": "陣列式/混合型",
+      "form_factor": "固定式",
+      "precision": "工業級",
+      "trl": "小量商用",
+      "gases": [
+        "硫系",
+        "胺系",
+        "VOCs"
+      ],
+      "output_type": "精確數值(ppm-ppb)",
+      "ecosystem": "IoT雲端",
+      "segments": [
+        "環境監測",
+        "工業安全"
+      ],
+      "moat": "軟硬整合",
+      "features": "IoT整合, 惡臭測量, 硫/胺/VOCs檢測",
+      "confidence": "高",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 1,
+      "url_count": 1,
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-14"
+    },
+    {
+      "name": "휴대형 냄새측정기 BL-002 (便攜式氣味測量儀 BL-002)",
+      "brand": "BASELINE",
+      "description": "現場實時測量複合惡臭(OUs)、硫化氫(ppm)、氨(ppm)及揮發性有機化合物(TVOC, ppm)等濃度。",
+      "url": "https://www.enin.co.kr/bbs/board.php?bo_table=airworks&wr_id=28",
+      "sensor_type": "陣列式/混合型",
+      "form_factor": "手持可攜式",
+      "precision": "工業級",
+      "trl": "成熟商用",
+      "gases": [
+        "OUs",
+        "H2S",
+        "NH3",
+        "TVOC"
+      ],
+      "output_type": "精確數值(ppm-ppb)",
+      "ecosystem": "無",
+      "segments": [
+        "環境監測",
+        "工業安全"
+      ],
+      "moat": "純硬體",
+      "features": "現場實時測量,複合惡臭(OUs),多氣體同步監測",
+      "confidence": "高",
+      "country": "其他/不明",
+      "source": "analyzed",
+      "count": 1,
+      "url_count": 1,
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-14"
     }
   ]
 }
